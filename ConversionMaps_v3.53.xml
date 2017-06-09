@@ -1,0 +1,1624 @@
+<maps>
+  <header>
+    <model>
+      <class item="Ng4_MasterPrg" itemrevision="Ng4_MasterPrgRevision" masterform="Ng4_MasterPrgMaster|Ng4_MasterPrgMasterS" masterform-rev="Ng4_MasterPrgRevisionMaster|Ng4_MasterPrgRevMasterS"/>
+      <class item="Ng4_EngDoc" itemrevision="Ng4_EngDocRevision" masterform="Ng4_EngDocMaster|Ng4_EngDocMasterS" masterform-rev="Ng4_EngDocRevisionMaster|Ng4_EngDocRevMasterS"/>
+      <class item="Ng4_Ext_Dsgn" itemrevision="Ng4_Ext_DsgnRevision" masterform="Ng4_Ext_DsgnMaster|Ng4_Ext_DsgnMasterS" masterform-rev="Ng4_Ext_DsgnRevisionMaster|Ng4_Ext_DsgnRevMasterS"/>
+      <class item="Ng4_FinanceDoc" itemrevision="Ng4_FinanceDocRevision" masterform="Ng4_FinanceDocMaster|Ng4_FinanceDocMasterS" masterform-rev="Ng4_FinanceDocRevisionMaster|Ng4_FinanceDocRevMaster5"/>
+      <class item="Ng4_ManfgDoc" itemrevision="Ng4_ManfgDocRevision" masterform="Ng4_ManfgDocMaster|Ng4_ManfgDocMasterS" masterform-rev="Ng4_ManfgDocRevisionMaster|Ng4_ManfgDocRevMasterS"/>
+      <class item="Ng4_Non_ERP_Dsgn" itemrevision="Ng4_Non_ERP_DsgnRevision" masterform="Ng4_Non_ERP_DsgnMaster|Ng4_Non_ERP_DsgnMasterS" masterform-rev="Ng4_Non_ERP_DsgnRevisionMaster|Ng4_Non_ERP_DsgnRevMasterS"/>
+      <class item="Ng4_Part" itemrevision="Ng4_PartRevision" masterform="Ng4_PartMaster|Ng4_PartMasterS" masterform-rev="Ng4_PartRevisionMaster|Ng4_PartRevMasterS"/>
+      <class item="Ng4_Phase0" itemrevision="Ng4_Phase0Revision" masterform="Ng4_Phase0Master|Ng4_Phase0MasterS" masterform-rev="Ng4_Phase0RevisionMaster|Ng4_Phase0RevMasterS"/>
+      <class item="Ng4_Phase0Doc" itemrevision="Ng4_Phase0DocRevision" masterform="Ng4_Phase0DocMaster|Ng4_Phase0DocMasterS" masterform-rev="Ng4_Phase0DocRevisionMaster|Ng4_Phase0DocRevMasterS"/>
+      <class item="Ng4_ProgDoc" itemrevision="Ng4_ProgDocRevision" masterform="Ng4_ProgDocMaster|Ng4_ProgDocMasterS" masterform-rev="Ng4_ProgDocRevisionMaster|Ng4_ProgDocRevMasterS"/>
+      <class item="Ng4_Program" itemrevision="Ng4_ProgramRevision" masterform="Ng4_ProgramMaster|Ng4_ProgramMasterS" masterform-rev="Ng4_ProgramRevisionMaster|Ng4_ProgramRevMasterS"/>
+      <class item="Ng4_PurchDoc" itemrevision="Ng4_PurchDocRevision" masterform="Ng4_PurchDocMaster|Ng4_PurchDocMasterS" masterform-rev="Ng4_PurchDocRevisionMaster|Ng4_PurchDocRevMasterS"/>
+      <class item="Ng4_QualDoc" itemrevision="Ng4_QualDocRevision" masterform="Ng4_QualDocMaster|Ng4_QualDocMasterS" masterform-rev="Ng4_QualDocRevisionMaster|Ng4_QualDocRevMasterS"/>
+      <class item="Ng4_SalesDoc" itemrevision="Ng4_SalesDocRevision" masterform="Ng4_SalesDocMaster|Ng4_SalesDocMasterS" masterform-rev="Ng4_SalesDocRevisionMaster|Ng4_SalesDocRevMasterS"/>
+      <class item="A9_EngDoc" itemrevision="A9_EngDocRevision" masterform="A9_EngDocMaster|A9_EngDocMasterS" masterform-rev="A9_EngDocRevisionMaster|A9_EngDocRevMasterS"/>
+      <class item="A9_NonProduct" itemrevision="A9_NonProductRevision" masterform="A9_NonProductMaster|A9_NonProductMasterS" masterform-rev="A9_NonProductRevisionMaster|A9_NonProductRevMasterS"/>
+      <class item="A9_ManDoc" itemrevision="A9_ManDocRevision" masterform="A9_ManDocMaster|A9_ManDocMasterS" masterform-rev="A9_ManDocRevisionMaster|A9_ManDocRevMasterS"/>
+      <class item="A9_autoproduct" itemrevision="A9_autoproductRevision" masterform="A9_autoproductMaster|A9_autoproductMasterS" masterform-rev="A9_autoproductRevisionMaster|A9_autoproductRevMasterS"/>
+      <class item="YF5_IndDesDoc" itemrevision="YF5_IndDesDocRevision" masterform="YF5_IndDesDocMaster|YF5_IndDesDocMasterS" masterform-rev="YF5_IndDesDocRevisionMaster|YF5_IndDesDocRevMasterS"/>
+      <class item="A9_PurchDoc" itemrevision="A9_PurchDocRevision" masterform="A9_PurchDocMaster|A9_PurchDocMasterS" masterform-rev="A9_PurchDocRevisionMaster|A9_PurchDocRevMasterS"/>
+      <class item="A9_QuaDoc" itemrevision="A9_QuaDocRevision" masterform="A9_QuaDocMaster|A9_QuaDocMasterS" masterform-rev="A9_QuaDocRevisionMaster|A9_QuaDocRevMasterS"/>
+      <class item="YF5_SalesFinDoc" itemrevision="YF5_SalesFinDocRevision" masterform="YF5_SalesFinDocMaster|YF5_SalesFinDocMasterS" masterform-rev="YF5_SalesFinDocRevisionMaster|YF5_SalesFinDocRevMasterS"/>
+      <class item="A9_ProgramItem" itemrevision="A9_ProgramItemRevision" masterform="A9_ProgramItemMaster|A9_ProgramItemMasterS" masterform-rev="A9_ProgramItemRevisionMaster|A9_ProgramItemRevMasterS"/>
+      <class item="Ng4_Design" itemrevision="Ng4_DesignRevision" masterform="Ng4_DesignMaster|Ng4_DesignMasterS" masterform-rev="Ng4_DesignRevisionMaster|Ng4_DesignRevMasterS"/>
+      <class item="A9_AutoDesign" itemrevision="A9_AutoDesignRevision" masterform="A9_AutoDesignMaster|A9_AutoDesignMasterS" masterform-rev="A9_AutoDesignRevisionMaster|A9_AutoDesignRevMasterS"/>
+      <class item="Ng4_MtlMaster" itemrevision="Ng4_MtlMasterRevision" masterform="Ng4_MtlMasterMaster|Ng4_MtlMasterMasterS" masterform-rev="Ng4_MtlMasterRevisionMaster|Ng4_MtlMasterRevMasterS"/>      
+      <class item="Ng4_GeneralDoc" itemrevision="Ng4_GeneralDocRevision" masterform="Ng4_GeneralDocMaster|Ng4_GeneralDocMasterS" masterform-rev="Ng4_GeneralDocRevisionMaster|Ng4_GeneralDocRevMasterS"/>
+      <class item="A9_autodoc" itemrevision="A9_autodocRevision" masterform="A9_autodocMaster|A9_autodocMasterS" masterform-rev="A9_autodocRevisionMaster|A9_autodocRevMasterS"/>
+      <class item="Ng4_PlantDoc" itemrevision="Ng4_PlantDocRevision" masterform="Ng4_PlantDocMaster|Ng4_PlantDocMasterS" masterform-rev="Ng4_PlantDocRevisionMaster|Ng4_PlantDocRevMasterS"/>
+      <class item="YF5_MatrlsDoc" itemrevision="YF5_MatrlsDocRevision" masterform="YF5_MatrlsDocMaster|YF5_MatrlsDocMasterS" masterform-rev="YF5_MatrlsDocRevisionMaster|YF5_MatrlsDocRevMasterS"/>
+      <class item="Ng4_PWP" itemrevision="Ng4_PWPRevision" masterform="Ng4_PWPMaster|Ng4_PWPMasterS" masterform-rev="Ng4_PWPRevisionMaster|Ng4_PWPRevMasterS"/>
+      <class item="Ng4_CR" itemrevision="Ng4_CRRevision" masterform="Ng4_CRMaster|Ng4_CRMasterS" masterform-rev="Ng4_CRRevisionMaster|Ng4_CRRevMasterS"/>
+      <class item="A9_AutoCR" itemrevision="A9_AutoCRRevision" masterform="A9_AutoCRMaster|A9_AutoCRMasterS" masterform-rev="A9_AutoCRRevisionMaster|A9_AutoCRRevMasterS"/>
+      <class item="Ng4_ChangeNotice" itemrevision="Ng4_ChangeNoticeRevision" masterform="Ng4_ChangeNoticeMaster|Ng4_ChangeNoticeMasterS" masterform-rev="Ng4_ChangeNoticeRevisionMaster|Ng4_ChangeNoticeRevMasterS"/>
+      <class item="A9_AutoCN" itemrevision="A9_AutoCNRevision" masterform="A9_AutoCNMaster|A9_AutoCNMasterS" masterform-rev="A9_AutoCNRevisionMaster|A9_AutoCNRevMasterS"/>
+      <class item="Ng4_DR" itemrevision="Ng4_DRRevision" masterform="Ng4_DRMaster|Ng4_DRMasterS" masterform-rev="Ng4_DRRevisionMaster|Ng4_DRRevMasterS"/>
+      <class item="A9_AutoDR" itemrevision="A9_AutoDRRevision" masterform="A9_AutoDRMaster|A9_AutoDRMasterS" masterform-rev="A9_AutoDRRevisionMaster|A9_AutoDRRevMasterS"/>
+      <class item="Ng4_EPR" itemrevision="Ng4_EPRRevision" masterform="Ng4_EPRMaster|Ng4_EPRMasterS" masterform-rev="Ng4_EPRRevisionMaster|Ng4_EPRRevMasterS"/>
+      <class item="Ng4_PR" itemrevision="Ng4_PRRevision" masterform="Ng4_PRMaster|Ng4_PRMasterS" masterform-rev="Ng4_PRRevisionMaster|Ng4_PRRevMasterS"/>
+      <class item="A9_AutoPR" itemrevision="A9_AutoPRRevision" masterform="A9_AutoPRMaster|A9_AutoPRMasterS" masterform-rev="A9_AutoPRRevisionMaster|A9_AutoPRRevMasterS"/>
+      <class item="Ng4_DA" itemrevision="Ng4_DARevision" masterform="Ng4_DAMaster|Ng4_DAMasterS" masterform-rev="Ng4_DARevisionMaster|Ng4_DARevMasterS"/>
+      <class item="YF5_DevRqst" itemrevision="YF5_DevRqstRevision" masterform="YF5_DevRqstMaster|YF5_DevRqstMasterS" masterform-rev="YF5_DevRqstRevisionMaster|YF5_DevRqstRevMasterS"/>
+      <class item="Ng4_GenDocs" itemrevision="Ng4_GenDocsRevision" masterform="Ng4_GenDocsMaster|Ng4_GenDocsMasterS" masterform-rev="Ng4_GenDocsRevisionMaster|Ng4_GenDocsRevMasterS"/>
+      <class item="A9_Program" itemrevision="A9_ProgramRevision" masterform="A9_ProgramMaster|A9_ProgramMasterS" masterform-rev="A9_ProgramRevisionMaster|A9_ProgramRevMasterS"/>
+      <class item="Ng4_ProbReport" itemrevision="Ng4_ProbReportRevision" masterform="Ng4_ProbReportMaster|Ng4_ProbReportMasterS" masterform-rev="Ng4_ProbReportRevisionMaster|Ng4_ProbReportRevMasterS"/>
+      <class item="Ng4_ROC" itemrevision="Ng4_ROCRevision" masterform="Ng4_ROCMaster|Ng4_ROCMasterS" masterform-rev="Ng4_ROCRevisionMaster|Ng4_ROCRevMasterS"/>
+	  <class item="Ng4_XImpact" itemrevision="Ng4_XImpactRevision" masterform="Ng4_XImpactMaster|Ng4_XImpactMasterS" masterform-rev="Ng4_XImpactRevisionMaster|Ng4_XImpactRevMasterS"/>
+	  <class item="A9_XImpact" itemrevision="A9_XImpactRevision" masterform="A9_XImpactMaster|A9_XImpactMasterS" masterform-rev="A9_XImpactRevisionMaster|A9_XImpactRevMasterS"/>
+	  <class item="Item" itemrevision="ItemRevision" masterform="ItemMaster|ItemMasterS" masterform-rev="ItemRevisionMaster|ItemRevMasterS"/>
+    </model>
+
+    <!--Release status values-->
+    <lookup name="ChangeReleseStatus" file="rel_stat.csv"/>
+
+    <!--Owning User values-->
+    <lookup name="ChangeOwningUser" file="owning_user.csv"/>
+
+    <!--Owning Group values-->
+    <lookup name="ChangeOwningGroup" file="owning_group.csv"/>
+
+    <!--UnitOfMeasure values-->
+    <lookup name="ChangeUOM" file="uom.csv"/>
+	
+	<!--Customer PUID values-->
+    <lookup name="CustomerPuid" file="customer.csv"/>
+
+    <mapRefObject type="Group" lookup="ChangeOwningGroup"/>
+    <mapRefObject type="User" lookup="ChangeOwningUser"/>
+    <mapRefObject type="ReleaseStatus" lookup="ChangeReleseStatus"/>
+    <mapRefObject type="UnitOfMeasure" lookup="ChangeUOM"/>
+    <mapRefObject type="DatasetType">
+      <!-- Dataset mapping -->
+      <value a="Ng4_Cal" b="YF5_Cal"/>
+      <value a="Ng4_Cals" b="YF5_Cals"/>
+      <value a="Ng4_QChecker" b="YF5_QChecker"/>
+    </mapRefObject>
+    <mapRefObject type="ImanType">
+	
+      <value a="Ng4_Has_MaterialMaster" b="YF5_Has_MaterialMaster"/>
+      <value a="Ng4_DwgLink" b="A9_DwgLink"/>
+      <value a="Ng4_DeformedLink" b="A9_GenLink"/>
+      <value a="Ng4_MirroredLink" b="A9_GenLink"/>
+      <value a="Ng4_HandedLink" b="A9_GenLink"/>
+      <value a="Ng4_ProposedChanges" b="A9_Proposed_Changes"/>
+      <value a="Ng4_Major_Minor_Rel" b="ImanRelation"/>
+      <value a="Ng4_DesignToExDesignFrm" b="A9_PartToCustomer"/>
+      <value a="Ng4_OEM_Representation" b="A9_GenLink"/>
+      <value a="Ng4_Replaced_By" b="A9_Has_Color_Parts"/>
+      <value a="Ng4_WPDocRel" b="A9_ProgramHasDocument"/>
+      <value a="Ng4_BOMSyncReport" b="ImanRelation"/>
+      <value a="Ng4_EndItemsPF" b="A9_PartToProgram"/>
+      <value a="Ng4_OriginProgram" b="A9_PartToProgram"/>
+      <value a="TC_Is_Represented_By" b="TC_Is_Represented_By"/>
+      <value a="TC_Primary_Design_Representation" b="TC_Primary_Design_Representation"/>
+      <value a="Ng4_Alternatives" b="A9_Has_Color_Parts"/>
+      <value a="Ng4_BusinessPlan" b="A9_ProgramHasDocument"/>
+      <value a="Ng4_CntPltToPrg" b="ImanRelation"/>
+      <value a="Ng4_Design_Alternatives" b="A9_Has_Color_Parts"/>
+      <value a="Ng4_LegacyChangeObjects" b="ImanRelation"/>
+      <value a="Ng4_MPLFolder" b="IMAN_Snapshot"/>
+      <value a="Ng4_PartToExPartFrm" b="A9_PartToCustomer"/>
+      <value a="Ng4_PortProgRel" b="ImanRelation"/>
+      <value a="Ng4_PrgDocRel" b="A9_ProgramHasDocument"/>
+      <value a="Ng4_PrgToLaunchPrg" b="ImanRelation"/>
+      <value a="Ng4_ProgramSchedule" b="A9P_ProgramHasScheduleMS"/>
+      <value a="Ng4_ProgToProject" b="A9_ProgramHasProject"/>
+      <value a="Ng4_Represents_CPP" b="A9_Has_Color_Parts"/>
+      <value a="Ng4_SubProgram" b="ImanRelation"/>
+      <value a="Ng4_SupportingDocsPF" b="A9_PartHasDocument"/>
+      <value a="Ng4_WPRel" b="ImanRelation"/>
+	  <!-- Material master maps for iteration 1 -->
+	  <value a="Ng4_PartMM" b="YF5_Has_MaterialMaster"/>
+	  <value a="Ng4_MMPlantInfo" b="YF5_Has_MaterialMaster"/>
+    </mapRefObject>
+  </header>
+
+  <!--Change POM_stubs from Ng4_MtlMaster to Item for Iteration 1-->
+  <map a="POM_stub" b="POM_stub">
+    <src-check if="@object_class = 'Ng4_MtlMaster'"/>
+    <attribute name="object_class" value="'Item'"/>
+    <attribute name="object_type" value="'Item'"/>
+  </map>
+  <map a="POM_stub" b="POM_stub">
+    <src-check if="@object_class = 'Ng4_PlantFrm'"/>
+    <attribute name="object_class" value="'Item'"/>
+    <attribute name="object_type" value="'Item'"/>
+  </map>
+  <map a="POM_stub" b="POM_stub">
+    <src-check if="@object_class = 'Ng4_Non_ERP_DsgnRevision'"/>
+    <attribute name="object_class" value="'A9_NonProductRevision'"/>
+    <attribute name="object_type" value="'A9_NonProductRevision'"/>
+  </map>  
+
+  <map a="Ng4_MtlMaster" b="Item">
+    <attr>
+		<a>ng4_PlantomFlag</a>
+		<b>yf5_PhantomFlag</b>
+	</attr>
+	<attr>
+		<a>ng4_ItemMasterType</a>
+		<b>yf5_ItemMasterType</b>
+	</attr>
+  </map>
+
+  <!-- Mapping for Dynamic Participants -->
+
+  <map a="Ng4_DesignEngineerLead" b="A9_LeadDesigner"/>
+  <map a="Ng4_ExtendedSDTMembers" b="YF5_Other"/>
+  <map a="Ng4_Finance" b="YF5_SalesFinance"/>
+  <map a="Ng4_LeadDesigner" b="A9_LeadDesigner"/>
+  <map a="Ng4_Manufacturing" b="YF5_Manufacturing"/>
+  <map a="Ng4_NotifiedDesignEnggLeads" b="YF5_Other"/>
+  <map a="Ng4_NotifiedProgramManagers" b="YF5_Other"/>
+  <map a="Ng4_ProgramManager" b="A9_ProgramManager"/>
+  <map a="Ng4_Purchasing" b="YF5_Procurement"/>
+  <map a="Ng4_Quality" b="YF5_Other"/>
+  <map a="Ng4_SDTMember" b="YF5_Other"/>
+  <map a="Ng4_SalesCommercial" b="YF5_Other"/>
+  <map a="Ng4_Supplier" b="YF5_Other"/>
+
+  
+  <!--Ng4_Design-->
+  <map a="Ng4_Design" b="A9_AutoDesign">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+    <attribute name="ng4_CAD_Ownership" value="null"/>
+    <attribute name="ng4_Cad_Uses" value="null"/>
+    <attribute name="ng4_CDBNumber" value="null"/>
+    <attribute name="ng4_DAssembly" value="null"/>
+    <attribute name="ng4_DPosition" value="null"/>
+    <attribute name="ng4_EDBNumber" value="null"/>
+    <attribute name="ng4_EPICNumber" value="null"/>
+    <attribute name="ng4_OverlayIcon_Invalid" value="null"/>
+    <attribute name="ng4_OwningSystem" value="null"/>
+  </map>
+
+  <!--Ng4_DesignRevision-->
+  <map a="A9_AutoDesignRevision" b="A9_AutoDesignRevision">
+    <attr>
+      <a>ng4_Type</a>
+      <b>yf5_DrawingType</b>
+    </attr>
+    <attribute name="ng4_OEM" value="null"/>
+    <attribute name="ng4_SupplierPartNumber" value="null"/>
+    <attribute name="ng4_LegacyCreateDate" value="null"/>
+    <attribute name="ng4_IsItDeformed" value="null"/>
+    <attribute name="ng4_LegacyReleaser" value="null"/>
+    <attribute name="ng4_CDBRevision" value="null"/>
+    <attribute name="ng4_RelPos" value="null"/>
+    <attribute name="ng4_Supplier" value="null"/>
+    <attribute name="ng4_OriginatingSite" value="null"/>
+    <attribute name="ng4_OEMPartNumber" value="null"/>
+    <attribute name="ng4_SourceRevision" value="null"/>
+    <attribute name="ng4_Superseded_Applied" value="null"/>
+    <attribute name="ng4_LegacyReleaseDate" value="null"/>
+    <attribute name="ng4_Options" value="null"/>
+    <attribute name="ng4_OEMRevision" value="null"/>
+    <attribute name="ng4_ModifiedThickness" value="null"/>
+    <attribute name="ng4_Options_1" value="null"/>
+    <attribute name="ng4_CreateOEMRelate" value="null"/>
+    <attribute name="ng4_MasterDesign" value="null"/>
+    <attribute name="ng4_ProdConfig" value="null"/>
+    <attribute name="ng4_OwningSystem" value="null"/>
+    <attribute name="ng4_CalculatedThickness" value="null"/>
+    <attribute name="ng4_CrossCar" value="null"/>
+    <attribute name="ng4_Assembly" value="null"/>
+    <attribute name="ng4_Superseded" value="null"/>
+    <attribute name="ng4_Row" value="null"/>
+    <attribute name="ng4_LegacyStatus" value="null"/>
+    <attribute name="ng4_Blackbox" value="null"/>
+    <attribute name="ng4_life_cycle_state" value="null"/>
+    <attribute name="ng4_LegacyFilename" value="null"/>
+    <attribute name="ng4_COP" value="null"/>
+    <attribute name="ng4_ForeAft_1" value="null"/>
+    <attribute name="ng4_SupplierRevision" value="null"/>
+    <attribute name="ng4_UpDown" value="null"/>
+    <attribute name="ng4_EDBRevision" value="null"/>
+    <attribute name="ng4_LegacyOwner" value="null"/>
+    <attribute name="ng4_DriveTrain" value="null"/>
+    <attribute name="ng4_DriveConfig" value="null"/>
+    <attribute name="ng4_OccPosition" value="null"/>
+    <attribute name="ng4_DrawingSheet" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_EPICRevision" value="null"/>
+	<attribute name="ng4_IsNXDrawing" value="null"/>
+	<attribute name="ng4_OverlayIcon" value="null"/>
+  </map>
+
+  <!--Ng4_Ext_Dsgn-->
+  <map a="Ng4_Ext_Dsgn" b="A9_NonProduct">
+    <attribute name="ng4_OverlayIcon_Invalid" value="null"/>
+    <attribute name="ng4_OwningSystem" value="null"/>
+  </map>
+
+  <!--Ng4_Ext_DsgnRevision-->
+  <map a="A9_NonProductRevision" b="A9_NonProductRevision">
+    <attribute name="ng4_CalculatedThickness" value="null"/>
+    <attribute name="ng4_isTwoDString" value="null"/>
+	<attribute name="ng4_IsNXDrawing" value="null"/>
+	<attribute name="ng4_OverlayIcon" value="null"/>
+    <attribute name="ng4_ModifiedThickness" value="null"/>
+    <attribute name="ng4_OwningSystem" value="null"/>
+    <attribute name="ng4_PositionComplex" value="null"/>
+    <attribute name="ng4_UpToDateFlagStatus" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+  </map>
+
+  <!--Ng4_Non_ERP_Dsgn-->
+  <map a="Ng4_Non_ERP_Dsgn" b="A9_NonProduct">
+    <attribute name="ng4_OwningSystem" value="null"/>
+	<attribute name="ng4_OverlayIcon_Invalid" value="null"/>
+  </map>
+
+  <!--Ng4_Non_ERP_DsgnRevision-->
+  <map a="A9_NonProductRevision" b="A9_NonProductRevision">
+	<attr>
+      <a>ng4_Type</a>
+      <b>yf5_DrawingType</b>
+    </attr>
+    <attribute name="ng4_CalculatedThickness" value="null"/>
+    <attribute name="ng4_COP" value="null"/>
+	<attribute name="ng4_EntSourcDec" value="null"/>
+    <attribute name="ng4_isTwoD" value="null"/>
+    <attribute name="ng4_isTwoDString" value="null"/>
+    <attribute name="ng4_LegacyCreateDate" value="null"/>
+    <attribute name="ng4_LegacyFilename" value="null"/>
+    <attribute name="ng4_LegacyOwner" value="null"/>
+    <attribute name="ng4_LegacyReleaseDate" value="null"/>
+    <attribute name="ng4_LegacyReleaser" value="null"/>
+    <attribute name="ng4_LegacyStatus" value="null"/>
+    <attribute name="ng4_MasterDesign" value="null"/>
+    <attribute name="ng4_ModifiedThickness" value="null"/>
+    <attribute name="ng4_OwningSystem" value="null"/>
+    <attribute name="ng4_PositionComplex" value="null"/>
+    <attribute name="ng4_SourceRevision" value="null"/>
+    <attribute name="ng4_UpToDateFlagStatus" value="null"/>
+	
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_IsNXDrawing" value="null"/>
+	<attribute name="ng4_Master_Design" value="null"/>
+	<attribute name="ng4_OverlayIcon" value="null"/>
+  </map>
+
+  <!--Ng4_Part-->
+  <map a="Ng4_Part" b="A9_autoproduct">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+    <attribute name="ng4_OwningSystem" value="null"/>
+    <attribute name="ng4_Confidential" value="null"/>
+    <attribute name="ng4_CPPPartCode" value="null"/>
+    <attribute name="ng4_IsPartSyncedToEPIC" value="null"/>
+    <attribute name="ng4_NewCarryover" value="null"/>
+    <attribute name="ng4_OwningSystem" value="null"/>
+    <attribute name="ng4_UOM" value="null"/>
+    <attr>
+      <a>ng4_EntSourcDec</a>
+      <b>yf5_EntSourceDesc</b>
+    </attr>
+    <attr>
+      <a>ng4_MaterialGroup</a>
+      <b>yf5_MaterialGroup</b>
+    </attr>
+    <attr>
+      <a>ng4_MaterialType</a>
+      <b>yf5_MaterialType</b>
+    </attr>
+    <attr>
+      <a>ng4_MfgDesc</a>
+      <b>yf5_ManufDesc</b>
+    </attr>
+    <attr>
+      <a>ng4_PartCategory</a>
+      <b>yf5_PartCategory</b>
+    </attr>
+    <attr>
+      <a>ng4_ProdAttr</a>
+      <b>yf5_ProdAttr</b>
+    </attr>
+    <attr>
+      <a>ng4_ProdCode</a>
+      <b>yf5_ProdCode</b>
+    </attr>
+    <attr>
+      <a>ng4_ProdHierarchy</a>
+      <b>yf5_ProdHierarchy</b>
+    </attr>
+    <attr>
+      <a>ng4_SAPNetWeight</a>
+      <b>yf5_SAPNetWeight</b>
+    </attr>
+    <attr>
+      <a>ng4_SAPWeightUOM</a>
+      <b>yf5_SAPWeightUOM</b>
+    </attr>
+  </map>
+
+  <map a="A9_autoproductMasterS" b="A9_autoproductMasterS">
+    <attribute name="is_designrequired" value="null"/>
+  </map>
+  
+  <!--Ng4_PartRevision-->
+  <map a="A9_autoproductRevision" b="A9_autoproductRevision">
+    <attribute name="ng4_Assembly" value="null"/>
+    <attribute name="ng4_CrossCar" value="null"/>
+    <attribute name="ng4_DesignMaterial" value="null"/>
+    <attribute name="ng4_DriveConfig" value="null"/>
+    <attribute name="ng4_DriveTrain" value="null"/>
+    <attribute name="ng4_EPIC_sync_activity" value="null"/>
+    <attribute name="ng4_est_wt_UOM" value="null"/>
+    <attribute name="ng4_estimated_weight" value="null"/>
+    <attribute name="ng4_ForeAft_1" value="null"/>
+    <attribute name="ng4_HasActiveDA" value="null"/>
+    <attribute name="ng4_IsSelforMajorRev" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+    <attribute name="ng4_Job_Description" value="null"/>
+    <attribute name="ng4_LegacyCreDate" value="null"/>
+    <attribute name="ng4_LegacyEffectiv" value="null"/>
+    <attribute name="ng4_LegacyModDate" value="null"/>
+    <attribute name="ng4_LegacyState" value="null"/>
+    <attribute name="ng4_life_cycle_state" value="null"/>
+    <attribute name="ng4_Material" value="null"/>
+    <attribute name="ng4NULL" value="null"/>
+    <attribute name="ng4_ProdConfig" value="null"/>
+    <attribute name="ng4_isSelforMajorRev" value="null"/>
+    <attribute name="ng4_OccPosition" value="null"/>
+    <attribute name="ng4_Options" value="null"/>
+    <attribute name="ng4_OverlayIcon" value="null"/>
+    <attribute name="ng4_OwningSystem" value="null"/>
+    <attribute name="ng4_PartOwner" value="null"/>
+    <attribute name="ng4_PositionComplex_RP" value="null"/>
+    <attribute name="ng4_ProdConfig" value="null"/>
+    <attribute name="ng4_RelPos" value="null"/>
+    <attribute name="ng4_RepresentedBy_items" value="null"/>
+    <attribute name="ng4_RevisionType" value="null"/>
+    <attribute name="ng4_Row" value="null"/>
+    <attribute name="ng4_SurfaceArea" value="null"/>
+    <attribute name="ng4_Target_Part_Cost" value="null"/>
+    <attribute name="ng4_Target_Tool_Cost" value="null"/>
+    <attribute name="ng4_Treatment1" value="null"/>
+    <attribute name="ng4_Treatment2" value="null"/>
+    <attribute name="ng4_UpDown" value="null"/>
+    <attribute name="ng4_UpToDateFlagStatus" value="null"/>
+    <attr>
+      <a>ng4_EngNetWeight</a>
+      <b>a9_weight</b>
+    </attr>
+
+    <attr>
+      <a>ng4_EngWeightUOM</a>
+      <b>a9_weightunit</b>
+    </attr>
+    <attr>
+      <a>ng4_SurfaceAreaUOM</a>
+      <b>yf5_SurfaceAreaUOM</b>
+    </attr>
+    <attribute name="yf5_SurfaceAreaUOM" value="@yf5_SurfaceAreaUOM.Trunc(32)"/>
+
+    <attr>
+      <a>ng4_CPP_STD</a>
+      <b>a9_PartType</b>
+    </attr>
+    <attr>
+      <a>ng4_IsDesignRequired</a>
+      <b>yf5_CADRequired</b>
+    </attr>
+    <attr>
+      <a>ng4_LegacyChange</a>
+      <b>yf5_LegacyChange</b>
+    </attr>
+    <attr>
+      <a>ng4_LegacyRelDate</a>
+      <b>yf5_LegacyRelDate</b>
+    </attr>
+	<attr>
+      <a>ng4_Material</a>
+      <b>yf5_Material</b>
+    </attr>
+	<attr>
+      <a>ng4_PartOriginPrgm</a>
+      <b>a9_LeadProgram</b>
+    </attr>
+
+  </map>
+
+  <map a="A9_autoproductRevMasterS" b="A9_autoproductRevMasterS">
+    <attribute name="source" value="null"/>
+  </map>
+  
+  <!--Ng4_MasterPrg-->
+  <map a="Ng4_MasterPrg" b="A9_ProgramItem">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+    <attribute name="ng4_CntPltID" value="null"/>
+    <attribute name="ng4_FinalAwardBOM" value="null"/>
+    <attribute name="ng4_isMPL_Str" value="null"/>
+    <attribute name="ng4_LeadProgram" value="null"/>
+    <attribute name="ng4_metrix_bom_last_refresh" value="null"/>
+    <attribute name="ng4_Metrix_enabled" value="null"/>
+    <attribute name="ng4_newDesign_mstr" value="null"/>
+    <attribute name="ng4_newPart_mstr" value="null"/>
+    <attribute name="ng4_ownedChangeObjects" value="null"/>
+    <attribute name="ng4_PrgPortfolio" value="null"/>
+    <attribute name="ng4_ScheduleTemplateStr" value="null"/>
+   <!-- Commented for iteration 2. These attributes don't exist on the source type -->
+   <!--
+   <attribute name="ng4AutoPrgName" value="null"/>
+	<attribute name="ng4_leadRgnSite" value="null"/>
+	<attribute name="ng4_oem_model_year" value="null"/>
+	<attribute name="ng4_region_dc_launch_site" value="null"/>
+	-->
+
+  </map>
+  
+
+  <!--Ng4_MasterPrgRevision-->
+  <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
+	<attribute name="ng4_AwardBOMStatus" value="null"/>
+	<attribute name="ng4_AwardOverrideStatus" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+	<attribute name="ng4_MigratedFrom" value="null"/>
+	<attribute name="ng4_QuoteDue_ActlDate" value="null"/>
+	<attribute name="ng4AwdLetterExpected_PlDate" value="null"/>
+	<attribute name="ng4AwdLetterRcvd_ActlDate" value="null"/>
+	<attribute name="ng4AwdPostGo_ActlDate" value="null"/>
+	<attribute name="ng4CPA_PlDate" value="null"/>
+	<attribute name="ng4CustomerGroupRgn" value="null"/>
+	<attribute name="ng4CustPartAppr_ActlDate" value="null"/>
+	<attribute name="ng4DCName" value="null"/>
+	<attribute name="ng4DCSameAsOEM" value="null"/>
+	<attribute name="ng4DevStart_ActlDate" value="null"/>
+	<attribute name="ng4DS_PlDate" value="null"/>
+	<attribute name="ng4DVPE_PlDate" value="null"/>
+	<attribute name="ng4DVR_PlDate" value="null"/>
+	<attribute name="ng4DVRelease_ActlDate" value="null"/>
+	<attribute name="ng4DVRR_PlDate" value="null"/>
+	<attribute name="ng4_EndItemVarn" value="null"/>
+	<attribute name="ng4FinalScore" value="null"/>
+	<attribute name="ng4FinProdRel_ActlDate" value="null"/>
+	<attribute name="ng4FPR_PlDate" value="null"/>
+	<attribute name="ng4GateEventActual" value="null"/>
+	<attribute name="ng4Go_Actual" value="null"/>
+	<attribute name="ng4Go_Awd_PlDate" value="null"/>
+	<attribute name="ng4Go_Planned" value="null"/>
+	<attribute name="ng4Go_PostAwardActlDate" value="null"/>
+	<attribute name="ng4Go_PostAwardPlDate" value="null"/>
+	<attribute name="ng4Go_PreAwardActlDate" value="null"/>
+	<attribute name="ng4Go_PreAwdPlDate" value="null"/>
+	<attribute name="ng4GPSOpportunityID" value="null"/>
+	<attribute name="ng4KissComment" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4PE_PlDate" value="null"/>
+	<attribute name="ng4PL_PlDate" value="null"/>
+	<attribute name="ng4PltName" value="null"/>
+	<attribute name="ng4PostLaunch_ActlDate" value="null"/>
+	<attribute name="ng4PrgBusinessRisk" value="null"/>
+	<attribute name="ng4PrgBusinessRiskComm" value="null"/>
+	<attribute name="ng4PrgCarAmt" value="null"/>
+	<attribute name="ng4PrgCarAmtComm" value="null"/>
+	<attribute name="ng4PrgCriticalSuppComm" value="null"/>
+	<attribute name="ng4PrgNoOfSuppComm" value="null"/>
+	<attribute name="ng4PrgNoOfSupp" value="null"/>
+	<attribute name="ng4PrgOEMSpecChanges" value="null"/>
+	<attribute name="ng4PrgOEMSpecChgComm" value="null"/>
+	<attribute name="ng4PrgRepRisk" value="null"/>
+	<attribute name="ng4PrgRepRiskComm" value="null"/>
+	<attribute name="ng4PrgStart_ActlDate" value="null"/>
+	<attribute name="ng4PrgTotalBusiness" value="null"/>
+	<attribute name="ng4PrgTotalBusinessComm" value="null"/>
+	<attribute name="ng4PrgType" value="null"/>
+	<attribute name="ng4ProdArea" value="null"/>
+	<attribute name="ng4ProdFacility" value="null"/>
+	<attribute name="ng4Product" value="null"/>
+	<attribute name="ng4ProductGroup" value="null"/>
+	<attribute name="ng4ProductGroupRgn" value="null"/>
+	<attribute name="ng4ProgCompComm" value="null"/>
+	<attribute name="ng4ProgCompNo" value="null"/>
+	<attribute name="ng4ProgEndItemComm" value="null"/>
+	<attribute name="ng4ProgramEEQU" value="null"/>
+	<attribute name="ng4ProgramEEQUComm" value="null"/>
+	<attribute name="ng4ProgramScore" value="null"/>
+	<attribute name="ng4PVPE_PlDate" value="null"/>
+	<attribute name="ng4PVRR_PlDate" value="null"/>
+	<attribute name="ng4QT_PlDate" value="null"/>
+	<attribute name="ng4Quote_ActDate" value="null"/>
+	<attribute name="ng4QuoteDue_PlDate" value="null"/>
+	<attribute name="ng4RFQExpected_PlDate" value="null"/>
+	<attribute name="ng4RFWReceived_ActlDate" value="null"/>
+	<attribute name="ng4SOP" value="null"/>
+	<attribute name="ng4SOP_ActlDate" value="null"/>
+	<attribute name="ng4TBLEntry_ActlDate" value="null"/>
+	<attribute name="ng4TE_PlDate" value="null"/>
+	<attribute name="ng4TERM_PlDate" value="null"/>
+	
+    <attr>
+      <a>ng4_CPV</a>
+      <b>yf5_CapPlVolume</b>
+    </attr>
+	<attr>
+      <a>ng4CustomerGroup</a>
+      <b>yf5_CustomerGroup</b>
+    </attr>
+    <attr>
+      <a>ng4EOP_ActlDate</a>
+      <b>a9_EOP</b>
+    </attr>
+	<attr>
+      <a>ng4_FPV</a>
+      <b>yf5_FinPlVolume</b>
+    </attr>
+    <attr>
+      <a>ng4JVPartnerName</a>
+      <b>yf5_JVPartner</b>
+    </attr>
+    <attr>
+      <a>ng4MdlYear</a>
+      <b>yf5_Model_Year</b>
+    </attr>
+    <attr>
+      <a>ng4ModelCode</a>
+      <b>yf5_OEM_Model_Code</b>
+    </attr>
+    <attr>
+      <a>ng4PltName</a>
+      <b>yf5_OEMPlatformCode</b>
+    </attr>
+	<attr>
+      <a>ng4_PrmLifeYear</a>
+      <b>yf5_ProgramLife</b>
+    </attr>
+    <attr>
+      <a>ng4PrgCategory</a>
+      <b>a9_ProjectCategory</b>
+    </attr>
+    <attr>
+      <a>ng4PrgStatus</a>
+      <b>a9_ProgramStatus</b>
+    </attr>
+    <attr>
+      <a>ng4PS_PlDate</a>
+      <b>a9_ProjectTargetedStart</b>
+    </attr>
+    <attr>
+      <a>ng4SOP_ActlDate</a>
+      <b>a9_SOP</b>
+    </attr>
+    <attr>
+      <a>ng4VehicleName</a>
+      <b>yf5_OEM_Model_Name</b>
+    </attr>
+    <attr>
+      <a>ng4LaunchSite</a>
+      <b>yf5_MfgRegion</b>
+    </attr>
+    <attr>
+      <a>ng4DCLaunchSiteRgn</a>
+      <b>yf5_LeadMfgCountry</b>
+    </attr>
+    <attr-check  if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains(',')">
+      <attribute name="yf5_MfgRegion" value="@yf5_MfgRegion.Split(',')[0]"/>
+      <attribute name="yf5_LeadMfgCountry" value="@yf5_LeadMfgCountry.Split(',')[1]"/>
+    </attr-check>
+    <attr>
+      <a>ng4OEMName</a>
+      <b>yf5_OEMName</b>
+    </attr>
+    <attr>
+      <a>ng4OEMName</a>
+      <b>yf5_OEMSubGroup</b>
+    </attr>
+<!-- The following logic does not appear to be right PS 6/4/17.
+    <attr-check  if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains('-')">
+      <attribute name="yf5_OEMName" value="@yf5_OEMName.Split('-')[0]"/>
+      <attribute name="yf5_OEMSubGroup" value="@yf5_OEMSubGroup.Split('-')[1]"/>
+    </attr-check>
+	-->
+	<attr-check  if="@yf5_OEMName != null and @yf5_OEMName.Contains('-')">
+      <attribute name="yf5_OEMName" value="@yf5_OEMName.Split('-')[0]"/>
+      <attribute name="yf5_OEMSubGroup" value="@yf5_OEMSubGroup.Split('-')[1]"/>
+    </attr-check>
+    <attr>
+      <a>ng4EOP_PlDate</a>
+      <b>a9_ProjectTargetedEnd</b>
+    </attr>
+    <attr>
+      <a>ng4opportunity_desc</a>
+      <b>yf5_Program_Comments</b>
+    </attr>
+    <attr>
+      <a>ng4ProdLine</a>
+      <b>a9_ProductGroup</b>
+    </attr>
+    <attr>
+      <a>ng4SDTLead</a>
+      <b>a9_ProgramLeader</b>
+    </attr>
+	<!-- Commented out per the latest mapping sheet. This should be set to null - PS 6/4/17 
+    <attr>
+      <a>ng4SOP_PlDate</a>
+      <b>a9_SOP</b>
+    </attr>
+	-->
+	<attr>
+      <a>ng4GateEvent</a>
+      <b>a9_ProgramGate</b>
+    </attr>
+	<attr>
+      <a>ng4JVPartnerName</a>
+      <b>yf5_JVPartner</b>
+    </attr>
+	<attr>
+      <a>ng4JVPartnerName</a>
+      <b>yf5_JVPartner</b>
+    </attr>
+  </map>
+
+
+  
+  <!--Ng4_Program-->
+  <map a="Ng4_Program" b="A9_ProgramItem">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+    <attribute name="ng4_area" value="null"/>
+    <attribute name="ng4_cg" value="null"/>
+    <attribute name="ng4_Confidential" value="null"/>
+    <attribute name="ng4_CreateProject" value="null"/>
+    <attribute name="ng4_customer_launch_sites" value="null"/>
+    <attribute name="ng4_dc_customer_name" value="null"/>
+    <attribute name="ng4_global_program" value="null"/>
+    <attribute name="ng4_IsMPL" value="null"/>
+    <attribute name="ng4_IsMPL_Str" value="null"/>
+    <attribute name="ng4_jci_prod_facilities" value="null"/>
+    <attribute name="ng4_jv_partner" value="null"/>
+    <attribute name="ng4_lead_email" value="null"/>
+    <attribute name="ng4_lead_region_site" value="null"/>
+    <attribute name="ng4_leadRgdSite" value="null"/>
+    <attribute name="ng4_MaxCatiaRelease" value="null"/>
+    <attribute name="ng4_newDesign_mstr" value="null"/>
+    <attribute name="ng4_newPart_mstr" value="null"/>
+    <!--
+	<attribute name="ng4_oem_vehicle_name" value="null"/>
+	-->
+    <attribute name="ng4_oemmodelyr" value="null"/>
+    <attribute name="ng4_opportunity_ids" value="null"/>
+    <attribute name="ng4_OwningCompany" value="null"/>
+    <attribute name="ng4_product_line" value="null"/>
+    <attribute name="ng4_ProgramState" value="null"/>
+    <attribute name="ng4_ProgramType" value="null"/>
+    <attribute name="ng4_ScheduleTemplateStr" value="null"/>
+
+	<attribute name="ng4_leadRgnSite" value="null"/>
+	<attribute name="ng4_oem_model_year" value="null"/>
+	<!--<attribute name="ng4_region_dc_launch_site" value="null"/>-->
+
+    <attr>
+      <a>ng4_oem_model_code</a>
+      <b>yf5_OEM_Model_Code</b>
+    </attr>
+    <attr>
+      <a>ng4_oem_name</a>
+      <b>yf5_OEMName</b>
+    </attr>
+	<attr>
+      <a>ng4_oem_name</a>
+      <b>yf5_OEMSubGroup</b>
+    </attr>
+    <attr>
+      <a>ng4_pg</a>
+      <b>yf5_ProductGroup</b>
+    </attr>
+    <attr>
+      <a>ng4_oem_platform_name</a>
+      <b>yf5_GlobalPlatformCode</b>
+    </attr>
+    <attr>
+      <a>ng4_ProgDescription</a>
+      <b>yf5_Program_Comments</b>
+    </attr>
+    <attr>
+      <a>ng4_program_category</a>
+      <b>a9_ProjectCategory</b>
+    </attr>
+    <attr>
+      <a>ng4_program_status</a>
+      <b>a9_ProgramStatus</b>
+    </attr>
+	<attr-check  if="@yf5_OEMName != null and @yf5_OEMName.Contains('-')">
+      <attribute name="yf5_OEMName" value="@yf5_OEMName.Split('-')[0]"/>
+      <attribute name="yf5_OEMSubGroup" value="@yf5_OEMSubGroup.Split('-')[1]"/>
+    </attr-check>
+	<attr>
+      <a>ng4_oem_vehicle_name</a>
+      <b>yf5_OEMName</b>
+    </attr>
+	<attr>
+      <a>ng4_region_dc_launch_site</a>
+      <b>yf5_MfgRegion</b>
+    </attr>
+	<attr>
+      <a>ng4_region_dc_launch_site</a>
+      <b>yf5_LeadMfgCountry</b>
+    </attr>
+	<attr-check  if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains(',')">
+      <attribute name="yf5_MfgRegion" value="@yf5_MfgRegion.Split(',')[0]"/>
+      <attribute name="yf5_LeadMfgCountry" value="@yf5_LeadMfgCountry.Split(',')[1]"/>
+    </attr-check>
+  </map>
+  <!--Ng4_MasterPrgRevision-->
+  <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
+		<attribute name="ng4_AwardBOMStatus" value="null"/>
+		<attribute name="ng4_AwardOverrideStatus" value="null"/>
+		<attribute name="ng4_job_desc" value="null"/>
+		<attribute name="ng4_Job_Description" value="null"/>
+		<attribute name="ng4_MigratedFrom" value="null"/>
+		<attribute name="ng4_QuoteDue_ActlDate" value="null"/>
+		<attribute name="ng4AwdLetterExpected_PlDate" value="null"/>
+		<attribute name="ng4AwdLetterRcvd_ActlDate" value="null"/>
+		<attribute name="ng4AwdPostGo_ActlDate" value="null"/>
+		<attribute name="ng4CPA_PlDate" value="null"/>
+		<attribute name="ng4CustomerGroupRgn" value="null"/>
+		<attribute name="ng4CustPartAppr_ActlDate" value="null"/>
+		<attribute name="ng4DCName" value="null"/>
+		<attribute name="ng4DCSameAsOEM" value="null"/>
+		<attribute name="ng4DevStart_ActlDate" value="null"/>
+		<attribute name="ng4DS_PlDate" value="null"/>
+		<attribute name="ng4DVPE_PlDate" value="null"/>
+		<attribute name="ng4DVR_PlDate" value="null"/>
+		<attribute name="ng4DVRelease_ActlDate" value="null"/>
+		<attribute name="ng4DVRR_PlDate" value="null"/>
+		<attribute name="ng4_EndItemVarn" value="null"/>
+		<attribute name="ng4FinalScore" value="null"/>
+		<attribute name="ng4FinProdRel_ActlDate" value="null"/>
+		<attribute name="ng4FPR_PlDate" value="null"/>
+		<attribute name="ng4GateEventActual" value="null"/>
+		<attribute name="ng4Go_Actual" value="null"/>
+		<attribute name="ng4Go_Awd_PlDate" value="null"/>
+		<attribute name="ng4Go_Planned" value="null"/>
+		<attribute name="ng4Go_PostAwardActlDate" value="null"/>
+		<attribute name="ng4Go_PostAwardPlDate" value="null"/>
+		<attribute name="ng4Go_PreAwardActlDate" value="null"/>
+		<attribute name="ng4Go_PreAwdPlDate" value="null"/>
+		<attribute name="ng4GPSOpportunityID" value="null"/>
+		<attribute name="ng4KissComment" value="null"/>
+		<attribute name="ng4NULL" value="null"/>
+		<attribute name="ng4PE_PlDate" value="null"/>
+		<attribute name="ng4PL_PlDate" value="null"/>
+		<attribute name="ng4PltName" value="null"/>
+		<attribute name="ng4PostLaunch_ActlDate" value="null"/>
+		<attribute name="ng4PrgBusinessRisk" value="null"/>
+		<attribute name="ng4PrgBusinessRiskComm" value="null"/>
+		<attribute name="ng4PrgCarAmt" value="null"/>
+		<attribute name="ng4PrgCarAmtComm" value="null"/>
+		<attribute name="ng4PrgCriticalSuppComm" value="null"/>
+		<attribute name="ng4PrgNoOfSuppComm" value="null"/>
+		<attribute name="ng4PrgNoOfSupp" value="null"/>
+		<attribute name="ng4PrgOEMSpecChanges" value="null"/>
+		<attribute name="ng4PrgOEMSpecChgComm" value="null"/>
+		<attribute name="ng4PrgRepRisk" value="null"/>
+		<attribute name="ng4PrgRepRiskComm" value="null"/>
+		<attribute name="ng4PrgStart_ActlDate" value="null"/>
+		<attribute name="ng4PrgTotalBusiness" value="null"/>
+		<attribute name="ng4PrgTotalBusinessComm" value="null"/>
+		<attribute name="ng4PrgType" value="null"/>
+		<attribute name="ng4ProdArea" value="null"/>
+		<attribute name="ng4ProdFacility" value="null"/>
+		<attribute name="ng4Product" value="null"/>
+		<attribute name="ng4ProductGroup" value="null"/>
+		<attribute name="ng4ProductGroupRgn" value="null"/>
+		<attribute name="ng4ProgCompComm" value="null"/>
+		<attribute name="ng4ProgCompNo" value="null"/>
+		<attribute name="ng4ProgEndItemComm" value="null"/>
+		<attribute name="ng4ProgramEEQU" value="null"/>
+		<attribute name="ng4ProgramEEQUComm" value="null"/>
+		<attribute name="ng4ProgramScore" value="null"/>
+		<attribute name="ng4PVPE_PlDate" value="null"/>
+		<attribute name="ng4PVRR_PlDate" value="null"/>
+		<attribute name="ng4QT_PlDate" value="null"/>
+		<attribute name="ng4Quote_ActDate" value="null"/>
+		<attribute name="ng4QuoteDue_PlDate" value="null"/>
+		<attribute name="ng4RFQExpected_PlDate" value="null"/>
+		<attribute name="ng4RFWReceived_ActlDate" value="null"/>
+		<attribute name="ng4SOP" value="null"/>
+		<attribute name="ng4SOP_ActlDate" value="null"/>
+		<attribute name="ng4TBLEntry_ActlDate" value="null"/>
+		<attribute name="ng4TE_PlDate" value="null"/>
+		<attribute name="ng4TERM_PlDate" value="null"/>
+				<attr>
+			<a>ng4LaunchSite</a>
+			<b>yf5_MfgRegion</b>
+		</attr>
+		<attr>
+			<a>ng4DCLaunchSiteRgn</a>
+			<b>yf5_LeadMfgCountry</b>
+		</attr>
+		<attr-check  if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains(',')">
+			<attribute name="yf5_MfgRegion" value="@yf5_MfgRegion.Split(',')[0]"/>
+			<attribute name="yf5_LeadMfgCountry" value="@yf5_LeadMfgCountry.Split(',')[1]"/>
+		</attr-check>
+		<attr>
+			<a>ng4EOP_PlDate</a>
+			<b>a9_ProjectTargetedEnd</b>
+		</attr>
+		<attr>
+			<a>ng4OEMName</a>
+			<b>yf5_OEMName</b>
+		</attr>
+		<attr>
+			<a>ng4OEMName</a>
+			<b>yf5_OEMSubGroup</b>
+		</attr>
+		<attr>
+			<a>ng4opportunity_desc</a>
+			<b>yf5_Program_Comments</b>
+		</attr>
+		<attr>
+			<a>ng4ProdLine</a>
+			<b>a9_ProductGroup</b>
+		</attr>
+		<attr>
+			<a>ng4SDTLead</a>
+			<b>a9_ProgramLeader</b>
+		</attr>
+		<attr>
+			<a>ng4SOP_PlDate</a>
+			<b>a9_SOP</b>
+		</attr>
+
+  </map>
+  <!--Ng4_GenDocs-->
+  <!-- Mapping Document not available for this type -->
+  <map a="Ng4_GenDocs" b="A9_autodoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_GenDocsRevision-->
+  <map a="A9_autodocRevision" b="A9_autodocRevision">
+	<attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_EngDoc-->
+  <map a="Ng4_EngDoc" b="A9_EngDoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_EngDocRevision-->
+  <map a="A9_EngDocRevision" b="A9_EngDocRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_FinanceDoc-->
+  <map a="Ng4_FinanceDoc" b="YF5_SalesFinDoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_FinanceDocRevision-->
+  <map a="YF5_SalesFinDocRevision" b="YF5_SalesFinDocRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_GeneralDoc-->
+  <map a="Ng4_GeneralDoc" b="A9_autodoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_GeneralDocRevision-->
+  <map a="A9_autodocRevision" b="A9_autodocRevision">
+	<attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_ManfgDoc-->
+  <map a="Ng4_ManfgDoc" b="A9_ManDoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_ManfgDocRevision-->
+  <map a="A9_ManDocRevision" b="A9_ManDocRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_Phase0Doc-->
+  <map a="Ng4_Phase0Doc" b="YF5_IndDesDoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_Phase0DocRevision-->
+  <map a="YF5_IndDesDocRevision" b="YF5_IndDesDocRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_PlantDoc-->
+  <map a="Ng4_PlantDoc" b="YF5_MatrlsDoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_PlantDocRevision-->
+  <map a="YF5_MatrlsDocRevision" b="YF5_MatrlsDocRevision">
+	<attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_ProgDoc-->
+  <map a="Ng4_ProgDoc" b="A9_Program">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_ProgDocRevision-->
+  <map a="A9_ProgramRevision" b="A9_ProgramRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_PurchDoc-->
+  <map a="Ng4_PurchDoc" b="A9_PurchDoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_PurchDocRevision-->
+  <map a="A9_PurchDocRevision" b="A9_PurchDocRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_QualDoc-->
+  <map a="Ng4_QualDoc" b="A9_QuaDoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_QualDocRevision-->
+  <map a="A9_QuaDocRevision" b="A9_QuaDocRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_SalesDoc-->
+  <map a="Ng4_SalesDoc" b="YF5_SalesFinDoc">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_SalesDocRevision-->
+  <map a="YF5_SalesFinDocRevision" b="YF5_SalesFinDocRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+
+  <!--Ng4_PWP-->
+  <map a="Ng4_PWP" b="A9_ProgramItem">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+    <attribute name="ng4_newDesign_mstr" value="null"/>
+    <attribute name="ng4_newPart_mstr" value="null"/>
+	<!-- The following attributes don't exist on Ng4_PWP PS 6/4/17
+	<attribute name="ng4_isMPL_Str" value="null"/>
+	<attribute name="ng4_leadRgnSite" value="null"/>
+	<attribute name="ng4_oem_model_year" value="null"/>
+	<attribute name="ng4_region_dc_launch_site" value="null"/>
+	-->
+  </map>
+  <!--Ng4_PWPRevision-->
+  <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
+    <attribute name="ng4EWPStatus" value="null"/>
+	<attribute name="ng4Product" value="null"/>
+	<attr>
+		<a>ng4OEM</a>
+		<b>yf5_OEMName</b>
+	</attr>
+	<attr>
+		<a>ng4Customer</a>
+		<b>yf5_CustomerBillTo</b>
+	</attr>
+	<attr>
+		<a>ng4Platform</a>
+		<b>yf5_GlobalPlatformCode</b>
+	</attr>
+	<attr>
+		<a>ng4Business</a>
+		<b>yf5_VehicleSalesRegions</b>
+	</attr>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+  
+  <map a="Ng4_Phase0" b="A9_ProgramItem">
+  	<attribute name="ng4_OEM" value="null"/>
+	<attribute name="ng4_newDesign_mstr" value="null"/>
+	<attribute name="ng4_newPart_mstr" value="null"/>
+	<attribute name="ng4_PDWO" value="null"/>
+	<attribute name="ng4_startech" value="null"/>
+	<attr>
+		<a>ng4_customer</a>
+		<b>yf5_OEMName</b>
+	</attr>
+	<attr>
+		<a>ng4_programtype</a>
+		<b>yf5_OEM_Model_Code</b>
+	</attr>
+	<attr>
+		<a>ng4_projectyear</a>
+		<b>yf5_Model_Year</b>
+	</attr>
+	<attr>
+		<a>ng4_property</a>
+		<b>yf5_OEM_Model_Name</b>
+	</attr>
+  </map>
+  <!-- Unmapped attributes of A9_ProgramItem-->
+  <map a="A9_ProgramItem" b="A9_ProgramItem">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+	<attribute name="ng4_isMPL_Str" value="null"/>
+	<attribute name="ng4_MetrixEnabled" value="null"/>
+  </map>
+  
+    <!-- Unmapped attributes of A9_ProgramItemRevMasterS-->
+  <map a="A9_ProgramItemRevMasterS" b="A9_ProgramItemRevMasterS">
+	  <attribute name="ng4GateEvent" value="null"/>
+  </map>	
+
+  <!--Ng4_CR-->
+  <map a="Ng4_CR" b="A9_AutoCR">
+	<attr>
+		<a>ng4_BudgetImpacted</a>
+		<b>a9_BudgetImpact</b>
+	</attr>
+  </map>
+
+  <!--Ng4_CRRevision-->
+  <map a="A9_AutoCRRevision" b="A9_AutoCRRevision">
+  		<attribute name="ng4NULL" value="null"/>
+		<attribute name="ng4_ApprovalPath" value="null"/>
+		<attribute name="ng4_BudgetImpact" value="null"/>
+		<attribute name="ng4_BudgetImpact_S" value="null"/>
+		<attribute name="ng4_Buyer" value="null"/>
+		<attribute name="ng4_CADModelsImpacted" value="null"/>
+		<attribute name="ng4_CADModelsImpacted_S" value="null"/>
+		<attribute name="ng4_ChangeImpacts" value="null"/>
+		<attribute name="ng4_ChangeSource" value="null"/>
+		<attribute name="ng4_ChangeState" value="null"/>
+		<attribute name="ng4_Change_Impacts" value="null"/>
+		<attribute name="ng4_CostResponsibility" value="null"/>
+		<attribute name="ng4_Customer" value="null"/>
+		<attribute name="ng4_CustomerChangeNo" value="null"/>
+		<attribute name="ng4_CustomerRequestRejected" value="null"/>
+		<attribute name="ng4_DecisionMadeBy" value="null"/>
+		<attribute name="ng4_DesignEngineer" value="null"/>
+		<attribute name="ng4_DesignFMEAImpacted" value="null"/>
+		<attribute name="ng4_DesignFMEAImpacted_S" value="null"/>
+		<attribute name="ng4_DimensionalAnalysis" value="null"/>
+		<attribute name="ng4_DimensionalAnalysis_S" value="null"/>
+		<attribute name="ng4_DrawingsImpacted" value="null"/>
+		<attribute name="ng4_DrawingsImpacted_S" value="null"/>
+		<attribute name="ng4_Engineer" value="null"/>
+		<attribute name="ng4_EngineeringBOM" value="null"/>
+		<attribute name="ng4_EngineeringBOM_S" value="null"/>
+		<attribute name="ng4_EquipmentImpacted" value="null"/>
+		<attribute name="ng4_EquipmentImpacted_S" value="null"/>
+		<attribute name="ng4_Estimator" value="null"/>
+		<attribute name="ng4_FixturesImpacted" value="null"/>
+		<attribute name="ng4_FixturesImpacted_S" value="null"/>
+		<attribute name="ng4_IDandName" value="null"/>
+		<attribute name="ng4_ImpactedPrograms" value="null"/>
+		<attribute name="ng4_InspectionInstructions" value="null"/>
+		<attribute name="ng4_InspectionInstructionsS" value="null"/>
+		<attribute name="ng4_InvestmentCost" value="null"/>
+		<attribute name="ng4_IsMultProgramsImpacted" value="null"/>
+		<attribute name="ng4_job_desc" value="null"/>
+		<attribute name="ng4_Job_Description" value="null"/>
+		<attribute name="ng4_NonRecurringCost" value="null"/>
+		<attribute name="ng4_PPAPImpacted" value="null"/>
+		<attribute name="ng4_PPAPImpacted_S" value="null"/>
+		<attribute name="ng4_PackagingImpacted" value="null"/>
+		<attribute name="ng4_PackagingImpacted_S" value="null"/>
+		<attribute name="ng4_PendingReview" value="null"/>
+		<attribute name="ng4_PendingReviewDate" value="null"/>
+		<attribute name="ng4_PiecePriceImpacted" value="null"/>
+		<attribute name="ng4_PiecePriceImpacted_S" value="null"/>
+		<attribute name="ng4_PlantsImpacted" value="null"/>
+		<attribute name="ng4_PlantsImpacted_S" value="null"/>
+		<attribute name="ng4_ProblemDescription" value="null"/>
+		<attribute name="ng4_ProcessPlanner" value="null"/>
+		<attribute name="ng4_ProcessesImpacted" value="null"/>
+		<attribute name="ng4_ProcessesImpacted_S" value="null"/>
+		<attribute name="ng4_ProgramManager" value="null"/>
+		<attribute name="ng4_ProgramManager_t" value="null"/>
+		<attribute name="ng4_ProgramPlan" value="null"/>
+		<attribute name="ng4_ProgramPlan_S" value="null"/>
+		<attribute name="ng4_ProjectsImpacted" value="null"/>
+		<attribute name="ng4_ProjectsImpacted_S" value="null"/>
+		<attribute name="ng4_QualityEngineer" value="null"/>
+		<attribute name="ng4_ReasonforChange" value="null"/>
+		<attribute name="ng4_RequestApproved" value="null"/>
+		<attribute name="ng4_RequestApprovedDate" value="null"/>
+		<attribute name="ng4_RequestRejected" value="null"/>
+		<attribute name="ng4_SalesandCommercial" value="null"/>
+		<attribute name="ng4_SecondarySubCR" value="null"/>
+		<attribute name="ng4_Supplier" value="null"/>
+		<attribute name="ng4_TargetDispositionDate" value="null"/>
+		<attribute name="ng4_TargetDueDate" value="null"/>
+		<attribute name="ng4_TargetEffectivityDate" value="null"/>
+		<attribute name="ng4_TestingValidation" value="null"/>
+		<attribute name="ng4_TestingValidation_S" value="null"/>
+		<attribute name="ng4_Tooling" value="null"/>
+		<attribute name="ng4_Tooling_S" value="null"/>
+		<attribute name="ng4_TotalAnnualCost" value="null"/>
+		<attribute name="ng4_VendorPiecePrice" value="null"/>
+		<attribute name="ng4_VendorPiecePrice_S" value="null"/>
+		<attribute name="ng4_VendorToolingImpacted" value="null"/>
+		<attribute name="ng4_VendorToolingImpacted_S" value="null"/>
+		<attribute name="ng4_VendorsImpacted" value="null"/>
+		<attribute name="ng4_VendorsImpacted_S" value="null"/>
+		<attribute name="ng4_VerificationFEA" value="null"/>
+		<attribute name="ng4_VerificationFEA_S" value="null"/>
+		<attribute name="ng4_WorkInstrucions" value="null"/>
+		<attribute name="ng4_WorkInstrucions_S" value="null"/>
+		<attribute name="ng4_isCustApprovalReq" value="null"/>
+
+  </map>
+
+  <!--Ng4_ChangeNotice-->
+  <map a="Ng4_ChangeNotice" b="A9_AutoCN">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_ChangeNoticeRevision-->
+  <map a="A9_AutoCNRevision" b="A9_AutoCNRevision">
+	<attribute name="ng4_Buyer" value="null"/>
+	<attribute name="ng4_ChangeImpacts" value="null"/>
+	<attribute name="ng4_ChangeSource" value="null"/>
+	<attribute name="ng4_ChangeState" value="null"/>
+	<attribute name="ng4_CostResponsibility" value="null"/>
+	<attribute name="ng4_DesignEngineer" value="null"/>
+	<attribute name="ng4_Engineer" value="null"/>
+	<attribute name="ng4_Estimator" value="null"/>
+	<attribute name="ng4_ProblemDescription" value="null"/>
+	<attribute name="ng4_ProcessPlanner" value="null"/>
+	<attribute name="ng4_QualityEngineer" value="null"/>
+	<attribute name="ng4_ReasonforChange" value="null"/>
+	<attribute name="ng4_SalesandCommercial" value="null"/>
+	<attribute name="ng4_Supplier" value="null"/>
+	<attribute name="ng4_TargetEffectivityDate" value="null"/>
+
+	<attribute name="ng4_CNReadiness" value="null"/>
+	<attribute name="ng4_CNState" value="null"/>
+	<attribute name="ng4_ReferencedECO" value="null"/>
+	<attribute name="ng4_SetStatus" value="null"/>
+	<attribute name="ng4_ReferencedECR" value="null"/>
+	<attribute name="ng4_DesignEngLead" value="null"/>
+	<attribute name="ng4_CustomerNotified" value="null"/>
+	<attribute name="ng4_CustomerApproved" value="null"/>
+	<attribute name="ng4_EstImpDate" value="null"/>
+	<attribute name="ng4_ProgramManager" value="null"/>
+	<attribute name="ng4_ApprovalPath" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+  </map>
+
+  <!--Ng4_DR-->
+  <map a="Ng4_DR" b="A9_AutoDR">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_DRRevision-->
+  <map a="A9_AutoDRRevision" b="A9_AutoDRRevision">
+		<attribute name="ng4NULL" value="null"/>
+		<attribute name="ng4_Buyer" value="null"/>
+		<attribute name="ng4_ChangeImpacts" value="null"/>
+		<attribute name="ng4_ChangeSource" value="null"/>
+		<attribute name="ng4_ChangeState" value="null"/>
+		<attribute name="ng4_Change_Impacts" value="null"/>
+		<attribute name="ng4_CostResponsibility" value="null"/>
+		<attribute name="ng4_DeformedLink" value="null"/>
+		<attribute name="ng4_DesignEngineer" value="null"/>
+		<attribute name="ng4_DesignEngLead" value="null"/>
+		<attribute name="ng4_DRReadiness" value="null"/>
+		<attribute name="ng4_DRReadinessCheck" value="null"/>
+		<attribute name="ng4_DRState" value="null"/>
+		<attribute name="ng4_DwgLink" value="null"/>		
+		<attribute name="ng4_Engineer" value="null"/>
+		<attribute name="ng4_Estimator" value="null"/>
+		<attribute name="ng4_Handed" value="null"/>
+		<attribute name="ng4_isTopDown" value="null"/>
+		<attribute name="ng4_isTopDownStr" value="null"/>
+		<attribute name="ng4_job_desc" value="null"/>
+		<attribute name="ng4_Job_Description" value="null"/>
+		<attribute name="ng4_Mirrored" value="null"/>
+		<attribute name="ng4_OEMRep" value="null"/>
+		<attribute name="ng4_ProblemDescription" value="null"/>
+		<attribute name="ng4_ProcessPlanner" value="null"/>
+		<attribute name="ng4_ProgramManager_t" value="null"/>
+		<attribute name="ng4_QualityEngineer" value="null"/>
+		<attribute name="ng4_ReasonforChange" value="null"/>
+		<attribute name="ng4_ReferenceECO" value="null"/>
+		<attribute name="ng4_ReferenceECR" value="null"/>
+		<attribute name="ng4_SalesandCommercial" value="null"/>
+		<attribute name="ng4_SetStatus" value="null"/>
+		<attribute name="ng4_Supplier" value="null"/>
+		<attribute name="ng4_TargetEffectivityDate" value="null"/>
+  </map>
+
+  <!--Ng4_EPR-->
+  <map a="Ng4_EPR" b="A9_AutoDR">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+  
+  <map a="A9_AutoDRRevision" b="A9_AutoDRRevision">
+		<attribute name="ng4NULL" value="null"/>
+		<attribute name="ng4_Buyer" value="null"/>
+		<attribute name="ng4_ChangeImpacts" value="null"/>
+		<attribute name="ng4_ChangeSource" value="null"/>
+		<attribute name="ng4_ChangeState" value="null"/>
+		<attribute name="ng4_Change_Impacts" value="null"/>
+		<attribute name="ng4_CostResponsibility" value="null"/>
+		<attribute name="ng4_DRReadiness" value="null"/>
+		<attribute name="ng4_DRReadinessCheck" value="null"/>
+		<attribute name="ng4_DRState" value="null"/>
+		<attribute name="ng4_DesignEngLead" value="null"/>
+		<attribute name="ng4_DesignEngineer" value="null"/>
+		<attribute name="ng4_Engineer" value="null"/>
+		<attribute name="ng4_Estimator" value="null"/>
+		<attribute name="ng4_job_desc" value="null"/>
+		<attribute name="ng4_Job_Description" value="null"/>
+		<attribute name="ng4_ProblemDescription" value="null"/>
+		<attribute name="ng4_ProcessPlanner" value="null"/>
+		<attribute name="ng4_ProgramManager_t" value="null"/>
+		<attribute name="ng4_QualityEngineer" value="null"/>
+		<attribute name="ng4_ReasonforChange" value="null"/>
+		<attribute name="ng4_ReferenceECO" value="null"/>
+		<attribute name="ng4_ReferenceECR" value="null"/>
+		<attribute name="ng4_SalesandCommercial" value="null"/>
+		<attribute name="ng4_SetStatus" value="null"/>
+		<attribute name="ng4_Supplier" value="null"/>
+		<attribute name="ng4_TargetEffectivityDate" value="null"/>
+		<attribute name="ng4_isTopDown" value="null"/>
+		<attribute name="ng4_isTopDownStr" value="null"/>
+		<attribute name="ng4_EPRReadiness" value="null"/>
+		<attribute name="ng4_EPRState" value="null"/>
+		<attribute name="ng4_ReadinessCheck" value="null"/>
+		<attribute name="ng4_DeformedLink" value="null"/>
+		<attribute name="ng4_DwgLink" value="null"/>
+		<attribute name="ng4_Handed" value="null"/>
+		<attribute name="ng4_Mirrored" value="null"/>
+		<attribute name="ng4_OEMRep" value="null"/>
+  </map>
+
+  <!--Ng4_ProbReport-->
+  <map a="Ng4_ProbReport" b="A9_AutoPR">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_EPRRevision-->
+  <map a="A9_AutoPRRevision" b="A9_AutoPRRevision">
+	
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Buyer" value="null"/>
+	<attribute name="ng4_ChangeImpacts" value="null"/>
+	<attribute name="ng4_ChangeSource" value="null"/>
+	<attribute name="ng4_ChangeState" value="null"/>
+	<attribute name="ng4_Change_Impacts" value="null"/>
+	<attribute name="ng4_CostResponsibility" value="null"/>
+	<attribute name="ng4_DesignEngineer" value="null"/>
+	<attribute name="ng4_DesignEngineerLead" value="null"/>
+	<attribute name="ng4_Engineer" value="null"/>
+	<attribute name="ng4_Estimator" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+	<attribute name="ng4_ProblemDescription" value="null"/>
+	<attribute name="ng4_ProcessPlanner" value="null"/>
+	<attribute name="ng4_ProgramManager" value="null"/>
+	<attribute name="ng4_ProgramManager_t" value="null"/>
+	<attribute name="ng4_QualityEngineer" value="null"/>
+	<attribute name="ng4_ReasonforChange" value="null"/>
+	<attribute name="ng4_SalesandCommercial" value="null"/>
+	<attribute name="ng4_SDTMember" value="null"/>
+	<attribute name="ng4_State" value="null"/>
+	<attribute name="ng4_Supplier" value="null"/>
+	<attribute name="ng4_TargetEffectivityDate" value="null"/>
+  </map>
+
+  <!--Ng4_DA-->
+  <map a="Ng4_DA" b="YF5_DevRqst">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_DARevision-->
+  <map a="YF5_DevRqstRevision" b="YF5_DevRqstRevision">
+	<attribute name="ng4_Batch_Number" value="null"/>
+	<attribute name="ng4_Buyer" value="null"/>
+	<attribute name="ng4_Change_Impacts" value="null"/>
+	<attribute name="ng4_ChangeImpacts" value="null"/>
+	<attribute name="ng4_ChangeSource" value="null"/>
+	<attribute name="ng4_ChangeState" value="null"/>
+	<attribute name="ng4_CorrectiveAction" value="null"/>
+	<attribute name="ng4_CostResponsibility" value="null"/>
+	<attribute name="ng4_DesignEngineer" value="null"/>
+	<attribute name="ng4_Engineer" value="null"/>
+	<attribute name="ng4_Estimator" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_PO_Nbr" value="null"/>
+	<attribute name="ng4_ProblemDescription" value="null"/>
+	<attribute name="ng4_ProcessPlanner" value="null"/>
+	<attribute name="ng4_ProgramManager_t" value="null"/>
+	<attribute name="ng4_QualityEngineer" value="null"/>
+	<attribute name="ng4_SalesandCommercial" value="null"/>
+	<attribute name="ng4_Supplier" value="null"/>
+	<attribute name="ng4_TargetEffectivityDate" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	
+    
+    
+    
+    <attr>
+      <a>ng4_Start_Date</a>
+      <b>yf5_StartDate</b>
+    </attr>
+    <attr>
+      <a>ng4_Duration_Type</a>
+      <b>yf5_DurationType</b>
+    </attr>
+    <attr>
+      <a>ng4_End_Date</a>
+      <b>yf5_EndDate</b>
+    </attr>
+    <attr>
+      <a>ng4_Quantity</a>
+      <b>yf5_Quantity</b>
+    </attr>
+    <attr>
+      <a>ng4_ReasonforChange</a>
+      <b>yf5_ReasonForDeviation</b>
+    </attr>
+    <attr>
+      <a>ng4_Extended_End_Date</a>
+      <b>yf5_ExtDate</b>
+    </attr>
+  </map>
+
+  <!--Ng4_ROC-->
+  <map a="Ng4_ROC" b="A9_AutoCN">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+
+  <!--Ng4_RocRevision-->
+  <map a="A9_AutoCNRevision" b="A9_AutoCNRevision">
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Buyer" value="null"/>
+	<attribute name="ng4_Change_Impacts" value="null"/>
+	<attribute name="ng4_ChangeSource" value="null"/>
+	<attribute name="ng4_ChangeState" value="null"/>
+	<attribute name="ng4_ChangeImpacts" value="null"/>
+	<attribute name="ng4_CostResponsibility" value="null"/>
+	<attribute name="ng4_DesignEngineer" value="null"/>
+	<attribute name="ng4_Engineer" value="null"/>
+	<attribute name="ng4_Estimator" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+	<attribute name="ng4_ProblemDescription" value="null"/>
+	<attribute name="ng4_ProcessPlanner" value="null"/>
+	<attribute name="ng4_ProgramManager_t" value="null"/>
+	<attribute name="ng4_QualityEngineer" value="null"/>
+	<attribute name="ng4_ReasonforChange" value="null"/>
+	<attribute name="ng4_SalesandCommercial" value="null"/>
+	<attribute name="ng4_Supplier" value="null"/>
+	<attribute name="ng4_TargetEffectivityDate" value="null"/>
+  </map>
+
+  <!-- Ng4_ExternalPartFrm -->
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_ExtDesignFrm'"/>
+    <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
+  </map>
+
+  <map a="Ng4_ExtDesignFrmStorage" b="A9_PartCustomerInfoStorage">
+	<attribute name="ng4_OEMCompany" value="null"/>
+	<attribute name="ng4_OEMNumber" value="null"/>
+	<attribute name="ng4_OEMDesignNumber" value="null"/>
+	<attribute name="ng4_OEMRevision" value="null"/>
+	<attribute name="ng4_OEMDesignName" value="null"/>
+	<attribute name="ng4_OEMEnvironment" value="null"/>
+	<attribute name="ng4_OEMFileName" value="null"/>
+	<attribute name="ng4_BusRelations" value="null"/>
+  </map>
+
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_ExternalPartFrm'"/>
+    <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
+  </map>
+
+  <map a="Ng4_ExternalPartFrmStorage" b="A9_PartCustomerInfoStorage"/>
+
+  <!--Ng4_ExternalPartFrm-->
+  <map a="A9_PartCustomerInfoStorage" b="A9_PartCustomerInfoStorage">
+    <attribute name="ng4_BusRelations" value="null"/>
+    <attribute name="ng4_ID" value="null"/>
+	<attribute name="object_type" value="null"/>
+
+    		<attr>
+			<a>ng4_PartRevision</a>
+			<b>a9_CustomerPartRevision</b>
+		</attr>
+		<!-- Source is string, target is reference-->
+		<attr>
+			<a>ng4_PartCompName</a>
+			<b>a9_Customer2</b>
+		</attr>
+		<attribute name="a9_Customer2" value="Lookup('CustomerPuid',@a9_Customer2)"/>
+		<attr>
+			<a>ng4_PartId</a>
+			<b>a9_CustomerPartNo</b>
+		</attr>
+		<attr>
+			<a>ng4_PartCompany</a>
+			<b>yf5_CustomerPartName</b>
+		</attr>
+		<attr>
+			<a>ng4_ServiceIndicator</a>
+			<b>yf5_ServiceIndicator</b>
+		</attr>
+
+  </map>
+  <!-- Ng4_PlantFrm -->
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_PlantFrm'"/>
+    <attribute name="object_type" value="'YF5_MaterialMaster'"/>
+	
+  </map>
+
+  <map a="Ng4_PlantFrmStorage" b="YF5_MaterialMasterStorage"/>
+  
+  <map a="YF5_MaterialMasterStorage" b="YF5_MaterialMasterStorage">
+	<attr>
+		<a>ng4_HyperionCode</a>
+		<b>yf5_HyperionCode</b>
+	</attr>
+	<attr>
+		<a>ng4_MaterialTaxInd</a>
+		<b>yf5_MaterialTaxInd</b>
+	</attr>
+	<attr>
+		<a>ng4_CountryOfOrigin</a>
+		<b>yf5_CountryOfOrigin</b>
+	</attr>
+	<attr>
+		<a>ng4_LastTransDate</a>
+		<b>yf5_LastTransDate</b>
+	</attr>
+	<attr>
+		<a>ng4_LastUpdatedDate</a>
+		<b>yf5_LastUpdatedDate</b>
+	</attr>
+	<attr>
+		<a>ng4_ItemType</a>
+		<b>yf5_ItemType</b>
+	</attr>
+	<attr>
+		<a>ng4_ItemMasterDesc</a>
+		<b>yf5_ItemMasterDesc</b>
+	</attr>
+	<attr>
+		<a>ng4_PlantWeightUOM</a>
+		<b>yf5_PlantWeightUOM</b>
+	</attr>
+	<attr>
+		<a>ng4_PlantNetWeight</a>
+		<b>yf5_PlantNetWeight</b>
+	</attr>
+	<attr>
+		<a>ng4_PurchasingMfgCode</a>
+		<b>yf5_PurchasingMfgCode</b>
+	</attr>
+	<attr>
+		<a>ng4_AccAsgnGrp</a>
+		<b>yf5_AccAsgnGrp</b>
+	</attr>
+	<attr>
+		<a>ng4_TransGroup</a>
+		<b>yf5_TransGroup</b>
+	</attr>
+	<attr>
+		<a>ng4_ValuationClass</a>
+		<b>yf5_ValuationClass</b>
+	</attr>
+	<attr>
+		<a>ng4_PlantCode</a>
+		<b>yf5_PlantCode</b>
+	</attr>
+  </map>
+  <!--Dataset-->
+  <map a="Dataset" b="Dataset">
+    <attribute name="ng4Creator" value="null"/>
+  </map>
+  <map a="Ng4_Cal" b="YF5_Cal">
+    <attribute name="ng4Creator" value="null"/>
+  </map>
+  <map a="Ng4_Cals" b="YF5_Cals">
+    <attribute name="ng4Creator" value="null"/>
+  </map>
+  <map a="Ng4_QChecker" b="YF5_QChecker">
+    <attribute name="ng4Creator" value="null"/>
+    <attribute name="ng4QcheckerStatus" value="null"/>	
+  </map>
+  <map a="JtSimplification" b="JtSimplification">
+    <attribute name="ng4Creator" value="null"/>
+  </map>
+  
+  <!--PSOccurrence-->
+  <map a="PSOccurrence" b="PSOccurrence">
+    <attribute name="ng4_EndEffDate" value="null"/>
+    <attribute name="ng4_findNumber" value="null"/>
+    <attribute name="ng4_sequenceOrder" value="null"/>
+    <attribute name="ng4_startEffDate" value="null"/>
+  </map>
+  <map a="Text" b="Text">
+	<attribute name="ng4Creator" value="null"/>
+	<attribute name="ng4QcheckerStatus" value="null"/>
+  </map>
+  <map a="Item" b="Item">
+	<attribute name="ng4_PhantomFlag" value="null"/>
+  </map>
+  <map a="Ng4_XImpactRevision" b="A9_XImpactRevision"> 
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+			<attr>
+			<a>ng4_TargetDate</a>
+			<b>a9_TargetDate</b>
+		</attr>
+		<attr>
+			<a>ng4_ReviewDescribe</a>
+			<b>a9_ReviewDescribe</b>
+		</attr>
+		<attr>
+			<a>ng4_EstCompletion</a>
+			<b>a9_EstCompletion</b>
+		</attr>
+		<attr>
+			<a>ng4_FunctionalArea</a>
+			<b>a9_FunctionalArea</b>
+		</attr>
+		<attr>
+			<a>ng4_EstCost</a>
+			<b>yf5_EstimatedCost</b>
+		</attr>
+
+  </map>
+  <map a="ItemRevision" b="ItemRevision"> 
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+  
+</maps>
