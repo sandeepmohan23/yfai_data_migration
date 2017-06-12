@@ -622,7 +622,7 @@
 	-->
 	<attr-check  if="@yf5_OEMName != null and @yf5_OEMName.Contains('-')">
       <attribute name="yf5_OEMName" value="@yf5_OEMName.Split('-')[0]"/>
-      <attribute name="yf5_OEMSubGroup" value="@yf5_OEMSubGroup.Split('-')[1]"/>
+      <attribute name="yf5_OEMSubGroup" value="@yf5_OEMName.Split('-')[1]"/>
     </attr-check>
     <attr>
       <a>ng4EOP_PlDate</a>
@@ -1621,7 +1621,7 @@
 	<attribute name="ng4_Job_Description" value="null"/>
   </map>
 
-<!--    <script>
+    <script>
     XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
 
     if (uom1 != null)
@@ -1655,6 +1655,6 @@
 
     uom2.Remove();
     }
-  </script>  -->
+  </script>
   
 </maps>
