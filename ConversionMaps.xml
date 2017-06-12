@@ -602,10 +602,10 @@
       <a>ng4DCLaunchSiteRgn</a>
       <b>yf5_LeadMfgCountry</b>
     </attr>
-    <attr-check  if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains(',')">
-      <attribute name="yf5_MfgRegion" value="@yf5_MfgRegion.Split(',')[0]"/>
-      <attribute name="yf5_LeadMfgCountry" value="@yf5_LeadMfgCountry.Split(',')[1]"/>
-    </attr-check>
+	<attr-check if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains(',')"> 
+		<attribute name="yf5_MfgRegion" value="@yf5_MfgRegion.Split(',')[0]"/> 
+		<attribute name="yf5_LeadMfgCountry" value="@yf5_MfgRegion.Split(',')[1]"/> 
+	</attr-check>
     <attr>
       <a>ng4OEMName</a>
       <b>yf5_OEMName</b>
@@ -1621,7 +1621,7 @@
 	<attribute name="ng4_Job_Description" value="null"/>
   </map>
 
-  <script>
+<!--    <script>
     XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
 
     if (uom1 != null)
@@ -1655,6 +1655,6 @@
 
     uom2.Remove();
     }
-  </script>
+  </script>  -->
   
 </maps>
