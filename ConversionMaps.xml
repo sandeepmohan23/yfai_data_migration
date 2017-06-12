@@ -1620,5 +1620,41 @@
 	<attribute name="ng4_job_desc" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
   </map>
+
+  <script>
+    XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
+
+    if (uom1 != null)
+    {
+    string id = uom1.GetAttrValue("elemId");
+    var uom1els = from el in _xml.Elements().Where(x => x.Attribute("uom_tag") != null)
+    where el.Attribute("uom_tag").Value == ("#" + id)
+    select el;
+
+    foreach(var el in uom1els)
+    {
+    el.SetAttrValue("uom_tag", "");
+    }
+
+    uom1.Remove();
+    }
+
+    XElement uom2 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "LegacyEA").SingleOrDefault();
+
+    if (uom2 != null)
+    {
+    string id = uom1.GetAttrValue("elemId");
+    var uom2els = from el in _xml.Elements().Where(x => x.Attribute("uom_tag") != null)
+    where el.Attribute("uom_tag").Value == ("#" + id)
+    select el;
+
+    foreach (var el in uom2els)
+    {
+    el.SetAttrValue("uom_tag", "");
+    }
+
+    uom2.Remove();
+    }
+  </script>
   
 </maps>
