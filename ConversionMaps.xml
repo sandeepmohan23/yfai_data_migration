@@ -1643,7 +1643,7 @@
 
     if (uom2 != null)
     {
-    string id = uom1.GetAttrValue("elemId");
+    string id = uom2.GetAttrValue("elemId");
     var uom2els = from el in _xml.Elements().Where(x => x.Attribute("uom_tag") != null)
     where el.Attribute("uom_tag").Value == ("#" + id)
     select el;
