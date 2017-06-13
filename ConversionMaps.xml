@@ -604,8 +604,8 @@
       <b>yf5_LeadMfgCountry</b>
     </attr>
 	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')"> 
-		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[0]"/> 
-		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[1]"/> 
+		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[1]"/> 
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[0]"/> 
 	</attr-check>
 	  <!-- Commented PS 
     <attr>
@@ -752,8 +752,8 @@
     </attr>
 -->
 	<attr-check  if="@ng4_region_dc_launch_site != null and @ng4_region_dc_launch_site.Contains(',')">
-      <attribute name="yf5_MfgRegion" value="@ng4_region_dc_launch_site.Split(',')[0]"/>
-      <attribute name="yf5_LeadMfgCountry" value="@ng4_region_dc_launch_site.Split(',')[1]"/>
+      <attribute name="yf5_MfgRegion" value="@ng4_region_dc_launch_site.Split(',')[1]"/>
+      <attribute name="yf5_LeadMfgCountry" value="@ng4_region_dc_launch_site.Split(',')[0]"/>
     </attr-check>
   </map>
   <!--Ng4_MasterPrgRevision-->
