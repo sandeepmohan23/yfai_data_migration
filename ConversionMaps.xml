@@ -594,18 +594,20 @@
       <a>ng4VehicleName</a>
       <b>yf5_OEM_Model_Name</b>
     </attr>
+	  <!-- Commented - PS
     <attr>
       <a>ng4LaunchSite</a>
       <b>yf5_MfgRegion</b>
-    </attr>
+    </attr>-->
     <attr>
       <a>ng4DCLaunchSiteRgn</a>
       <b>yf5_LeadMfgCountry</b>
     </attr>
-	<attr-check if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains(',')"> 
-		<attribute name="yf5_MfgRegion" value="@yf5_MfgRegion.Split(',')[0]"/> 
-		<attribute name="yf5_LeadMfgCountry" value="@yf5_MfgRegion.Split(',')[1]"/> 
+	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')"> 
+		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[0]"/> 
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[1]"/> 
 	</attr-check>
+	  <!-- Commented PS 
     <attr>
       <a>ng4OEMName</a>
       <b>yf5_OEMName</b>
@@ -613,16 +615,16 @@
     <attr>
       <a>ng4OEMName</a>
       <b>yf5_OEMSubGroup</b>
-    </attr>
+    </attr> -->
 <!-- The following logic does not appear to be right PS 6/4/17.
     <attr-check  if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains('-')">
       <attribute name="yf5_OEMName" value="@yf5_OEMName.Split('-')[0]"/>
       <attribute name="yf5_OEMSubGroup" value="@yf5_OEMSubGroup.Split('-')[1]"/>
     </attr-check>
 	-->
-	<attr-check  if="@yf5_OEMName != null and @yf5_OEMName.Contains('-')">
-      <attribute name="yf5_OEMName" value="@yf5_OEMName.Split('-')[0]"/>
-      <attribute name="yf5_OEMSubGroup" value="@yf5_OEMName.Split('-')[1]"/>
+	<attr-check  if="@ng4OEMName != null and @ng4OEMName.Contains('-')">
+      <attribute name="yf5_OEMName" value="@ng4OEMName.Split('-')[0]"/>
+      <attribute name="yf5_OEMSubGroup" value="@ng4OEMName.Split('-')[1]"/>
     </attr-check>
     <attr>
       <a>ng4EOP_PlDate</a>
@@ -701,6 +703,7 @@
       <a>ng4_oem_model_code</a>
       <b>yf5_OEM_Model_Code</b>
     </attr>
+	  <!-- Commented PS 
     <attr>
       <a>ng4_oem_name</a>
       <b>yf5_OEMName</b>
@@ -709,6 +712,7 @@
       <a>ng4_oem_name</a>
       <b>yf5_OEMSubGroup</b>
     </attr>
+-->
     <attr>
       <a>ng4_pg</a>
       <b>yf5_ProductGroup</b>
@@ -729,14 +733,15 @@
       <a>ng4_program_status</a>
       <b>a9_ProgramStatus</b>
     </attr>
-	<attr-check  if="@yf5_OEMName != null and @yf5_OEMName.Contains('-')">
-      <attribute name="yf5_OEMName" value="@yf5_OEMName.Split('-')[0]"/>
-      <attribute name="yf5_OEMSubGroup" value="@yf5_OEMSubGroup.Split('-')[1]"/>
+	<attr-check  if="@ng4_oem_name != null and @ng4_oem_name.Contains('-')">
+      <attribute name="yf5_OEMName" value="@ng4_oem_name.Split('-')[0]"/>
+      <attribute name="yf5_OEMSubGroup" value="@ng4_oem_name.Split('-')[1]"/>
     </attr-check>
 	<attr>
       <a>ng4_oem_vehicle_name</a>
       <b>yf5_OEMName</b>
     </attr>
+	  <!-- Commented PS 
 	<attr>
       <a>ng4_region_dc_launch_site</a>
       <b>yf5_MfgRegion</b>
@@ -745,9 +750,10 @@
       <a>ng4_region_dc_launch_site</a>
       <b>yf5_LeadMfgCountry</b>
     </attr>
-	<attr-check  if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains(',')">
-      <attribute name="yf5_MfgRegion" value="@yf5_MfgRegion.Split(',')[0]"/>
-      <attribute name="yf5_LeadMfgCountry" value="@yf5_LeadMfgCountry.Split(',')[1]"/>
+-->
+	<attr-check  if="@ng4_region_dc_launch_site != null and @ng4_region_dc_launch_site.Contains(',')">
+      <attribute name="yf5_MfgRegion" value="@ng4_region_dc_launch_site.Split(',')[0]"/>
+      <attribute name="yf5_LeadMfgCountry" value="@ng4_region_dc_launch_site.Split(',')[1]"/>
     </attr-check>
   </map>
   <!--Ng4_MasterPrgRevision-->
@@ -829,6 +835,7 @@
 		<attribute name="ng4TBLEntry_ActlDate" value="null"/>
 		<attribute name="ng4TE_PlDate" value="null"/>
 		<attribute name="ng4TERM_PlDate" value="null"/>
+	  <!-- Commented PS
 				<attr>
 			<a>ng4LaunchSite</a>
 			<b>yf5_MfgRegion</b>
@@ -837,9 +844,10 @@
 			<a>ng4DCLaunchSiteRgn</a>
 			<b>yf5_LeadMfgCountry</b>
 		</attr>
-		<attr-check  if="@yf5_MfgRegion != null and @yf5_MfgRegion.Contains(',')">
-			<attribute name="yf5_MfgRegion" value="@yf5_MfgRegion.Split(',')[0]"/>
-			<attribute name="yf5_LeadMfgCountry" value="@yf5_LeadMfgCountry.Split(',')[1]"/>
+-->
+		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')">
+			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[0]"/>
+			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[1]"/>
 		</attr-check>
 		<attr>
 			<a>ng4EOP_PlDate</a>
