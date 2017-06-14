@@ -1575,9 +1575,11 @@
   <map a="Ng4_Cals" b="YF5_Cals">
     <attribute name="ng4Creator" value="null"/>
   </map>
+  <!-- RA:adding object_type="YF5_QChecker".When we create this dataset in UI its creating "YF5_QChecker" object_type -->
   <map a="Ng4_QChecker" b="Dataset">
     <attribute name="ng4Creator" value="null"/>
     <attribute name="ng4QcheckerStatus" value="null"/>	
+    <attribute name="object_type" value="YF5_QChecker"/>	
   </map>
   <map a="JtSimplification" b="JtSimplification">
     <attribute name="ng4Creator" value="null"/>
