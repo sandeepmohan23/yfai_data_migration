@@ -1493,6 +1493,7 @@
 			<a>ng4_PartCompany</a>
 			<b>yf5_CustomerPartName</b>
 		</attr>
+		<attribute name="yf5_CustomerPartName" value="@yf5_CustomerPartName.Trunc(32)"/>
 		<attr>
 			<a>ng4_ServiceIndicator</a>
 			<b>yf5_ServiceIndicator</b>
