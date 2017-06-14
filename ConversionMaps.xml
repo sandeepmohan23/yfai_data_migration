@@ -1581,7 +1581,7 @@
   <map a="Ng4_QChecker" b="Dataset">
     <attribute name="ng4Creator" value="null"/>
     <attribute name="ng4QcheckerStatus" value="null"/>	
-    <attribute name="object_type" value="YF5_QChecker"/>	
+    <attribute name="object_type" value="'YF5_QChecker'"/>	
   </map>
   <map a="JtSimplification" b="JtSimplification">
     <attribute name="ng4Creator" value="null"/>
