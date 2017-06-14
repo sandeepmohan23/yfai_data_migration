@@ -114,6 +114,7 @@
 	  <!-- Material master maps for iteration 1 -->
 	  <value a="Ng4_PartMM" b="YF5_Has_MaterialMaster"/>
 	  <value a="Ng4_MMPlantInfo" b="YF5_Has_MaterialMaster"/>
+	  <value a="Ng4_QChecker" b="YF5_QChecker"/>
     </mapRefObject>
   </header>
 
