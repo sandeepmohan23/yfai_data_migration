@@ -318,6 +318,8 @@
       <a>ng4_MfgDesc</a>
       <b>yf5_ManufDesc</b>
     </attr>
+	<!-- RA:Source has more than 24 char description values -->
+	<attribute name="yf5_ManufDesc" value="@yf5_ManufDesc.Trunc(24)"/>
     <attr>
       <a>ng4_PartCategory</a>
       <b>yf5_PartCategory</b>
