@@ -415,6 +415,8 @@
       <a>ng4_IsDesignRequired</a>
       <b>yf5_CADRequired</b>
     </attr>
+	<!-- RA:Issue#9 yf5_CADRequired takes 4 chars only,value=False can't make it -->
+    <attribute name="yf5_CADRequired" value="@yf5_CADRequired.Trunc(4)"/>	
     <attr>
       <a>ng4_LegacyChange</a>
       <b>yf5_LegacyChange</b>
