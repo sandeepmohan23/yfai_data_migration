@@ -5,7 +5,8 @@
 use File::Basename;
 use File::Path qw(make_path);
 use utf8;
-use Encode qw( encode_utf8 );
+use Encode;
+
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Following are a few global OS dependent variables.
@@ -14,6 +15,7 @@ use Encode qw( encode_utf8 );
 #
 # my $dir_separator = '/';
 my $dir_separator = '\\';
+my $last_char = 
 
 my $perl_file_name = basename($0);
 $perl_file_name =~ s{\.[^.]+$}{};
@@ -118,7 +120,7 @@ foreach $inp_xml_file (@inp_xml_files) {
 				if($bytenum > $bytelimit){
 					# my $trim_yf5_CustomerPartName=trimStringByBytes($yf5_CustomerPartName,$bytelimit);
 					
-							my $str = $yf5_CustomerPartName;
+							my $str = encode_utf8($yf5_CustomerPartName);
 							# my $bytelimit = shift;
 							
 							print "=======================================\n";  
@@ -141,9 +143,11 @@ foreach $inp_xml_file (@inp_xml_files) {
 							print LOGFILE "in while counts - post chop =  $bytenum , $chars  \n";
 							print "---------------------------------------\n";
 							}
+							#decode('utf8', $sstr, Encode::FB_QUIET);
+							$str = decode('utf8',$str, Encode::FB_QUIET);
 							
 							print "=======================================\n";  
-							chop($str);
+							#chop($str);
 							$bytenum = testbytelength($str);
 							$chars = length($str);
 							print "After num of chars = $chars\n";
