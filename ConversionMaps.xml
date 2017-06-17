@@ -61,6 +61,9 @@
     <!--Owning Group values-->
     <lookup name="ChangeOwningGroup" file="owning_group.csv"/>
 
+    <!--Owning Group values-->
+    <lookup name="ChangeRole" file="roles.csv"/>	
+	
     <!--UnitOfMeasure values-->
     <lookup name="ChangeUOM" file="uom.csv"/>
 	
@@ -69,6 +72,8 @@
 
     <mapRefObject type="Group" lookup="ChangeOwningGroup"/>
     <mapRefObject type="User" lookup="ChangeOwningUser"/>
+	<mapRefObject type="Role" lookup="ChangeRole"/>
+	
     <mapRefObject type="ReleaseStatus" lookup="ChangeReleseStatus"/>
     <mapRefObject type="UnitOfMeasure" lookup="ChangeUOM"/>
     <mapRefObject type="DatasetType">
