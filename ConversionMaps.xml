@@ -1244,6 +1244,8 @@
 	<attribute name="ng4NULL" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
 	<attribute name="ng4_job_desc" value="null"/>
+	<!-- RA:Import error from Iteration 2 load,removing ng4_ImpactedPrograms attribute -->
+	<attribute name="ng4_ImpactedPrograms" value="null"/>
   </map>
 
   <!--Ng4_DR-->
