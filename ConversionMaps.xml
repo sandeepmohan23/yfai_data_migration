@@ -709,7 +709,7 @@
 
 	<attribute name="ng4_leadRgnSite" value="null"/>
 	<attribute name="ng4_oem_model_year" value="null"/>
-	<!--<attribute name="ng4_region_dc_launch_site" value="null"/>-->
+	
 
     <attr>
       <a>ng4_oem_model_code</a>
@@ -767,15 +767,14 @@
       <attribute name="yf5_MfgRegion" value="@ng4_region_dc_launch_site.Split(',')[1]"/>
       <attribute name="yf5_LeadMfgCountry" value="@ng4_region_dc_launch_site.Split(',')[0]"/>
     </attr-check>
+	<attribute name="ng4_region_dc_launch_site" value="null"/>
+	<attribute name="ng4_oem_name" value="null"/>
   </map>
-  <!--Ng4_MasterPrgRevision-->
+  <!--Ng4_ProgramRevision-->
   <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
-		<attribute name="ng4_AwardBOMStatus" value="null"/>
-		<attribute name="ng4_AwardOverrideStatus" value="null"/>
+		
 		<attribute name="ng4_job_desc" value="null"/>
 		<attribute name="ng4_Job_Description" value="null"/>
-		<attribute name="ng4_MigratedFrom" value="null"/>
-		<attribute name="ng4_QuoteDue_ActlDate" value="null"/>
 		<attribute name="ng4AwdLetterExpected_PlDate" value="null"/>
 		<attribute name="ng4AwdLetterRcvd_ActlDate" value="null"/>
 		<attribute name="ng4AwdPostGo_ActlDate" value="null"/>
@@ -787,13 +786,15 @@
 		<attribute name="ng4DevStart_ActlDate" value="null"/>
 		<attribute name="ng4DS_PlDate" value="null"/>
 		<attribute name="ng4DVPE_PlDate" value="null"/>
-		<attribute name="ng4DVR_PlDate" value="null"/>
+		<attribute name="ng4DVR_PLDate" value="null"/>
 		<attribute name="ng4DVRelease_ActlDate" value="null"/>
 		<attribute name="ng4DVRR_PlDate" value="null"/>
-		<attribute name="ng4_EndItemVarn" value="null"/>
+		<attribute name="ng4EndItemVarn" value="null"/>
+		<attribute name="ng4EOP_PlDate" value="null"/>
 		<attribute name="ng4FinalScore" value="null"/>
 		<attribute name="ng4FinProdRel_ActlDate" value="null"/>
 		<attribute name="ng4FPR_PlDate" value="null"/>
+		<attribute name="ng4GateEvent" value="null"/>
 		<attribute name="ng4GateEventActual" value="null"/>
 		<attribute name="ng4Go_Actual" value="null"/>
 		<attribute name="ng4Go_Awd_PlDate" value="null"/>
@@ -814,8 +815,9 @@
 		<attribute name="ng4PrgCarAmt" value="null"/>
 		<attribute name="ng4PrgCarAmtComm" value="null"/>
 		<attribute name="ng4PrgCriticalSuppComm" value="null"/>
+		<attribute name="ng4PrgCriticalSuppliers" value="null"/>
 		<attribute name="ng4PrgNoOfSuppComm" value="null"/>
-		<attribute name="ng4PrgNoOfSupp" value="null"/>
+		<attribute name="ng4PrgNoOfSuppliers" value="null"/>
 		<attribute name="ng4PrgOEMSpecChanges" value="null"/>
 		<attribute name="ng4PrgOEMSpecChgComm" value="null"/>
 		<attribute name="ng4PrgRepRisk" value="null"/>
@@ -835,18 +837,20 @@
 		<attribute name="ng4ProgramEEQU" value="null"/>
 		<attribute name="ng4ProgramEEQUComm" value="null"/>
 		<attribute name="ng4ProgramScore" value="null"/>
+		<attribute name="ng4PS_PlDate" value="null"/>
 		<attribute name="ng4PVPE_PlDate" value="null"/>
 		<attribute name="ng4PVRR_PlDate" value="null"/>
 		<attribute name="ng4QT_PlDate" value="null"/>
-		<attribute name="ng4Quote_ActDate" value="null"/>
+		<attribute name="ng4Quote_ActlDate" value="null"/>
 		<attribute name="ng4QuoteDue_PlDate" value="null"/>
 		<attribute name="ng4RFQExpected_PlDate" value="null"/>
-		<attribute name="ng4RFWReceived_ActlDate" value="null"/>
+		<attribute name="ng4RFQReceived_ActlDate" value="null"/>
 		<attribute name="ng4SOP" value="null"/>
 		<attribute name="ng4SOP_ActlDate" value="null"/>
 		<attribute name="ng4TBLEntry_ActlDate" value="null"/>
 		<attribute name="ng4TE_PlDate" value="null"/>
 		<attribute name="ng4TERM_PlDate" value="null"/>
+
 	  <!-- Commented PS
 				<attr>
 			<a>ng4LaunchSite</a>
@@ -862,34 +866,91 @@
 			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[1]"/>
 		</attr-check>
 		<attr>
-			<a>ng4EOP_PlDate</a>
-			<b>a9_ProjectTargetedEnd</b>
+			<a>ng4_EstCompletion</a>
+			<b>a9_EstCompletion</b>
 		</attr>
 		<attr>
-			<a>ng4OEMName</a>
-			<b>yf5_OEMName</b>
+			<a>ng4_EstCost</a>
+			<b>yf5_EstimatedCost</b>
 		</attr>
 		<attr>
-			<a>ng4OEMName</a>
-			<b>yf5_OEMSubGroup</b>
+			<a>ng4_FunctionalArea</a>
+			<b>a9_FunctionalArea</b>
 		</attr>
 		<attr>
-			<a>ng4opportunity_desc</a>
-			<b>yf5_Program_Comments</b>
+			<a>ng4_PartCompany</a>
+			<b>yf5_CustomerPartName</b>
 		</attr>
 		<attr>
-			<a>ng4ProdLine</a>
-			<b>a9_ProductGroup</b>
+			<a>ng4_PartCompName</a>
+			<b>a9_Customer2</b>
 		</attr>
 		<attr>
-			<a>ng4SDTLead</a>
-			<b>a9_ProgramLeader</b>
+			<a>ng4_PartId</a>
+			<b>a9_CustomerPartNo</b>
 		</attr>
 		<attr>
-			<a>ng4SOP_PlDate</a>
+			<a>ng4_PartRevision</a>
+			<b>a9_CustomerPartRevision</b>
+		</attr>
+		<attr>
+			<a>ng4_ReviewDescribe</a>
+			<b>a9_ReviewDescribe</b>
+		</attr>
+		<attr>
+			<a>ng4_ServiceIndicator</a>
+			<b>yf5_ServiceIndicator</b>
+		</attr>
+		<attr>
+			<a>ng4_TargetDate</a>
+			<b>a9_TargetDate</b>
+		</attr>
+		<attr>
+			<a>ng4CustomerGroup</a>
+			<b>yf5_CustomerGroup</b>
+		</attr>
+		<attr>
+			<a>ng4EOP_ActlDate</a>
+			<b>a9_EOP</b>
+		</attr>
+		<attr>
+			<a>ng4JVPartnerName</a>
+			<b>yf5_JVPartner</b>
+		</attr>
+		<attr>
+			<a>ng4MdlYear</a>
+			<b>yf5_Model_Year</b>
+		</attr>
+		<attr>
+			<a>ng4ModelCode</a>
+			<b>yf5_OEM_Model_Code</b>
+		</attr>
+		<attr>
+			<a>ng4PltName</a>
+			<b>yf5_OEMPlatformCode</b>
+		</attr>
+		<attr>
+			<a>ng4PrgCategory</a>
+			<b>a9_ProjectCategory</b>
+		</attr>
+		<attr>
+			<a>ng4PrgStatus</a>
+			<b>a9_ProgramStatus</b>
+		</attr>
+		<attr>
+			<a>ng4PS_PlDate</a>
+			<b>a9_ProjectTargetedStart</b>
+		</attr>
+		<attr>
+			<a>ng4SOP_ActlDate</a>
 			<b>a9_SOP</b>
 		</attr>
-
+		<attr>
+			<a>ng4VehicleName</a>
+			<b>yf5_OEM_Model_Name</b>
+		</attr>
+		<attribute name="ng4LaunchSite" value="null"/>
+		<attribute name="ng4DCLaunchSiteRgn" value="null"/>
   </map>
   <!--Ng4_GenDocs-->
   <!-- Mapping Document not available for this type -->
@@ -1685,3 +1746,4 @@
   </script>
   
 </maps>
+
