@@ -324,7 +324,9 @@
       <b>yf5_ManufDesc</b>
     </attr>
 	<!-- RA:Source has more than 24 char description values -->
-	<attribute name="yf5_ManufDesc" value="@yf5_ManufDesc.Trunc(24)"/>
+	<attr-check if="@yf5_ManufDesc" != null>
+			<attribute name="yf5_ManufDesc" value="@yf5_ManufDesc.Trunc(24)"/> 
+	</attr-check>
     <attr>
       <a>ng4_PartCategory</a>
       <b>yf5_PartCategory</b>
@@ -410,7 +412,9 @@
       <a>ng4_SurfaceAreaUOM</a>
       <b>yf5_SurfaceAreaUOM</b>
     </attr>
-    <attribute name="yf5_SurfaceAreaUOM" value="@yf5_SurfaceAreaUOM.Trunc(32)"/>
+	<attr-check if="@yf5_SurfaceAreaUOM" != null>
+			<attribute name="yf5_SurfaceAreaUOM" value="@yf5_SurfaceAreaUOM.Trunc(32)"/> 
+	</attr-check>
 
     <attr>
       <a>ng4_CPP_STD</a>
@@ -421,7 +425,9 @@
       <b>yf5_CADRequired</b>
     </attr>
 	<!-- RA:Issue#9 yf5_CADRequired takes 4 chars only,value=False can't make it -->
-    <attribute name="yf5_CADRequired" value="@yf5_CADRequired.Trunc(4)"/>	
+	<attr-check if="@yf5_CADRequired" != null>
+			<attribute name="yf5_CADRequired" value="@yf5_CADRequired.Trunc(4)"/> 
+	</attr-check>
     <attr>
       <a>ng4_LegacyChange</a>
       <b>yf5_LegacyChange</b>
@@ -672,6 +678,8 @@
       <a>ng4JVPartnerName</a>
       <b>yf5_JVPartner</b>
     </attr>
+	<attribute name="ng4OEMName" value="null"/>
+	<attribute name="ng4LaunchSite" value="null"/>
   </map>
 
 
@@ -947,6 +955,9 @@
 			<a>ng4VehicleName</a>
 			<b>yf5_OEM_Model_Name</b>
 		</attr>
+		<attr-check if="@yf5_CustomerGroup" != null>
+			<attribute name="yf5_CustomerGroup" value="@yf5_CustomerGroup.Trunc(10)"/> 
+		</attr-check>
 		<attribute name="ng4LaunchSite" value="null"/>
 		<attribute name="ng4DCLaunchSiteRgn" value="null"/>
   </map>
@@ -1566,7 +1577,9 @@
 			<b>yf5_CustomerPartName</b>
 		</attr>
 		<!-- RA:We are trimming part name ot 10 for iteration 2 only ,for next iteration YFAI increases the target attribute length -->
-		<attribute name="yf5_CustomerPartName" value="@yf5_CustomerPartName.Trunc(10)"/>
+		<attr-check if="@yf5_CustomerPartName" != null>
+			<attribute name="yf5_CustomerPartName" value="@yf5_CustomerPartName.Trunc(10)"/> 
+		</attr-check>
 		<attr>
 			<a>ng4_ServiceIndicator</a>
 			<b>yf5_ServiceIndicator</b>
