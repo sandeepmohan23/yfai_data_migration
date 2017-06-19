@@ -722,6 +722,14 @@
 	ng4_ProgDescription attribute is on Item in the soruce but in target we are trying to map to yf5_Program_Comments on ItemRevision(A9_ProgramItemRevision) class. As Mike tool can't handle to move attributes from Item to Item Rev so we may need to strip it from A9_ProgramItem . -->
 	<attribute name="ng4_ProgDescription" value="null"/>
 
+		<!-- 	RA:THIS CHANGE IS FOR ITERATION_2 ONLY.
+	ng4_oem_platform_name:Ng4_Program mappped to yf5_GlobalPlatformCode:A9_ProgramItem,but yf5_GlobalPlatformCode dont exist on A9_ProgramItem. -->
+	<attribute name="ng4_oem_platform_name" value="null"/>	
+	<!--     <attr>
+      <a>ng4_oem_platform_name</a>
+      <b>yf5_GlobalPlatformCode</b>
+    </attr> -->
+	
     <attr>
       <a>ng4_oem_model_code</a>
       <b>yf5_OEM_Model_Code</b>
@@ -739,10 +747,6 @@
     <attr>
       <a>ng4_pg</a>
       <b>yf5_ProductGroup</b>
-    </attr>
-    <attr>
-      <a>ng4_oem_platform_name</a>
-      <b>yf5_GlobalPlatformCode</b>
     </attr>
     <attr>
       <a>ng4_program_category</a>
@@ -857,6 +861,9 @@
 		<attribute name="ng4TBLEntry_ActlDate" value="null"/>
 		<attribute name="ng4TE_PlDate" value="null"/>
 		<attribute name="ng4TERM_PlDate" value="null"/>
+		<!-- RA:Import error in Iteration 2 so removing it -->
+		<attribute name="ng4DCLaunchSites" value="null"/>		
+		
 
 	  <!-- Commented PS
 				<attr>
