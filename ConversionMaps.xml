@@ -323,10 +323,11 @@
       <a>ng4_MfgDesc</a>
       <b>yf5_ManufDesc</b>
     </attr>
-	<!-- RA:Source has more than 24 char description values -->
-	<attr-check if="@yf5_ManufDesc" != null>
-			<attribute name="yf5_ManufDesc" value="@yf5_ManufDesc.Trunc(24)"/> 
-	</attr-check>
+    <!-- RA:Source has more than 24 char description values --> 
+    <attr-check if="@yf5_ManufDesc != null"> 
+           <attribute name="yf5_ManufDesc" value="@yf5_ManufDesc.Trunc(24)"/> 
+    </attr-check> 
+
     <attr>
       <a>ng4_PartCategory</a>
       <b>yf5_PartCategory</b>
@@ -412,7 +413,7 @@
       <a>ng4_SurfaceAreaUOM</a>
       <b>yf5_SurfaceAreaUOM</b>
     </attr>
-	<attr-check if="@yf5_SurfaceAreaUOM" != null>
+	<attr-check if="@yf5_SurfaceAreaUOM != null">
 			<attribute name="yf5_SurfaceAreaUOM" value="@yf5_SurfaceAreaUOM.Trunc(32)"/> 
 	</attr-check>
 
@@ -425,7 +426,7 @@
       <b>yf5_CADRequired</b>
     </attr>
 	<!-- RA:Issue#9 yf5_CADRequired takes 4 chars only,value=False can't make it -->
-	<attr-check if="@yf5_CADRequired" != null>
+	<attr-check if="@yf5_CADRequired != null">
 			<attribute name="yf5_CADRequired" value="@yf5_CADRequired.Trunc(4)"/> 
 	</attr-check>
     <attr>
@@ -955,7 +956,7 @@
 			<a>ng4VehicleName</a>
 			<b>yf5_OEM_Model_Name</b>
 		</attr>
-		<attr-check if="@yf5_CustomerGroup" != null>
+		<attr-check if="@yf5_CustomerGroup != null">
 			<attribute name="yf5_CustomerGroup" value="@yf5_CustomerGroup.Trunc(10)"/> 
 		</attr-check>
 		<attribute name="ng4LaunchSite" value="null"/>
@@ -1577,7 +1578,7 @@
 			<b>yf5_CustomerPartName</b>
 		</attr>
 		<!-- RA:We are trimming part name ot 10 for iteration 2 only ,for next iteration YFAI increases the target attribute length -->
-		<attr-check if="@yf5_CustomerPartName" != null>
+		<attr-check if="@yf5_CustomerPartName != null">
 			<attribute name="yf5_CustomerPartName" value="@yf5_CustomerPartName.Trunc(10)"/> 
 		</attr-check>
 		<attr>
