@@ -659,10 +659,14 @@
       <a>ng4ProdLine</a>
       <b>a9_ProductGroup</b>
     </attr>
+<!-- Removing in this iteration. a9_ProgramLeader is of type POM_untyped_reference in target. PS 6/20 -->
+<!--
     <attr>
       <a>ng4SDTLead</a>
       <b>a9_ProgramLeader</b>
     </attr>
+-->
+	<attribute name="ng4SDTLead" value="null"/>
 	<!-- Commented out per the latest mapping sheet. This should be set to null - PS 6/4/17 
     <attr>
       <a>ng4SOP_PlDate</a>
