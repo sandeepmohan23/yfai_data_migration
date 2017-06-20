@@ -738,6 +738,12 @@
       <a>ng4_oem_platform_name</a>
       <b>yf5_GlobalPlatformCode</b>
     </attr> -->
+	<!-- RA:For Ng4_program we no need to map ng4_program_status attribute. -->
+    <attribute name="ng4_program_status" value="null"/>		
+    <!-- 	<attr>
+      <a>ng4_program_status</a>
+      <b>a9_ProgramStatus</b>
+    </attr> -->
 	
     <attr>
       <a>ng4_oem_model_code</a>
@@ -760,10 +766,6 @@
     <attr>
       <a>ng4_program_category</a>
       <b>a9_ProjectCategory</b>
-    </attr>
-    <attr>
-      <a>ng4_program_status</a>
-      <b>a9_ProgramStatus</b>
     </attr>
 	<attr-check  if="@ng4_oem_name != null and @ng4_oem_name.Contains('-')">
       <attribute name="yf5_OEMName" value="@ng4_oem_name.Split('-')[0]"/>
