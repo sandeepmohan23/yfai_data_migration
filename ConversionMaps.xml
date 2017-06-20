@@ -1744,6 +1744,14 @@
     <attribute name="ng4NULL" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
   </map>
+  <map a="ScheduleRevision" b="ScheduleRevision">
+    <attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+  <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
+    <attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
   
   <!--PSOccurrence-->
   <map a="PSOccurrence" b="PSOccurrence">
@@ -1828,3 +1836,4 @@
   </script>
   
 </maps>
+
