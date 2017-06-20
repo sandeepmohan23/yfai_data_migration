@@ -508,9 +508,9 @@
 	<attribute name="ng4Go_Awd_PlDate" value="null"/>
 	<attribute name="ng4Go_Planned" value="null"/>
 	<attribute name="ng4Go_PostAwardActlDate" value="null"/>
-	<attribute name="ng4Go_PostAwardPlDate" value="null"/>
+	<attribute name="ng4GO_PostAwd_PlDate" value="null"/>
 	<attribute name="ng4Go_PreAwardActlDate" value="null"/>
-	<attribute name="ng4Go_PreAwdPlDate" value="null"/>
+	<attribute name="ng4GO_PreAwd_PlDate" value="null"/>
 	<attribute name="ng4GPSOpportunityID" value="null"/>
 	<attribute name="ng4KissComment" value="null"/>
 	<attribute name="ng4NULL" value="null"/>
@@ -814,7 +814,7 @@
 		<attribute name="ng4Go_PostAwardActlDate" value="null"/>
 		<attribute name="ng4GO_PostAwd_PlDate" value="null"/>
 		<attribute name="ng4Go_PreAwardActlDate" value="null"/>
-		<attribute name="ng4Go_PreAwdPlDate" value="null"/>
+		<attribute name="ng4GO_PreAwd_PlDate" value="null"/>
 		<attribute name="ng4GPSOpportunityID" value="null"/>
 		<attribute name="ng4KissComment" value="null"/>
 		<attribute name="ng4NULL" value="null"/>
