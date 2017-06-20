@@ -681,6 +681,7 @@
     </attr>
 	<attribute name="ng4OEMName" value="null"/>
 	<attribute name="ng4LaunchSite" value="null"/>
+	<attribute name="ng4SOP_PlDate" value="null"/>
   </map>
 
 
@@ -811,12 +812,14 @@
 		<attribute name="ng4Go_Awd_PlDate" value="null"/>
 		<attribute name="ng4Go_Planned" value="null"/>
 		<attribute name="ng4Go_PostAwardActlDate" value="null"/>
-		<attribute name="ng4Go_PostAwardPlDate" value="null"/>
+		<attribute name="ng4GO_PostAwd_PlDate" value="null"/>
 		<attribute name="ng4Go_PreAwardActlDate" value="null"/>
 		<attribute name="ng4Go_PreAwdPlDate" value="null"/>
 		<attribute name="ng4GPSOpportunityID" value="null"/>
 		<attribute name="ng4KissComment" value="null"/>
 		<attribute name="ng4NULL" value="null"/>
+		<attribute name="ng4OEMName" value="null"/>
+		<attribute name="ng4opportunity_desc" value="null"/>
 		<attribute name="ng4PE_PlDate" value="null"/>
 		<attribute name="ng4PL_PlDate" value="null"/>
 		<attribute name="ng4PltName" value="null"/>
@@ -839,6 +842,7 @@
 		<attribute name="ng4PrgType" value="null"/>
 		<attribute name="ng4ProdArea" value="null"/>
 		<attribute name="ng4ProdFacility" value="null"/>
+		<attribute name="ng4ProdLine" value="null"/>
 		<attribute name="ng4Product" value="null"/>
 		<attribute name="ng4ProductGroup" value="null"/>
 		<attribute name="ng4ProductGroupRgn" value="null"/>
@@ -856,6 +860,8 @@
 		<attribute name="ng4QuoteDue_PlDate" value="null"/>
 		<attribute name="ng4RFQExpected_PlDate" value="null"/>
 		<attribute name="ng4RFQReceived_ActlDate" value="null"/>
+		<attribute name="ng4SDTLead" value="null"/>
+		<attribute name="ng4SOP_PlDate" value="null"/>
 		<attribute name="ng4SOP" value="null"/>
 		<attribute name="ng4SOP_ActlDate" value="null"/>
 		<attribute name="ng4TBLEntry_ActlDate" value="null"/>
