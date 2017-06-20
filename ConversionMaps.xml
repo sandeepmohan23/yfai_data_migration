@@ -463,7 +463,9 @@
     <attribute name="ng4_Metrix_enabled" value="null"/>
     <attribute name="ng4_newDesign_mstr" value="null"/>
     <attribute name="ng4_newPart_mstr" value="null"/>
+	<attribute name="ng4_oem" value="null"/>
     <attribute name="ng4_ownedChangeObjects" value="null"/>
+	<attribute name="ng4_pdwo" value="null"/>
     <attribute name="ng4_PrgPortfolio" value="null"/>
     <attribute name="ng4_ScheduleTemplateStr" value="null"/>
    <!-- Commented for iteration 2. These attributes don't exist on the source type -->
@@ -709,9 +711,11 @@
     <!--
 	<attribute name="ng4_oem_vehicle_name" value="null"/>
 	-->
+	<attribute name="ng4_oem" value="null"/>
     <attribute name="ng4_oemmodelyr" value="null"/>
     <attribute name="ng4_opportunity_ids" value="null"/>
     <attribute name="ng4_OwningCompany" value="null"/>
+	<attribute name="ng4_pdwo" value="null"/>
     <attribute name="ng4_product_line" value="null"/>
     <attribute name="ng4_ProgramState" value="null"/>
     <attribute name="ng4_ProgramType" value="null"/>
@@ -1001,6 +1005,14 @@
 	<attribute name="ng4_job_desc" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
   </map>
+  <!-- Item appears as stub, so, adding the following mapping - PS 6/20 -->
+<!--Ng4_EngDocRevision-->
+  <map a="Ng4_EngDocRevision" b="A9_EngDocRevision">
+    <attribute name="ng4_doc_state" value="null"/>
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
 
   <!--Ng4_FinanceDoc-->
   <map a="Ng4_FinanceDoc" b="YF5_SalesFinDoc">
@@ -1157,10 +1169,10 @@
   </map>
   
   <map a="Ng4_Phase0" b="A9_ProgramItem">
-  	<attribute name="ng4_OEM" value="null"/>
+  	<attribute name="ng4_oem" value="null"/>
 	<attribute name="ng4_newDesign_mstr" value="null"/>
 	<attribute name="ng4_newPart_mstr" value="null"/>
-	<attribute name="ng4_PDWO" value="null"/>
+	<attribute name="ng4_pdwo" value="null"/>
 	<attribute name="ng4_startech" value="null"/>
 	<attr>
 		<a>ng4_customer</a>
@@ -1374,6 +1386,44 @@
 		<attribute name="ng4_Supplier" value="null"/>
 		<attribute name="ng4_TargetEffectivityDate" value="null"/>
   </map>
+<!-- Item appears as POM_Stub, so, revision has to be transformed explicitly PS 6/20 -->
+<!--Ng4_DRRevision-->
+  <map a="Ng4_DRRevision" b="A9_AutoDRRevision">
+		<attribute name="ng4NULL" value="null"/>
+		<attribute name="ng4_Buyer" value="null"/>
+		<attribute name="ng4_ChangeImpacts" value="null"/>
+		<attribute name="ng4_ChangeSource" value="null"/>
+		<attribute name="ng4_ChangeState" value="null"/>
+		<attribute name="ng4_Change_Impacts" value="null"/>
+		<attribute name="ng4_CostResponsibility" value="null"/>
+		<attribute name="ng4_DeformedLink" value="null"/>
+		<attribute name="ng4_DesignEngineer" value="null"/>
+		<attribute name="ng4_DesignEngLead" value="null"/>
+		<attribute name="ng4_DRReadiness" value="null"/>
+		<attribute name="ng4_DRReadinessCheck" value="null"/>
+		<attribute name="ng4_DRState" value="null"/>
+		<attribute name="ng4_DwgLink" value="null"/>		
+		<attribute name="ng4_Engineer" value="null"/>
+		<attribute name="ng4_Estimator" value="null"/>
+		<attribute name="ng4_Handed" value="null"/>
+		<attribute name="ng4_isTopDown" value="null"/>
+		<attribute name="ng4_isTopDownStr" value="null"/>
+		<attribute name="ng4_job_desc" value="null"/>
+		<attribute name="ng4_Job_Description" value="null"/>
+		<attribute name="ng4_Mirrored" value="null"/>
+		<attribute name="ng4_OEMRep" value="null"/>
+		<attribute name="ng4_ProblemDescription" value="null"/>
+		<attribute name="ng4_ProcessPlanner" value="null"/>
+		<attribute name="ng4_ProgramManager_t" value="null"/>
+		<attribute name="ng4_QualityEngineer" value="null"/>
+		<attribute name="ng4_ReasonforChange" value="null"/>
+		<attribute name="ng4_ReferenceECO" value="null"/>
+		<attribute name="ng4_ReferenceECR" value="null"/>
+		<attribute name="ng4_SalesandCommercial" value="null"/>
+		<attribute name="ng4_SetStatus" value="null"/>
+		<attribute name="ng4_Supplier" value="null"/>
+		<attribute name="ng4_TargetEffectivityDate" value="null"/>
+  </map>
 
   <!--Ng4_EPR-->
   <map a="Ng4_EPR" b="A9_AutoDR">
@@ -1530,7 +1580,8 @@
 	<attribute name="ng4_DesignEngineer" value="null"/>
 	<attribute name="ng4_Engineer" value="null"/>
 	<attribute name="ng4_Estimator" value="null"/>
-	<attribute name="ng4_job_desc" value="null"/>
+	<attribute name="ng4_ImpactedPrograms" value="null"/>
+	<attribute name="ng4_job_desc" value="null"/>	
 	<attribute name="ng4_Job_Description" value="null"/>
 	<attribute name="ng4_ProblemDescription" value="null"/>
 	<attribute name="ng4_ProcessPlanner" value="null"/>
@@ -1540,6 +1591,8 @@
 	<attribute name="ng4_SalesandCommercial" value="null"/>
 	<attribute name="ng4_Supplier" value="null"/>
 	<attribute name="ng4_TargetEffectivityDate" value="null"/>
+	
+	
   </map>
 
   <!-- Ng4_ExternalPartFrm -->
@@ -1687,6 +1740,10 @@
   <map a="JtSimplification" b="JtSimplification">
     <attribute name="ng4Creator" value="null"/>
   </map>
+  <map a="ScheduleTaskRevision" b="ScheduleTaskRevision">
+    <attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
   
   <!--PSOccurrence-->
   <map a="PSOccurrence" b="PSOccurrence">
@@ -1771,4 +1828,3 @@
   </script>
   
 </maps>
-
