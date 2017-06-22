@@ -237,61 +237,6 @@
 	<attribute name="ng4_IsNXDrawing" value="null"/>
 	<attribute name="ng4_OverlayIcon" value="null"/>
   </map>
-  <!-- Repeating for Rev when item and rev appear in different islands PS 6/22 -->
-  <!--Ng4_DesignRevision-->
-  <map a="Ng4_DesignRevision" b="A9_AutoDesignRevision">
-    <attr>
-      <a>ng4_Type</a>
-      <b>yf5_DrawingType</b>
-    </attr>
-    <attribute name="ng4_OEM" value="null"/>
-    <attribute name="ng4_SupplierPartNumber" value="null"/>
-    <attribute name="ng4_LegacyCreateDate" value="null"/>
-    <attribute name="ng4_IsItDeformed" value="null"/>
-    <attribute name="ng4_LegacyReleaser" value="null"/>
-    <attribute name="ng4_CDBRevision" value="null"/>
-    <attribute name="ng4_RelPos" value="null"/>
-    <attribute name="ng4_Supplier" value="null"/>
-    <attribute name="ng4_OriginatingSite" value="null"/>
-    <attribute name="ng4_OEMPartNumber" value="null"/>
-    <attribute name="ng4_SourceRevision" value="null"/>
-    <attribute name="ng4_Superseded_Applied" value="null"/>
-    <attribute name="ng4_LegacyReleaseDate" value="null"/>
-    <attribute name="ng4_Options" value="null"/>
-    <attribute name="ng4_OEMRevision" value="null"/>
-    <attribute name="ng4_ModifiedThickness" value="null"/>
-    <attribute name="ng4_Options_1" value="null"/>
-    <attribute name="ng4_CreateOEMRelate" value="null"/>
-    <attribute name="ng4_MasterDesign" value="null"/>
-    <attribute name="ng4_ProdConfig" value="null"/>
-    <attribute name="ng4_OwningSystem" value="null"/>
-    <attribute name="ng4_CalculatedThickness" value="null"/>
-    <attribute name="ng4_CrossCar" value="null"/>
-    <attribute name="ng4_Assembly" value="null"/>
-    <attribute name="ng4_Superseded" value="null"/>
-    <attribute name="ng4_Row" value="null"/>
-    <attribute name="ng4_LegacyStatus" value="null"/>
-    <attribute name="ng4_Blackbox" value="null"/>
-    <attribute name="ng4_life_cycle_state" value="null"/>
-    <attribute name="ng4_LegacyFilename" value="null"/>
-    <attribute name="ng4_COP" value="null"/>
-    <attribute name="ng4_ForeAft_1" value="null"/>
-    <attribute name="ng4_SupplierRevision" value="null"/>
-    <attribute name="ng4_UpDown" value="null"/>
-    <attribute name="ng4_EDBRevision" value="null"/>
-    <attribute name="ng4_LegacyOwner" value="null"/>
-    <attribute name="ng4_DriveTrain" value="null"/>
-    <attribute name="ng4_DriveConfig" value="null"/>
-    <attribute name="ng4_OccPosition" value="null"/>
-    <attribute name="ng4_DrawingSheet" value="null"/>
-	<attribute name="ng4NULL" value="null"/>
-	<attribute name="ng4_Job_Description" value="null"/>
-	<attribute name="ng4_job_desc" value="null"/>
-	<attribute name="ng4_EPICRevision" value="null"/>
-	<attribute name="ng4_IsNXDrawing" value="null"/>
-	<attribute name="ng4_OverlayIcon" value="null"/>
-  </map>
-
 
   <!--Ng4_Ext_Dsgn-->
   <map a="Ng4_Ext_Dsgn" b="A9_NonProduct">
