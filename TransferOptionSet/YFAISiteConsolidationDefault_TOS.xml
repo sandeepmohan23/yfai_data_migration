@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TCXML xmlns="http://www.tcxml.org/Schemas/TCXMLSchema" format="high_level">
+<ClosureRule clauses="CLASS.MEProcessRevision:CLASS.ItemRevision:RELATIONP2S.IMAN_METarget:SKIP:$opt_entire_mse==&quot;false&quot;,CLASS.MEProcessRevision:CLASS.MEWorkareaRevision:RELATIONP2S.IMAN_MEWorkArea:SKIP:$opt_entire_mse==&quot;false&quot;,CLASS.Dataset:CLASS.ItemRevision:RELATIONP2S.*:SKIP:,CLASS.ChangeItemRevision:CLASS.ItemRevision:RELATIONP2S.*:SKIP:,CLASS.Part_0_Revision_alt:CLASS.Design_0_Revision_alt:RELATIONP2S.*:SKIP:,CLASS.ItemRevision:CLASS.ItemRevision:RELATIONP2S.*:PROCESS+TRAVERSE::I,CLASS.Part_0_Revision_alt:CLASS.Item:RELATIONP2S.Ng4_OriginProgram:SKIP:,CLASS.Part_0_Revision_alt:CLASS.Ng4_MtlMaster:RELATIONP2S.Ng4_PartMM:SKIP:,CLASS.ItemRevision:CLASS.Participant:RELATIONP2S.HasParticipant:SKIP:,CLASS.ItemRevision:CLASS.HasParticipant:REFBY.primary_object:SKIP:,CLASS.ItemRevision:CLASS.Identifier:REFBY.altid_of:SKIP:,CLASS.Item:CLASS.Identifier:REFBY.altid_of:SKIP:,CLASS.Item:CLASS.Item:RELATIONP2S.Ng4_EndItemsPF:SKIP:,CLASS.Item:CLASS.Item:RELATIONP2S.TaskDependency:SKIP:,CLASS.ItemRevision:CLASS.Item:RELATIONP2S.*:PROCESS+TRAVERSE::I,CLASS.Item:CLASS.Item:RELATIONP2S.Ng4_MPLFolder:SKIP:,CLASS.Item:CLASS.Item:RELATIONP2S.Ng4_PortProgRel:SKIP:,CLASS.Item:CLASS.Item:RELATIONP2S.Ng4_PrgToLaunchPrg:SKIP:,CLASS.Item:CLASS.Item:RELATIONP2S.Ng4_ProgToProject:SKIP:,CLASS.Item:CLASS.Item:RELATIONP2S.Ng4_ProgramSchedule:SKIP:,CLASS.Item:CLASS.Item:RELATIONP2S.Ng4_Replaced_By:SKIP:,CLASS.Item:CLASS.ItemRevision:RELATIONP2S.Ng4_EndItemsPF:SKIP:,CLASS.Item:CLASS.ItemRevision:RELATIONP2S.Ng4_PrgDocRel:SKIP:,CLASS.Dataset:CLASS.ImanRelation:REFBY.primary_object:PROCESS+TRAVERSE:,CLASS.ChangeItemRevision:CLASS.ImanRelation:REFBY.primary_object:PROCESS+TRAVERSE:,CLASS.Part_0_Revision_alt:CLASS.Ng4_PartMM:REFBY.primary_object:SKIP:,CLASS.Part_0_Revision_alt:CLASS.ImanRelation:REFBY.primary_object:PROCESS+TRAVERSE:,CLASS.Item:CLASS.Ng4_ProgramSchedule:REFBY.primary_object:SKIP:,CLASS.Item:CLASS.ImanRelation:REFBY.primary_object:PROCESS+TRAVERSE:,CLASS.WorkspaceObject:CLASS.WorkspaceObject:RELATIONP2S.*:PROCESS+TRAVERSE::I" description="Closure Rules for Fast Export" elemId="id7" name="YFAISiteConsolidationDefaultCR" owning_site="#id2" schema_format="1" scope="0" transient_island_id="1">
+
+  <GSIdentity elemId="id6" label="43Rh7r7LIRyNID"/>
+
+</ClosureRule>
+<Group elemId="id10" list_of_role="#id8 #id9" name="dba" owning_site="#id2" transient_island_id="1">
+
+  <GSIdentity elemId="id4" label="AgP9X$gTIRyNID"/>
+
+</Group>
+<POM_imc elemId="id11" name="PROD_Clone" owning_site="#id2" site_id="-2076019828" transient_island_id="1">
+
+  <GSIdentity elemId="id2" label="wxP9X$g0IRyNID"/>
+
+</POM_imc>
+<TransferMode action_list="" closure_rules="#id6" config_objs="" context_string="" direction="0" elemId="id12" filters="" fnd0RevisionId="" gov_classification="" incremental="Y" ip_classification="" license_list="" multi_site="N" object_desc="Default Transfermode to be used for Fast Export" object_name="YFAISiteConsolidationDefaultTM" owning_site="#id2" project_list="" prop_sets="" schema_format="1" transient_island_id="1">
+
+  <GSIdentity elemId="id5" label="4zeh7r7LIRyNID"/>
+
+</TransferMode>
+<TransferOptionSet elemId="id13" fnd0RevisionId="" gov_classification="" ip_classification="" license_list="" object_desc="Default options for fast Export" object_name="YFAISiteConsolidationDefault" option_descriptions="Export ImanReservation for checked out Workspace object,Export ImanFile for checked out Workspace object,Export all components if the item selected is an assembly,Export BOM BOP WorkArea Structure together,Use Internal Closure Rules for traversal,Export Mechatronics data,Export Variant Expressions as island anchors,Export IXRs as island anchors,Export All Properties of Organization Objects,Export Source Objects of Design Element,Export Design Element in Workset,Exclude all Reference Geometry/Connected Element relations from Cpd0DesignElement,Export Audit Logs,Export relative EPMTask structure when export POM_Object which EPMTask attached to it" option_displaynames="Include ImanReservation,Include ImanFile,Export entire BOM,Export BOM BOP WorkArea Structure together,Use Internal Closure Rules,Mechatronics,Variant Expression as island-anchor,IXR as island-anchor,Export All Properties of Organization Objects,Export Source Objects of Design Element,Export Design Element in Workset,Exclude Reference Geometry,Export Audit Logs,Export workflow structure" option_groupnames="Relations,Relations,Product Structure Options,Relations,General Options,Mechatronics,General Options,General Options,General Options,General Options,General Options,General Options,General Options,General Options" option_initialvalues="False,True,False,False,True,False,True,False,False,True,True,True,True,False" option_readonlyflags="N N N N N N N N N Y Y N N N" option_realnames="opt_res_checkout,opt_res_audit,opt_entire_bom,opt_entire_mse,internalClosureRule,opt_mechatro,opt_varexp_islanchor,opt_ixr_islanchor,opt_exp_orgobj_allprops,opt_de_rlz_item,opt_workset_rlz_de,opt_cpd_p2s_skip,opt_exp_auditrec,opt_exp_workflow" owning_site="#id2" project_list="" site="#id2" transfermode="#id5" transient_island_id="1">
+
+  <GSIdentity elemId="id1" label="JITh7r7LIRyNID"/>
+
+</TransferOptionSet>
+<User elemId="id14" owning_site="#id2" transient_island_id="1" user_id="infodba">
+
+  <GSIdentity elemId="id3" label="AsG9X$gTIRyNID"/>
+
+</User>
+<Role elemId="id15" owning_site="#id2" role_name="Designer" transient_island_id="0">
+
+  <GSIdentity elemId="id9" label="gkG9X$gTIRyNID"/>
+
+</Role>
+<Role elemId="id16" owning_site="#id2" role_name="DBA" transient_island_id="0">
+
+  <GSIdentity elemId="id8" label="AcL9X$gTIRyNID"/>
+
+</Role>
+<Header author="infodba" date="2017-06-27" elemId="id17" originatingSite="-2076019828" targetSite="" time="17:57:12" version="Teamcenter V10000.1.0.60_20160315.00">
+
+  <TransferFormula elemId="id18">
+    <SessionOptions elemId="id19">
+      <Option elemId="id20" name="is_scope_rules_export" value="yes"/>
+      <Option elemId="id21" name="tcxmlArrayDataDelimiter" value=","/>
+    </SessionOptions>
+    <TransferMode elemId="id22" fnd0RevisionId="" gov_classification="" ip_classification="" license_list="" object_name="PLMXMLAdminDataExport" owning_site="id2" project_list=""/>
+    <Reason elemId="id23"></Reason>
+  </TransferFormula>
+
+  <TraverseRootRefs>#id1</TraverseRootRefs>
+
+</Header></TCXML>
