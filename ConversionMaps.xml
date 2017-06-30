@@ -90,32 +90,32 @@
       <value a="Ng4_MirroredLink" b="A9_GenLink"/>
       <value a="Ng4_HandedLink" b="A9_GenLink"/>
       <value a="Ng4_ProposedChanges" b="A9_Proposed_Changes"/>
-      <value a="Ng4_Major_Minor_Rel" b="ImanRelation"/>
+      <value a="Ng4_Major_Minor_Rel" b="YF5_Major_Minor_Rel"/>
       <value a="Ng4_DesignToExDesignFrm" b="A9_PartToCustomer"/>
       <value a="Ng4_OEM_Representation" b="A9_GenLink"/>
-      <value a="Ng4_Replaced_By" b="A9_Has_Color_Parts"/>
+      <value a="Ng4_Replaced_By" b="YF5_Replaced_By"/>
       <value a="Ng4_WPDocRel" b="A9_ProgramHasDocument"/>
-      <value a="Ng4_BOMSyncReport" b="ImanRelation"/>
-      <value a="Ng4_EndItemsPF" b="A9_PartToProgram"/>
-      <value a="Ng4_OriginProgram" b="A9_PartToProgram"/>
-      <value a="TC_Is_Represented_By" b="TC_Is_Represented_By"/>
-      <value a="TC_Primary_Design_Representation" b="TC_Primary_Design_Representation"/>
+      <value a="Ng4_BOMSyncReport" b="PDF_Reference"/>
+      <value a="Ng4_EndItemsPF" b="A9_ProgramHasEndItem"/>
+      <value a="Ng4_OriginProgram" b="A9_ProgramHasEndItem"/>
+      <value a="TC_Is_Represented_By" b="YF5_Is_Represented_By"/>
+      <value a="TC_Primary_Design_Representation" b="YF5_Primary_Design_Rep"/>
       <value a="Ng4_Alternatives" b="A9_Has_Color_Parts"/>
-      <value a="Ng4_BusinessPlan" b="A9_ProgramHasDocument"/>
-      <value a="Ng4_CntPltToPrg" b="ImanRelation"/>
+      <value a="Ng4_BusinessPlan" b="IMAN_reference"/>
+      <value a="Ng4_CntPltToPrg" b="IMAN_specification"/>
       <value a="Ng4_Design_Alternatives" b="A9_Has_Color_Parts"/>
-      <value a="Ng4_LegacyChangeObjects" b="ImanRelation"/>
+      <value a="Ng4_LegacyChangeObjects" b="A9_ProgramHasChange"/>
       <value a="Ng4_MPLFolder" b="IMAN_Snapshot"/>
       <value a="Ng4_PartToExPartFrm" b="A9_PartToCustomer"/>
-      <value a="Ng4_PortProgRel" b="ImanRelation"/>
+      <value a="Ng4_PortProgRel" b="IMAN_specification"/>
       <value a="Ng4_PrgDocRel" b="A9_ProgramHasDocument"/>
-      <value a="Ng4_PrgToLaunchPrg" b="ImanRelation"/>
+      <value a="Ng4_PrgToLaunchPrg" b="IMAN_specification"/>
       <value a="Ng4_ProgramSchedule" b="A9P_ProgramHasScheduleMS"/>
       <value a="Ng4_ProgToProject" b="A9_ProgramHasProject"/>
-      <value a="Ng4_Represents_CPP" b="A9_Has_Color_Parts"/>
-      <value a="Ng4_SubProgram" b="ImanRelation"/>
+      <value a="Ng4_Represents_CPP" b="YF5_Represents_CPP"/>
+      <value a="Ng4_SubProgram" b="IMAN_specification"/>
       <value a="Ng4_SupportingDocsPF" b="A9_PartHasDocument"/>
-      <value a="Ng4_WPRel" b="ImanRelation"/>
+      <value a="Ng4_WPRel" b="IMAN_specification"/>
 	  <!-- Material master maps for iteration 1 -->
 	  <value a="Ng4_PartMM" b="YF5_Has_MaterialMaster"/>
 	  <value a="Ng4_MMPlantInfo" b="YF5_Has_MaterialMaster"/>
@@ -156,18 +156,18 @@
   <!-- Mapping for Dynamic Participants -->
 
   <map a="Ng4_DesignEngineerLead" b="A9_LeadDesigner"/>
-  <map a="Ng4_ExtendedSDTMembers" b="YF5_Other"/>
-  <map a="Ng4_Finance" b="YF5_SalesFinance"/>
+  <map a="Ng4_ExtendedSDTMembers" b="A9_CrossFunctionalTeam"/>
+  <map a="Ng4_Finance" b="A9_Estimator"/>
   <map a="Ng4_LeadDesigner" b="A9_LeadDesigner"/>
   <map a="Ng4_Manufacturing" b="YF5_Manufacturing"/>
-  <map a="Ng4_NotifiedDesignEnggLeads" b="YF5_Other"/>
-  <map a="Ng4_NotifiedProgramManagers" b="YF5_Other"/>
+  <map a="Ng4_NotifiedDesignEnggLeads" b="A9_TechnicalReviewBoard"/>
+  <map a="Ng4_NotifiedProgramManagers" b="A9_AffectedProgramUsers"/>
   <map a="Ng4_ProgramManager" b="A9_ProgramManager"/>
   <map a="Ng4_Purchasing" b="YF5_Procurement"/>
-  <map a="Ng4_Quality" b="YF5_Other"/>
+  <map a="Ng4_Quality" b="A9_QualityEngineer"/>
   <map a="Ng4_SDTMember" b="YF5_Other"/>
-  <map a="Ng4_SalesCommercial" b="YF5_Other"/>
-  <map a="Ng4_Supplier" b="YF5_Other"/>
+  <map a="Ng4_SalesCommercial" b="A9_Sales"/>
+  <map a="Ng4_Supplier" b="YF5_Procurement"/>
 
   
   <!--Ng4_Design-->
