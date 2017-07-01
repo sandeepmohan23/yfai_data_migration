@@ -155,20 +155,46 @@
 
   <!-- Mapping for Dynamic Participants -->
 
-  <map a="Ng4_DesignEngineerLead" b="A9_LeadDesigner"/>
-  <map a="Ng4_ExtendedSDTMembers" b="A9_CrossFunctionalTeam"/>
-  <map a="Ng4_Finance" b="A9_Estimator"/>
-  <map a="Ng4_LeadDesigner" b="A9_LeadDesigner"/>
-  <map a="Ng4_Manufacturing" b="YF5_Manufacturing"/>
-  <map a="Ng4_NotifiedDesignEnggLeads" b="A9_TechnicalReviewBoard"/>
-  <map a="Ng4_NotifiedProgramManagers" b="A9_AffectedProgramUsers"/>
-  <map a="Ng4_ProgramManager" b="A9_ProgramManager"/>
-  <map a="Ng4_Purchasing" b="YF5_Procurement"/>
-  <map a="Ng4_Quality" b="A9_QualityEngineer"/>
-  <map a="Ng4_SDTMember" b="YF5_Other"/>
-  <map a="Ng4_SalesCommercial" b="A9_Sales"/>
-  <map a="Ng4_Supplier" b="YF5_Procurement"/>
-
+  <map a="Ng4_DesignEngineerLead" b="A9_LeadDesigner">
+	<attribute name="object_type" value="null"/>
+  </map>
+  
+  <map a="Ng4_ExtendedSDTMembers" b="A9_CrossFunctionalTeam">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_Finance" b="A9_Estimator">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_LeadDesigner" b="A9_LeadDesigner">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_Manufacturing" b="YF5_Manufacturing">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_NotifiedDesignEnggLeads" b="A9_TechnicalReviewBoard">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_NotifiedProgramManagers" b="A9_AffectedProgramUsers">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_ProgramManager" b="A9_ProgramManager">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_Purchasing" b="YF5_Procurement">
+     <attribute name="object_type" value="null"/>
+   </map>
+  <map a="Ng4_Quality" b="A9_QualityEngineer">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_SDTMember" b="YF5_Other">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_SalesCommercial" b="A9_Sales">
+     <attribute name="object_type" value="null"/>
+  </map>
+  <map a="Ng4_Supplier" b="YF5_Procurement">
+     <attribute name="object_type" value="null"/>
+   </map>
   
   <!--Ng4_Design-->
   <map a="Ng4_Design" b="A9_AutoDesign">
@@ -1175,13 +1201,17 @@
 	<attribute name="ng4_job_desc" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
   </map>
+  <!-- Item to Rev mapping for Ng4_Phase -->
+   <map a="Ng4_Phase0" b="Ng4_Phase0">
+      <join obj="Ng4_Phase0Revision" on="Ng4_Phase0@puid = Ng4_Phase0Revision@items_tag"/>
+      <attribute name="Ng4_Phase0Revision@yf5_HyperionPlatformCode" value="Ng4_Part@ng4_startech"/>
+	  <attribute name="Ng4_Phase0Revision@yf5_OEMPlatformCode" value="Ng4_Part@ng4_pdwo"/>
+   </map>
   
   <map a="Ng4_Phase0" b="A9_ProgramItem">
   	<attribute name="ng4_oem" value="null"/>
 	<attribute name="ng4_newDesign_mstr" value="null"/>
 	<attribute name="ng4_newPart_mstr" value="null"/>
-	<attribute name="ng4_pdwo" value="null"/>
-	<attribute name="ng4_startech" value="null"/>
 	<attr>
 		<a>ng4_customer</a>
 		<b>yf5_OEMName</b>
