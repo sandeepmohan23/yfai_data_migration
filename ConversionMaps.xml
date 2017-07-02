@@ -155,6 +155,10 @@
 
   <!-- Mapping for Dynamic Participants -->
 
+  <map a="Ng4_Approver" b="A9_ProductEngineer">
+	<attribute name="object_type" value="null"/>
+  </map>
+  
   <map a="Ng4_DesignEngineerLead" b="A9_LeadDesigner">
 	<attribute name="object_type" value="null"/>
   </map>
@@ -1204,8 +1208,8 @@
   <!-- Item to Rev mapping for Ng4_Phase -->
    <map a="Ng4_Phase0" b="Ng4_Phase0">
       <join obj="Ng4_Phase0Revision" on="Ng4_Phase0@puid = Ng4_Phase0Revision@items_tag"/>
-      <attribute name="Ng4_Phase0Revision@yf5_HyperionPlatformCode" value="Ng4_Part@ng4_startech"/>
-	  <attribute name="Ng4_Phase0Revision@yf5_OEMPlatformCode" value="Ng4_Part@ng4_pdwo"/>
+      <attribute name="Ng4_Phase0Revision@yf5_HyperionPlatformCode" value="Ng4_Phase0@ng4_startech"/>
+	  <attribute name="Ng4_Phase0Revision@yf5_OEMPlatformCode" value="Ng4_Phase0@ng4_pdwo"/>
    </map>
   
   <map a="Ng4_Phase0" b="A9_ProgramItem">
