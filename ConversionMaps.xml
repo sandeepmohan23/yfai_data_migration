@@ -1238,6 +1238,9 @@
 	<attribute name="ng4_PhantomFlag" value="null"/>
 	<attribute name="ng4_isMPL_Str" value="null"/>
 	<attribute name="ng4_MetrixEnabled" value="null"/>
+	<!-- The following two attributes have been mapped from Item to Rev, but need to be explicitly removed from Item PS 7/3-->
+	<attribute name="ng4_startech" value="null"/>
+	<attribute name="ng4_pdwo" value="null"/>
   </map>
   
     <!-- Unmapped attributes of A9_ProgramItemRevMasterS-->
