@@ -69,6 +69,9 @@
 	
 	<!--Customer PUID values-->
     <lookup name="CustomerPuid" file="customer.csv"/>
+		
+	<!-- Email - user id mapping values -->
+	<lookup name="EmailUserIdMap" file="email_userid.csv"/>
 
     <mapRefObject type="Group" lookup="ChangeOwningGroup"/>
     <mapRefObject type="User" lookup="ChangeOwningUser"/>
@@ -354,10 +357,12 @@
       <b>yf5_ManufDesc</b>
     </attr>
     <!-- RA:Source has more than 24 char description values --> 
+	<!-- Below truncation is not needed as Schema is updated for iteration 3 - PS 7/4-->
+	<!--
     <attr-check if="@yf5_ManufDesc != null"> 
            <attribute name="yf5_ManufDesc" value="@yf5_ManufDesc.Trunc(24)"/> 
     </attr-check> 
-
+-->
     <attr>
       <a>ng4_PartCategory</a>
       <b>yf5_PartCategory</b>
@@ -443,10 +448,12 @@
       <a>ng4_SurfaceAreaUOM</a>
       <b>yf5_SurfaceAreaUOM</b>
     </attr>
+	<!-- Below truncation is not needed as Schema is updated for iteration 3 - PS 7/4-->
+	<!--
 	<attr-check if="@yf5_SurfaceAreaUOM != null">
 			<attribute name="yf5_SurfaceAreaUOM" value="@yf5_SurfaceAreaUOM.Trunc(32)"/> 
 	</attr-check>
-
+-->
     <attr>
       <a>ng4_CPP_STD</a>
       <b>a9_PartType</b>
@@ -689,14 +696,12 @@
       <a>ng4ProdLine</a>
       <b>a9_ProductGroup</b>
     </attr>
-<!-- Removing in this iteration. a9_ProgramLeader is of type POM_untyped_reference in target. PS 6/20 -->
-<!--
     <attr>
       <a>ng4SDTLead</a>
       <b>a9_ProgramLeader</b>
     </attr>
--->
-	<attribute name="ng4SDTLead" value="null"/>
+	<attribute name="a9_ProgramLeader" value="Lookup('EmailUserIdMap',@a9_ProgramLeader)"/>
+	
 	<!-- Commented out per the latest mapping sheet. This should be set to null - PS 6/4/17 
     <attr>
       <a>ng4SOP_PlDate</a>
@@ -1689,9 +1694,12 @@
 			<b>yf5_CustomerPartName</b>
 		</attr>
 		<!-- RA:We are trimming part name ot 10 for iteration 2 only ,for next iteration YFAI increases the target attribute length -->
+		<!-- Below truncation is not needed as Schema is updated for iteration 3 - PS 7/4-->
+		<!--
 		<attr-check if="@yf5_CustomerPartName != null">
 			<attribute name="yf5_CustomerPartName" value="@yf5_CustomerPartName.Trunc(10)"/> 
 		</attr-check>
+		-->
 		<attr>
 			<a>ng4_ServiceIndicator</a>
 			<b>yf5_ServiceIndicator</b>
@@ -1881,4 +1889,3 @@
   </script>
   
 </maps>
-
