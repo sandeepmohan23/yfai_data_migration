@@ -1652,11 +1652,24 @@
   </map>
 
   <map a="Ng4_ExtDesignFrmStorage" b="A9_PartCustomerInfoStorage">
-	<attribute name="ng4_OEMCompany" value="null"/>
-	<attribute name="ng4_OEMNumber" value="null"/>
+	<attr>
+		<a>ng4_OEMCompany</a>
+		<b>a9_Customer2</b>
+	</attr>
+	<attribute name="a9_Customer2" value="Lookup('CustomerPuid',@a9_Customer2)"/>
+	<attr>
+		<a>ng4_OEMNumber</a>
+		<b>a9_CustomerPartNo</b>
+	</attr>
+	<attr>
+		<a>ng4_OEMDesignName</a>
+		<b>yf5_CustomerPartName</b>
+	</attr>
+	<attr>
+		<a>ng4_OEMRevision</a>
+		<b>a9_CustomerPartRevision</b>
+	</attr>
 	<attribute name="ng4_OEMDesignNumber" value="null"/>
-	<attribute name="ng4_OEMRevision" value="null"/>
-	<attribute name="ng4_OEMDesignName" value="null"/>
 	<attribute name="ng4_OEMEnvironment" value="null"/>
 	<attribute name="ng4_OEMFileName" value="null"/>
 	<attribute name="ng4_BusRelations" value="null"/>
