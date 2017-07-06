@@ -773,12 +773,12 @@
 	<attribute name="ng4_leadRgnSite" value="null"/>
 	<attribute name="ng4_oem_model_year" value="null"/>
 	<!-- 	RA:THIS CHANGE IS FOR ITERATION_2 ONLY.
-	ng4_ProgDescription attribute is on Item in the soruce but in target we are trying to map to yf5_Program_Comments on ItemRevision(A9_ProgramItemRevision) class. As Mike tool can't handle to move attributes from Item to Item Rev so we may need to strip it from A9_ProgramItem . -->
-	<attribute name="ng4_ProgDescription" value="null"/>
+	ng4_ProgDescription attribute is on Item in the soruce but in target we are trying to map to yf5_Program_Comments on ItemRevision(A9_ProgramItemRevision) class. As Mike tool can't handle to move attributes from Item to Item Rev so we may need to strip it from A9_ProgramItem . 
+	<attribute name="ng4_ProgDescription" value="null"/>-->
 
 		<!-- 	RA:THIS CHANGE IS FOR ITERATION_2 ONLY.
 	ng4_oem_platform_name:Ng4_Program mappped to yf5_GlobalPlatformCode:A9_ProgramItem,but yf5_GlobalPlatformCode dont exist on A9_ProgramItem. -->
-	<attribute name="ng4_oem_platform_name" value="null"/>
+	<attribute name="ng4_oem_platform_name" value="null"/>-->
 	<!--     <attr>
       <a>ng4_oem_platform_name</a>
       <b>yf5_GlobalPlatformCode</b>
@@ -838,6 +838,11 @@
     </attr-check>
 	<attribute name="ng4_region_dc_launch_site" value="null"/>
 	<attribute name="ng4_oem_name" value="null"/>
+  </map>
+  <!-- Remove the following properties that have moved to Rev -->
+  <map a="A9_ProgramItem" b="A9_ProgramItem">
+      <attribute name="ng4_ProgDescription" value="null"/>
+	  <attribute name="ng4_oem_platform_name" value="null"/>
   </map>
   <!--Ng4_ProgramRevision-->
   <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
