@@ -462,13 +462,6 @@
       <a>ng4_IsDesignRequired</a>
       <b>yf5_CADRequired</b>
     </attr>
-	<!--Issue#9 mapped true/false to yes/no PS 7/6 -->	
-	<attr-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'false'">
-		<attribute name="yf5_CADRequired" value="'no'"/> 
-	</attr-check>
-	<attr-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'true'">
-		<attribute name="yf5_CADRequired" value="'yes'"/> 
-	</attr-check>
     <attr>
       <a>ng4_LegacyChange</a>
       <b>yf5_LegacyChange</b>
@@ -487,7 +480,16 @@
     </attr>
 
   </map>
-
+  <!--Issue#9 mapped true/false to yes/no PS 7/6 -->
+   <map a="A9_autoproductRevision" b="A9_autoproductRevision">  
+	<src-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'false'"/>
+	<attribute name="yf5_CADRequired" value="'no'"/> 
+   </map>
+   <map a="A9_autoproductRevision" b="A9_autoproductRevision"> 
+	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'true'"/>
+	   <attribute name="yf5_CADRequired" value="'yes'"/> 
+	</map>
+  
   <map a="A9_autoproductRevMasterS" b="A9_autoproductRevMasterS">
     <attribute name="source" value="null"/>
   </map>
@@ -915,7 +917,6 @@
 		<attribute name="ng4QuoteDue_PlDate" value="null"/>
 		<attribute name="ng4RFQExpected_PlDate" value="null"/>
 		<attribute name="ng4RFQReceived_ActlDate" value="null"/>
-		<attribute name="ng4SDTLead" value="null"/>
 		<attribute name="ng4SOP_PlDate" value="null"/>
 		<attribute name="ng4SOP" value="null"/>
 		<attribute name="ng4SOP_ActlDate" value="null"/>
@@ -936,6 +937,12 @@
 			<b>yf5_LeadMfgCountry</b>
 		</attr>
 -->
+		<attr>
+			<a>ng4SDTLead</a>
+			<b>a9_ProgramLeader</b>
+		</attr>
+		<attribute name="a9_ProgramLeader" value="Lookup('EmailUserIdMap',@a9_ProgramLeader)"/>
+		
 		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')">
 			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[0]"/>
 			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[1]"/>
@@ -1696,7 +1703,7 @@
     <attribute name="ng4_ID" value="null"/>
 	<attribute name="object_type" value="null"/>
 
-    		<attr>
+  		<attr>
 			<a>ng4_PartRevision</a>
 			<b>a9_CustomerPartRevision</b>
 		</attr>
