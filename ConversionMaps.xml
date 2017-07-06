@@ -664,7 +664,7 @@
     </attr>-->
     <attr>
       <a>ng4DCLaunchSiteRgn</a>
-      <b>yf5_LeadMfgCountry</b>
+      <b>yf5_VehicleSalesRegions</b>
     </attr>
 	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')"> 
 		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[1]"/> 
