@@ -462,9 +462,12 @@
       <a>ng4_IsDesignRequired</a>
       <b>yf5_CADRequired</b>
     </attr>
-	<!-- RA:Issue#9 yf5_CADRequired takes 4 chars only,value=False can't make it -->
-	<attr-check if="@yf5_CADRequired != null">
-			<attribute name="yf5_CADRequired" value="@yf5_CADRequired.Trunc(4)"/> 
+	<!--Issue#9 mapped true/false to yes/no PS 7/6 -->	
+	<attr-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'false'">
+		<attribute name="yf5_CADRequired" value="'no'"/> 
+	</attr-check>
+	<attr-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'true'">
+		<attribute name="yf5_CADRequired" value="'yes'"/> 
 	</attr-check>
     <attr>
       <a>ng4_LegacyChange</a>
@@ -725,7 +728,12 @@
 	<attribute name="ng4SOP_PlDate" value="null"/>
   </map>
 
-
+<!-- Item to Rev mapping for Ng4_Program -->
+   <map a="Ng4_Program" b="Ng4_Program">
+      <join obj="Ng4_ProgramRevision" on="Ng4_Program@puid = Ng4_ProgramRevision@items_tag"/>
+      <attribute name="Ng4_ProgramRevision@yf5_Program_Comments" value="Ng4_Program@ng4_ProgDescription"/>
+	  <attribute name="Ng4_ProgramRevision@yf5_GlobalPlatformCode" value="Ng4_Program@ng4_oem_platform_name"/>
+   </map>
   
   <!--Ng4_Program-->
   <map a="Ng4_Program" b="A9_ProgramItem">
@@ -768,7 +776,7 @@
 
 		<!-- 	RA:THIS CHANGE IS FOR ITERATION_2 ONLY.
 	ng4_oem_platform_name:Ng4_Program mappped to yf5_GlobalPlatformCode:A9_ProgramItem,but yf5_GlobalPlatformCode dont exist on A9_ProgramItem. -->
-	<attribute name="ng4_oem_platform_name" value="null"/>	
+	<attribute name="ng4_oem_platform_name" value="null"/>
 	<!--     <attr>
       <a>ng4_oem_platform_name</a>
       <b>yf5_GlobalPlatformCode</b>
