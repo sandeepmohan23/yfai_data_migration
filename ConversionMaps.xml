@@ -482,11 +482,11 @@
   </map>
   <!--Issue#9 mapped true/false to yes/no PS 7/6 -->
    <map a="A9_autoproductRevision" b="A9_autoproductRevision">  
-	<src-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'False'"/>
+	<src-check if="@yf5_CADRequired != null and @yf5_CADRequired.ToUpper() = 'FALSE'"/>
 	<attribute name="yf5_CADRequired" value="'no'"/> 
    </map>
    <map a="A9_autoproductRevision" b="A9_autoproductRevision"> 
-	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'True'"/>
+	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired.ToUpper() = 'True'"/>
 	   <attribute name="yf5_CADRequired" value="'yes'"/> 
 	</map>
   
@@ -1222,13 +1222,17 @@
 		<a>ng4Platform</a>
 		<b>yf5_GlobalPlatformCode</b>
 	</attr>
-	<attr>
-		<a>ng4Business</a>
-		<b>yf5_VehicleSalesRegions</b>
-	</attr>
+	<!-- Fix for Issue#28 - PS 7/7 -->
+	<attr-check if="@ng4Business != null"> 
+		<attribute name="yf5_VehicleSalesRegions" value="@ng4Business"/> 
+	</attr-check>
 	<attribute name="ng4NULL" value="null"/>
 	<attribute name="ng4_job_desc" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+  <!-- Remove the following property to be safe -->
+  <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
+    <attribute name="ng4Business" value="null"/> 
   </map>
   <!-- Item to Rev mapping for Ng4_Phase -->
    <map a="Ng4_Phase0" b="Ng4_Phase0">
@@ -1665,13 +1669,14 @@
 	
   </map>
 
-  <!-- Ng4_ExternalPartFrm -->
+  <!-- Ng4_ExtDesignFrm -->
   <map a="Form" b="Form">
     <src-check if="@object_type = 'Ng4_ExtDesignFrm'"/>
     <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
   </map>
-
-  <map a="Ng4_ExtDesignFrmStorage" b="A9_PartCustomerInfoStorage">
+  <map a="Ng4_ExtDesignFrmStorage" b="A9_PartCustomerInfoStorage"/>
+  
+  <map a="A9_PartCustomerInfoStorage" b="A9_PartCustomerInfoStorage">
 	<attr>
 		<a>ng4_OEMCompany</a>
 		<b>a9_Customer2</b>
@@ -1695,15 +1700,17 @@
 	<attribute name="ng4_BusRelations" value="null"/>
   </map>
 
+  <!-- Map from Ng4_ExternalPartFrmStorage to A9_PartCustomerInfoStorage is wiping out the mappings for Ng4_ExtDesignFrmStorage. 
+  Workaround is to map the attributes to a dummy class, then  map the dummy class to A9_PartCustomerInfo -->
   <map a="Form" b="Form">
     <src-check if="@object_type = 'Ng4_ExternalPartFrm'"/>
-    <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
+    <attribute name="object_type" value="'A9_PartCustomerInfo1'"/>
   </map>
 
-  <map a="Ng4_ExternalPartFrmStorage" b="A9_PartCustomerInfoStorage"/>
+  <map a="Ng4_ExternalPartFrmStorage" b="A9_PartCustomerInfoStorage1"/>
 
   <!--Ng4_ExternalPartFrm-->
-  <map a="A9_PartCustomerInfoStorage" b="A9_PartCustomerInfoStorage">
+  <map a="A9_PartCustomerInfoStorage1" b="A9_PartCustomerInfoStorage1">
     <attribute name="ng4_BusRelations" value="null"/>
     <attribute name="ng4_ID" value="null"/>
 	<attribute name="object_type" value="null"/>
@@ -1739,6 +1746,14 @@
 		</attr>
 
   </map>
+  <!-- Map the dummy type to the target type -->
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'A9_PartCustomerInfo1'"/>
+    <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
+  </map>
+
+  <map a="A9_PartCustomerInfoStorage1" b="A9_PartCustomerInfoStorage"/>
+  
   <!-- Ng4_PlantFrm -->
   <map a="Form" b="Form">
     <src-check if="@object_type = 'Ng4_PlantFrm'"/>
