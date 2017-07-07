@@ -777,8 +777,8 @@
 	<attribute name="ng4_ProgDescription" value="null"/>-->
 
 		<!-- 	RA:THIS CHANGE IS FOR ITERATION_2 ONLY.
-	ng4_oem_platform_name:Ng4_Program mappped to yf5_GlobalPlatformCode:A9_ProgramItem,but yf5_GlobalPlatformCode dont exist on A9_ProgramItem. -->
-	<attribute name="ng4_oem_platform_name" value="null"/>
+	ng4_oem_platform_name:Ng4_Program mappped to yf5_GlobalPlatformCode:A9_ProgramItem,but yf5_GlobalPlatformCode dont exist on A9_ProgramItem.
+	<attribute name="ng4_oem_platform_name" value="null"/> -->
 	<!--     <attr>
       <a>ng4_oem_platform_name</a>
       <b>yf5_GlobalPlatformCode</b>
