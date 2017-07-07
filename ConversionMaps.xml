@@ -482,11 +482,11 @@
   </map>
   <!--Issue#9 mapped true/false to yes/no PS 7/6 -->
    <map a="A9_autoproductRevision" b="A9_autoproductRevision">  
-	<src-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'false'"/>
+	<src-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'False'"/>
 	<attribute name="yf5_CADRequired" value="'no'"/> 
    </map>
    <map a="A9_autoproductRevision" b="A9_autoproductRevision"> 
-	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'true'"/>
+	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired = 'True'"/>
 	   <attribute name="yf5_CADRequired" value="'yes'"/> 
 	</map>
   
@@ -777,7 +777,7 @@
 	<attribute name="ng4_ProgDescription" value="null"/>-->
 
 		<!-- 	RA:THIS CHANGE IS FOR ITERATION_2 ONLY.
-	ng4_oem_platform_name:Ng4_Program mappped to yf5_GlobalPlatformCode:A9_ProgramItem,but yf5_GlobalPlatformCode dont exist on A9_ProgramItem.
+	ng4_oem_platform_name:Ng4_Program mappped to yf5_GlobalPlatformCode:A9_ProgramItem,but yf5_GlobalPlatformCode dont exist on A9_ProgramItem. 
 	<attribute name="ng4_oem_platform_name" value="null"/> -->
 	<!--     <attr>
       <a>ng4_oem_platform_name</a>
