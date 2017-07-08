@@ -486,7 +486,7 @@
 	<attribute name="yf5_CADRequired" value="'no'"/> 
    </map>
    <map a="A9_autoproductRevision" b="A9_autoproductRevision"> 
-	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired.ToUpper() = 'TRUE'"/>
+	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired.ToUpper() = 'True'"/>
 	   <attribute name="yf5_CADRequired" value="'yes'"/> 
 	</map>
   
@@ -1218,10 +1218,13 @@
 		<a>ng4Customer</a>
 		<b>yf5_CustomerBillTo</b>
 	</attr>
-	<attr>
-		<a>ng4Platform</a>
-		<b>yf5_GlobalPlatformCode</b>
-	</attr>
+	<!-- Fix for Issue# 11 - a+b PS 7/8-->
+	<attr-check if="@ng4Platform != null"> 
+		<attr>
+			<a>ng4Platform</a>
+			<b>yf5_GlobalPlatformCode</b>
+		</attr>
+	</attr-check>
 	<!-- Fix for Issue#28 - PS 7/7 -->
 	<attr-check if="@ng4Business != null"> 
 		<attribute name="yf5_VehicleSalesRegions" value="@ng4Business"/> 
@@ -1230,9 +1233,10 @@
 	<attribute name="ng4_job_desc" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
   </map>
-  <!-- Remove the following property to be safe -->
+  <!-- Remove the following properties to be safe -->
   <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
     <attribute name="ng4Business" value="null"/> 
+	<attribute name="ng4Platform" value="null"/> 
   </map>
   <!-- Item to Rev mapping for Ng4_Phase -->
    <map a="Ng4_Phase0" b="Ng4_Phase0">
