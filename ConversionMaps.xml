@@ -486,7 +486,7 @@
 	<attribute name="yf5_CADRequired" value="'no'"/> 
    </map>
    <map a="A9_autoproductRevision" b="A9_autoproductRevision"> 
-	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired.ToUpper() = 'True'"/>
+	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired.ToUpper() = 'TRUE'"/>
 	   <attribute name="yf5_CADRequired" value="'yes'"/> 
 	</map>
   
