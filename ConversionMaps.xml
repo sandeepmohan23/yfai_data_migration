@@ -1903,6 +1903,12 @@
 	<attribute name="ng4_job_desc" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
   </map>
+  
+  <!-- Revision rule mapping PS 7/11 -->
+  <map a="RevisionRule" b="RevisionRule">
+    <src-check if="@object_name = 'JCI Default Rev Rule'"/>
+    <attribute name="object_name" value="'Latest Working'"/>
+  </map>
 
     <script>
     XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
