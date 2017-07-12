@@ -483,11 +483,11 @@
   <!--Issue#9 mapped true/false to yes/no PS 7/6 -->
    <map a="A9_autoproductRevision" b="A9_autoproductRevision">  
 	<src-check if="@yf5_CADRequired != null and @yf5_CADRequired.ToUpper() = 'FALSE'"/>
-	<attribute name="yf5_CADRequired" value="'no'"/> 
+	<attribute name="yf5_CADRequired" value="'No'"/> 
    </map>
    <map a="A9_autoproductRevision" b="A9_autoproductRevision"> 
 	  <src-check if="@yf5_CADRequired != null and @yf5_CADRequired.ToUpper() = 'TRUE'"/>
-	   <attribute name="yf5_CADRequired" value="'yes'"/> 
+	   <attribute name="yf5_CADRequired" value="'Yes'"/> 
 	</map>
   
   <map a="A9_autoproductRevMasterS" b="A9_autoproductRevMasterS">
