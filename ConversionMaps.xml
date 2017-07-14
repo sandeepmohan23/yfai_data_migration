@@ -98,7 +98,7 @@
       <value a="Ng4_OEM_Representation" b="A9_GenLink"/>
       <value a="Ng4_Replaced_By" b="YF5_Replaced_By"/>
       <value a="Ng4_WPDocRel" b="A9_ProgramHasDocument"/>
-      <value a="Ng4_BOMSyncReport" b="PDF_Reference"/>
+      <value a="Ng4_BOMSyncReport" b="IMAN_reference"/>
       <value a="Ng4_EndItemsPF" b="A9_ProgramHasEndItem"/>
       <value a="Ng4_OriginProgram" b="A9_ProgramHasEndItem"/>
       <value a="TC_Is_Represented_By" b="YF5_Is_Represented_By"/>
