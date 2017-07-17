@@ -1706,6 +1706,7 @@
 	<attribute name="ng4_OEMEnvironment" value="null"/>
 	<attribute name="ng4_OEMFileName" value="null"/>
 	<attribute name="ng4_BusRelations" value="null"/>
+	<attribute name="object_type" value="null"/>
   </map>
 
   <!-- Map from Ng4_ExternalPartFrmStorage to A9_PartCustomerInfoStorage is wiping out the mappings for Ng4_ExtDesignFrmStorage. 
