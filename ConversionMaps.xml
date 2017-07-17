@@ -1716,7 +1716,9 @@
     <attribute name="object_type" value="'A9_PartCustomerInfo1'"/>
   </map>
 
-  <map a="Ng4_ExternalPartFrmStorage" b="A9_PartCustomerInfoStorage1"/>
+  <map a="Ng4_ExternalPartFrmStorage" b="A9_PartCustomerInfoStorage1">
+		<attribute name="object_type" value="null"/>
+  </map>
 
   <!--Ng4_ExternalPartFrm-->
   <map a="A9_PartCustomerInfoStorage1" b="A9_PartCustomerInfoStorage1">
