@@ -1717,14 +1717,12 @@
   </map>
 
   <map a="Ng4_ExternalPartFrmStorage" b="A9_PartCustomerInfoStorage1">
-		<attribute name="object_type" value="null"/>
   </map>
 
   <!--Ng4_ExternalPartFrm-->
   <map a="A9_PartCustomerInfoStorage1" b="A9_PartCustomerInfoStorage1">
     <attribute name="ng4_BusRelations" value="null"/>
     <attribute name="ng4_ID" value="null"/>
-	<attribute name="object_type" value="null"/>
 
   		<attr>
 			<a>ng4_PartRevision</a>
