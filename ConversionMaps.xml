@@ -1921,13 +1921,8 @@
 <!-- Issue # 33 -->
 
   <map  a="IMAN_reference" b="ImanRelation" />
-  <map  a="IMAN_reference" b="ImanRelation" />
   <map  a="IMAN_specification" b="ImanRelation" />
   <map  a="IMAN_Snapshot" b="ImanRelation" />
-  <map  a="IMAN_specification" b="ImanRelation" />
-  <map  a="IMAN_specification" b="ImanRelation" />
-  <map  a="IMAN_specification" b="ImanRelation" />
-  <map  a="IMAN_specification" b="ImanRelation" />
     <script>
     XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
 
