@@ -144,7 +144,11 @@
     <attribute name="object_class" value="'A9_NonProductRevision'"/>
     <attribute name="object_type" value="'A9_NonProductRevision'"/>
   </map>  
-
+<map a="POM_stub" b="POM_stub">
+    <src-check if="@object_class = 'Ng4_ExternalPartFrm'"/>
+    <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
+	<attribute name="object_class" value="'A9_PartCustomerInfo'"/>
+  </map> 
   <map a="Ng4_MtlMaster" b="Item">
     <attr>
 		<a>ng4_PlantomFlag</a>
@@ -1762,7 +1766,8 @@
   </map>
 
   <map a="A9_PartCustomerInfoStorage1" b="A9_PartCustomerInfoStorage">
-	<attribute name="object_type" value="'null'"/>
+	<!-- Commeting out to remove the extra line for object_type in A9_PartCustomerInfoStorage PS 7/21 -->
+	<!-- <attribute name="object_type" value="'null'"/> -->
   </map>
   
   <!-- Ng4_PlantFrm -->
@@ -1921,6 +1926,30 @@
   <map  a="IMAN_reference" b="ImanRelation" />
   <map  a="IMAN_specification" b="ImanRelation" />
   <map  a="IMAN_Snapshot" b="ImanRelation" />
+   
+   <!-- Adding the following lines to eliminate the need for post_proc.pl PS 7/21 -->
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_ExternalPartFrm'"/>
+    <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
+  </map>
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_PartRevMasterS'"/>
+    <attribute name="object_type" value="'A9_autoproductRevMasterS'"/>
+  </map>
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_DesignRevisionMaster'"/>
+    <attribute name="object_type" value="'A9_AutoDesignRevisionMaster'"/>
+  </map>
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_PartRevisionMaster'"/>
+    <attribute name="object_type" value="'A9_autoproductRevisionMaster'"/>
+  </map>
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_Non_ERP_DsgnRevisionMaster'"/>
+    <attribute name="object_type" value="'A9_NonProductRevisionMaster'"/>
+  </map>
+  <map a="Ng4_PartRevMasterS" b="A9_autoproductRevMasterS">
+  </map>
     <script>
     XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
 
