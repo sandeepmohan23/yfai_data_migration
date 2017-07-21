@@ -1766,8 +1766,7 @@
   </map>
 
   <map a="A9_PartCustomerInfoStorage1" b="A9_PartCustomerInfoStorage">
-	<!-- Commeting out to remove the extra line for object_type in A9_PartCustomerInfoStorage PS 7/21 -->
-	<!-- <attribute name="object_type" value="'null'"/> -->
+	<attribute name="object_type" value="null"/>
   </map>
   
   <!-- Ng4_PlantFrm -->
@@ -1949,6 +1948,9 @@
     <attribute name="object_type" value="'A9_NonProductRevisionMaster'"/>
   </map>
   <map a="Ng4_PartRevMasterS" b="A9_autoproductRevMasterS">
+  </map>
+  <map a="ImanRelation" b="ImanRelation">
+	<attribute name="object_type" value="null"/>
   </map>
     <script>
     XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
