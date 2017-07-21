@@ -145,9 +145,9 @@
     <attribute name="object_type" value="'A9_NonProductRevision'"/>
   </map>  
 <map a="POM_stub" b="POM_stub">
-    <src-check if="@object_class = 'Ng4_ExternalPartFrm'"/>
+    <src-check if="@type = 'Ng4_ExternalPartFrm'"/>
     <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
-	<attribute name="object_class" value="'A9_PartCustomerInfo'"/>
+	<attribute name="object_class" value="'Form'"/>
   </map> 
   <map a="Ng4_MtlMaster" b="Item">
     <attr>
