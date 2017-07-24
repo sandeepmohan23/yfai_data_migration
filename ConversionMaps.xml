@@ -1952,6 +1952,11 @@
   <map a="ImanRelation" b="ImanRelation">
 	<attribute name="object_type" value="null"/>
   </map>
+  <!-- Issue #36 PS 7/24 -->
+  <map a="NX0BookletItemRevision" b="NX0BookletItemRevision">
+	<attribute name="ng4NULL" value="null"/>
+	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
     <script>
     XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
 
