@@ -144,8 +144,18 @@
     <attribute name="object_class" value="'A9_NonProductRevision'"/>
     <attribute name="object_type" value="'A9_NonProductRevision'"/>
   </map>  
+  <map a="POM_stub" b="POM_stub">
+    <src-check if="@object_class = 'Ng4_DesignRevision'"/>
+    <attribute name="object_class" value="'A9_AutoDesignRevision'"/>
+    <attribute name="object_type" value="'A9_AutoDesignRevision'"/>
+  </map>  
 <map a="POM_stub" b="POM_stub">
     <src-check if="@object_type = 'Ng4_ExternalPartFrm'"/>
+    <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
+	<attribute name="object_class" value="'Form'"/>
+  </map> 
+  <map a="POM_stub" b="POM_stub">
+    <src-check if="@object_type = 'Ng4_ExtDesignFrm'"/>
     <attribute name="object_type" value="'A9_PartCustomerInfo'"/>
 	<attribute name="object_class" value="'Form'"/>
   </map> 
@@ -1956,6 +1966,94 @@
   <map a="NX0BookletItemRevision" b="NX0BookletItemRevision">
 	<attribute name="ng4NULL" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
+  </map>
+  <!-- Dataset references for Iteration 4 
+		Type=Dataset PS 7/24-->
+  <map a="Dataset" b="Dataset">
+    <src-check if="@ref_names = 'Ng4_CAL'"/>
+    <attribute name="ref_names" value="'YF5_CAL'"/>
+  </map>
+  <map a="Dataset" b="Dataset">
+    <src-check if="@ref_names = 'Ng4_Cals'"/>
+    <attribute name="ref_names" value="'YF5_Cals'"/>
+  </map>
+  <map a="Dataset" b="Dataset">
+    <src-check if="@ref_names = 'Ng4_QCheckerHTML'"/>
+    <attribute name="ref_names" value="'YF5_QCheckerHTML'"/>
+  </map>
+  <map a="Dataset" b="Dataset">
+    <src-check if="@ref_names = 'Ng4_MSWord_Reference'"/>
+    <attribute name="ref_names" value="'YF5_MSWord_Reference'"/>
+  </map>
+  <map a="Dataset" b="Dataset">
+    <src-check if="@ref_names = 'Ng4_TIFF_Reference'"/>
+    <attribute name="ref_names" value="'YF5_TIFF_Reference'"/>
+  </map>
+  
+  <!-- Type = YF5_Cal -->
+  <map a="YF5_Cal" b="YF5_Cal">
+    <src-check if="@ref_names = 'Ng4_CAL'"/>
+    <attribute name="ref_names" value="'YF5_CAL'"/>
+  </map>
+  <map a="YF5_Cal" b="YF5_Cal">
+    <src-check if="@ref_names = 'Ng4_Cals'"/>
+    <attribute name="ref_names" value="'YF5_Cals'"/>
+  </map>
+  <map a="YF5_Cal" b="YF5_Cal">
+    <src-check if="@ref_names = 'Ng4_QCheckerHTML'"/>
+    <attribute name="ref_names" value="'YF5_QCheckerHTML'"/>
+  </map>
+  <map a="YF5_Cal" b="YF5_Cal">
+    <src-check if="@ref_names = 'Ng4_MSWord_Reference'"/>
+    <attribute name="ref_names" value="'YF5_MSWord_Reference'"/>
+  </map>
+  <map a="YF5_Cal" b="YF5_Cal">
+    <src-check if="@ref_names = 'Ng4_TIFF_Reference'"/>
+    <attribute name="ref_names" value="'YF5_TIFF_Reference'"/>
+  </map>
+  
+  <!-- Type = YF5_Cals -->
+  <map a="YF5_Cals" b="YF5_Cals">
+    <src-check if="@ref_names = 'Ng4_CAL'"/>
+    <attribute name="ref_names" value="'YF5_CAL'"/>
+  </map>
+  <map a="YF5_Cals" b="YF5_Cals">
+    <src-check if="@ref_names = 'Ng4_Cals'"/>
+    <attribute name="ref_names" value="'YF5_Cals'"/>
+  </map>
+  <map a="YF5_Cals" b="YF5_Cals">
+    <src-check if="@ref_names = 'Ng4_QCheckerHTML'"/>
+    <attribute name="ref_names" value="'YF5_QCheckerHTML'"/>
+  </map>
+  <map a="YF5_Cals" b="YF5_Cals">
+    <src-check if="@ref_names = 'Ng4_MSWord_Reference'"/>
+    <attribute name="ref_names" value="'YF5_MSWord_Reference'"/>
+  </map>
+  <map a="YF5_Cals" b="YF5_Cals">
+    <src-check if="@ref_names = 'Ng4_TIFF_Reference'"/>
+    <attribute name="ref_names" value="'YF5_TIFF_Reference'"/>
+  </map>
+  
+  <!-- Type = YF5_QChecker -->
+  <map a="YF5_QChecker" b="YF5_QChecker">
+    <src-check if="@ref_names = 'Ng4_CAL'"/>
+    <attribute name="ref_names" value="'YF5_CAL'"/>
+  </map>
+  <map a="YF5_QChecker" b="YF5_QChecker">
+    <src-check if="@ref_names = 'Ng4_Cals'"/>
+    <attribute name="ref_names" value="'YF5_Cals'"/>
+  </map>
+  <map a="YF5_QChecker" b="YF5_QChecker">
+    <src-check if="@ref_names = 'Ng4_QCheckerHTML'"/>
+    <attribute name="ref_names" value="'YF5_QCheckerHTML'"/>
+  </map>
+  <map a="YF5_QChecker" b="YF5_QChecker">
+    <src-check if="@ref_names = 'Ng4_MSWord_Reference'"/>
+    <attribute name="ref_names" value="'YF5_MSWord_Reference'"/>
+  </map>
+  <map a="YF5_QChecker" b="YF5_QChecker">
+    <src-check if="@ref_names = 'Ng4_TIFF_Reference'"/>
+    <attribute name="ref_names" value="'YF5_TIFF_Reference'"/>
   </map>
     <script>
     XElement uom1 = _xml.Elements(_ns + "UnitOfMeasure").Where(x => x.Attribute("symbol").Value == "each").SingleOrDefault();
