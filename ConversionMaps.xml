@@ -1066,6 +1066,7 @@
 		<attribute name="ng4DCLaunchSiteRgn" value="null"/>
 		<attribute name="ng4PrgStatus" value="null"/>
 		<attribute name="ng4VehicleName" value="null"/>
+		<attribute name="ng4SDTLead" value="null"/>		
   </map>
   <!--Ng4_GenDocs-->
   <!-- Mapping Document not available for this type -->
@@ -1960,6 +1961,10 @@
   <map a="Form" b="Form">
     <src-check if="@object_type = 'Ng4_DesignRevisionMaster'"/>
     <attribute name="object_type" value="'A9_AutoDesignRevisionMaster'"/>
+  </map>
+  <map a="Form" b="Form">
+    <src-check if="@object_type = 'Ng4_DesignMaster'"/>
+    <attribute name="object_type" value="'A9_AutoDesignMaster'"/>
   </map>
   <map a="Form" b="Form">
     <src-check if="@object_type = 'Ng4_PartRevisionMaster'"/>
