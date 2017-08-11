@@ -1285,7 +1285,7 @@
    <map a="Ng4_Phase0" b="Ng4_Phase0">
       <join obj="Ng4_Phase0Revision" on="Ng4_Phase0@puid = Ng4_Phase0Revision@items_tag"/>
       <attribute name="Ng4_Phase0Revision@yf5_HyperionPlatformCode" value="Ng4_Phase0@ng4_startech"/>
-	  <attribute name="Ng4_Phase0Revision@yf5_OEMPlatformCode" value="Ng4_Phase0@ng4_pdwo"/>
+	  <attribute name="Ng4_Phase0Revision@ng4_PltName" value="Ng4_Phase0@ng4_pdwo"/>
    </map>
   
   <map a="Ng4_Phase0" b="A9_ProgramItem">
@@ -1320,6 +1320,15 @@
 	<!-- The following two attributes have been mapped from Item to Rev, but need to be explicitly removed from Item PS 7/3-->
 	<attribute name="ng4_startech" value="null"/>
 	<attribute name="ng4_pdwo" value="null"/>
+  </map>
+  <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
+    <attr-check if="@ng4_PltName != null">
+		<attr>
+			<a>ng4_PltName</a>
+			<b>yf5_OEMPlatformCode</b>
+		</attr>
+	</attr-check>
+	<attribute name="ng4_PltName" value="null"/>
   </map>
   
     <!-- Unmapped attributes of A9_ProgramItemRevMasterS-->
