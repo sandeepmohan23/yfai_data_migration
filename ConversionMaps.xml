@@ -574,7 +574,6 @@
 	<attribute name="ng4NULL" value="null"/>
 	<attribute name="ng4PE_PlDate" value="null"/>
 	<attribute name="ng4PL_PlDate" value="null"/>
-	<attribute name="ng4PltName" value="null"/>
 	<attribute name="ng4PostLaunch_ActlDate" value="null"/>
 	<attribute name="ng4PrgBusinessRisk" value="null"/>
 	<attribute name="ng4PrgBusinessRiskComm" value="null"/>
@@ -892,7 +891,6 @@
 		<attribute name="ng4opportunity_desc" value="null"/>
 		<attribute name="ng4PE_PlDate" value="null"/>
 		<attribute name="ng4PL_PlDate" value="null"/>
-		<attribute name="ng4PltName" value="null"/>
 		<attribute name="ng4PostLaunch_ActlDate" value="null"/>
 		<attribute name="ng4PrgBusinessRisk" value="null"/>
 		<attribute name="ng4PrgBusinessRiskComm" value="null"/>
