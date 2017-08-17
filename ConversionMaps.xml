@@ -644,7 +644,7 @@
     </attr>
     <attr>
       <a>ng4PltName</a>
-      <b>yf5_OEMPlatformCode</b>
+      <b>yf5_GlobalPlatformCode</b>
     </attr>
 	<attr>
       <a>ng4_PrmLifeYear</a>
