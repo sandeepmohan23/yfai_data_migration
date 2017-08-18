@@ -739,7 +739,8 @@
    <map a="Ng4_Program" b="Ng4_Program">
       <join obj="Ng4_ProgramRevision" on="Ng4_Program@puid = Ng4_ProgramRevision@items_tag"/>
       <attribute name="Ng4_ProgramRevision@yf5_Program_Comments" value="Ng4_Program@ng4_ProgDescription"/>
-	  <attribute name="Ng4_ProgramRevision@yf5_GlobalPlatformCode" value="Ng4_Program@ng4_oem_platform_name"/>
+	  <!-- Transforming to an intermediate attribute ng4_PltName on Ng4_ProgramRevision, which is then converted to yf5_GlobalPlatformCode for A9_ProgramItemRevision PS 8/18-->
+	  <attribute name="Ng4_ProgramRevision@ng4_PltName" value="Ng4_Program@ng4_oem_platform_name"/>
    </map>
   
   <!--Ng4_Program-->
