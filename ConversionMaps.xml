@@ -609,7 +609,6 @@
 	<attribute name="ng4RFQExpected_PlDate" value="null"/>
 	<attribute name="ng4RFWReceived_ActlDate" value="null"/>
 	<attribute name="ng4SOP" value="null"/>
-	<attribute name="ng4SOP_ActlDate" value="null"/>
 	<attribute name="ng4TBLEntry_ActlDate" value="null"/>
 	<attribute name="ng4TE_PlDate" value="null"/>
 	<attribute name="ng4TERM_PlDate" value="null"/>
@@ -642,9 +641,10 @@
       <a>ng4ModelCode</a>
       <b>yf5_OEM_Model_Code</b>
     </attr>
+	<!-- PS 8/21- ng4PltName mapped to yf5_OEMPlatformCode for Ng4_ProgramRevision, so, as a workaround, rename to a dummy attribute, then re-transform -->
     <attr>
       <a>ng4PltName</a>
-      <b>yf5_GlobalPlatformCode</b>
+      <b>ng4PltName_MasterPrg</b>
     </attr>
 	<attr>
       <a>ng4_PrmLifeYear</a>
@@ -921,7 +921,6 @@
 		<attribute name="ng4ProgramEEQU" value="null"/>
 		<attribute name="ng4ProgramEEQUComm" value="null"/>
 		<attribute name="ng4ProgramScore" value="null"/>
-		<attribute name="ng4PS_PlDate" value="null"/>
 		<attribute name="ng4PVPE_PlDate" value="null"/>
 		<attribute name="ng4PVRR_PlDate" value="null"/>
 		<attribute name="ng4QT_PlDate" value="null"/>
@@ -931,7 +930,6 @@
 		<attribute name="ng4RFQReceived_ActlDate" value="null"/>
 		<attribute name="ng4SOP_PlDate" value="null"/>
 		<attribute name="ng4SOP" value="null"/>
-		<attribute name="ng4SOP_ActlDate" value="null"/>
 		<attribute name="ng4TBLEntry_ActlDate" value="null"/>
 		<attribute name="ng4TE_PlDate" value="null"/>
 		<attribute name="ng4TERM_PlDate" value="null"/>
@@ -1058,7 +1056,7 @@
 				<b>a9_ProjectTargetedStart</b>
 			</attr>
 		</attr-check>
-		<attr-check if="@ng4PS_PlDate != null">
+		<attr-check if="@ng4SOP_ActlDate != null">
 			<attr>
 				<a>ng4SOP_ActlDate</a>
 				<b>a9_SOP</b>
@@ -1327,7 +1325,15 @@
 			<b>yf5_OEMPlatformCode</b>
 		</attr>
 	</attr-check>
+	<attr-check if="@ng4PltName_MasterPrg != null">
+		<attr>
+			<a>ng4PltName_MasterPrg</a>
+			<b>yf5_GlobalPlatformCode</b>
+		</attr>
+	</attr-check>
+	
 	<attribute name="ng4_PltName" value="null"/>
+	<attribute name="ng4PltName_MasterPrg" value="null"/>
   </map>
   
     <!-- Unmapped attributes of A9_ProgramItemRevMasterS-->
