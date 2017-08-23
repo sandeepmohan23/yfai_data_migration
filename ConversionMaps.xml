@@ -427,7 +427,6 @@
     <attribute name="ng4_LegacyModDate" value="null"/>
     <attribute name="ng4_LegacyState" value="null"/>
     <attribute name="ng4_life_cycle_state" value="null"/>
-    <attribute name="ng4_Material" value="null"/>
     <attribute name="ng4NULL" value="null"/>
     <attribute name="ng4_ProdConfig" value="null"/>
     <attribute name="ng4_isSelforMajorRev" value="null"/>
@@ -1034,6 +1033,12 @@
 		<attr-check if="@ng4PltName != null">
 			<attr>
 				<a>ng4PltName</a>
+				<b>yf5_OEMPlatformCode</b>
+			</attr>
+		</attr-check>
+		<attr-check if="@ng4PltName_MasterPrg != null">
+			<attr>
+				<a>ng4PltName_MasterPrg</a>
 				<b>yf5_OEMPlatformCode</b>
 			</attr>
 		</attr-check>
