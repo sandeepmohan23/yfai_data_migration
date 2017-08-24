@@ -643,7 +643,7 @@
 	<!-- PS 8/21- ng4PltName mapped to yf5_OEMPlatformCode for Ng4_ProgramRevision, so, as a workaround, rename to a dummy attribute, then re-transform -->
     <attr>
       <a>ng4PltName</a>
-      <b>ng4PltName_MasterPrg</b>
+      <b>yf5_GlobalPlatformCode</b>
     </attr>
 	<attr>
       <a>ng4_PrmLifeYear</a>
@@ -1036,12 +1036,6 @@
 				<b>yf5_OEMPlatformCode</b>
 			</attr>
 		</attr-check>
-		<attr-check if="@ng4PltName_MasterPrg != null">
-			<attr>
-				<a>ng4PltName_MasterPrg</a>
-				<b>yf5_OEMPlatformCode</b>
-			</attr>
-		</attr-check>
 		<attr-check if="@ng4PrgCategory != null">
 			<attr>
 				<a>ng4PrgCategory</a>
@@ -1082,6 +1076,7 @@
 		<attribute name="ng4PrgStatus" value="null"/>
 		<attribute name="ng4VehicleName" value="null"/>
 		<attribute name="ng4SDTLead" value="null"/>		
+		<attribute name="ng4PltName" value="null"/>		
   </map>
   <!--Ng4_GenDocs-->
   <!-- Mapping Document not available for this type -->
@@ -1327,18 +1322,11 @@
     <attr-check if="@ng4_PltName != null">
 		<attr>
 			<a>ng4_PltName</a>
-			<b>yf5_OEMPlatformCode</b>
-		</attr>
-	</attr-check>
-	<attr-check if="@ng4PltName_MasterPrg != null">
-		<attr>
-			<a>ng4PltName_MasterPrg</a>
 			<b>yf5_GlobalPlatformCode</b>
 		</attr>
 	</attr-check>
 	
 	<attribute name="ng4_PltName" value="null"/>
-	<attribute name="ng4PltName_MasterPrg" value="null"/>
   </map>
   
     <!-- Unmapped attributes of A9_ProgramItemRevMasterS-->
