@@ -58,6 +58,13 @@
   </map>
 
 	<script>
+		var allPartEls = from el in _xml.Elements(_ns + "Ng4_PartRevision")
+			select el;
+		foreach(var el in allPartEls)
+		{
+			el.SetAttrValue("ng4_CPP_STD", "Engineering Part");
+		}
+	
 		XElement group1 = _xml.Elements(_ns + "Group").Where(x => x.Attribute("full_name").Value == "Confidential_Interiors_CPP.YFAI").SingleOrDefault();
 
 		if (group1 != null)
