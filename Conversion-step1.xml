@@ -1,0 +1,94 @@
+<maps>
+  <header>
+    <model>
+      <class item="Ng4_MasterPrg" itemrevision="Ng4_MasterPrgRevision" masterform="Ng4_MasterPrgMaster|Ng4_MasterPrgMasterS" masterform-rev="Ng4_MasterPrgRevisionMaster|Ng4_MasterPrgRevMasterS"/>
+      <class item="Ng4_EngDoc" itemrevision="Ng4_EngDocRevision" masterform="Ng4_EngDocMaster|Ng4_EngDocMasterS" masterform-rev="Ng4_EngDocRevisionMaster|Ng4_EngDocRevMasterS"/>
+      <class item="Ng4_Ext_Dsgn" itemrevision="Ng4_Ext_DsgnRevision" masterform="Ng4_Ext_DsgnMaster|Ng4_Ext_DsgnMasterS" masterform-rev="Ng4_Ext_DsgnRevisionMaster|Ng4_Ext_DsgnRevMasterS"/>
+      <class item="Ng4_FinanceDoc" itemrevision="Ng4_FinanceDocRevision" masterform="Ng4_FinanceDocMaster|Ng4_FinanceDocMasterS" masterform-rev="Ng4_FinanceDocRevisionMaster|Ng4_FinanceDocRevMaster5"/>
+      <class item="Ng4_ManfgDoc" itemrevision="Ng4_ManfgDocRevision" masterform="Ng4_ManfgDocMaster|Ng4_ManfgDocMasterS" masterform-rev="Ng4_ManfgDocRevisionMaster|Ng4_ManfgDocRevMasterS"/>
+      <class item="Ng4_Non_ERP_Dsgn" itemrevision="Ng4_Non_ERP_DsgnRevision" masterform="Ng4_Non_ERP_DsgnMaster|Ng4_Non_ERP_DsgnMasterS" masterform-rev="Ng4_Non_ERP_DsgnRevisionMaster|Ng4_Non_ERP_DsgnRevMasterS"/>
+      <class item="Ng4_Part" itemrevision="Ng4_PartRevision" masterform="Ng4_PartMaster|Ng4_PartMasterS" masterform-rev="Ng4_PartRevisionMaster|Ng4_PartRevMasterS"/>
+      <class item="Ng4_Phase0" itemrevision="Ng4_Phase0Revision" masterform="Ng4_Phase0Master|Ng4_Phase0MasterS" masterform-rev="Ng4_Phase0RevisionMaster|Ng4_Phase0RevMasterS"/>
+      <class item="Ng4_Phase0Doc" itemrevision="Ng4_Phase0DocRevision" masterform="Ng4_Phase0DocMaster|Ng4_Phase0DocMasterS" masterform-rev="Ng4_Phase0DocRevisionMaster|Ng4_Phase0DocRevMasterS"/>
+      <class item="Ng4_ProgDoc" itemrevision="Ng4_ProgDocRevision" masterform="Ng4_ProgDocMaster|Ng4_ProgDocMasterS" masterform-rev="Ng4_ProgDocRevisionMaster|Ng4_ProgDocRevMasterS"/>
+      <class item="Ng4_Program" itemrevision="Ng4_ProgramRevision" masterform="Ng4_ProgramMaster|Ng4_ProgramMasterS" masterform-rev="Ng4_ProgramRevisionMaster|Ng4_ProgramRevMasterS"/>
+      <class item="Ng4_PurchDoc" itemrevision="Ng4_PurchDocRevision" masterform="Ng4_PurchDocMaster|Ng4_PurchDocMasterS" masterform-rev="Ng4_PurchDocRevisionMaster|Ng4_PurchDocRevMasterS"/>
+      <class item="Ng4_QualDoc" itemrevision="Ng4_QualDocRevision" masterform="Ng4_QualDocMaster|Ng4_QualDocMasterS" masterform-rev="Ng4_QualDocRevisionMaster|Ng4_QualDocRevMasterS"/>
+      <class item="Ng4_SalesDoc" itemrevision="Ng4_SalesDocRevision" masterform="Ng4_SalesDocMaster|Ng4_SalesDocMasterS" masterform-rev="Ng4_SalesDocRevisionMaster|Ng4_SalesDocRevMasterS"/>
+      <class item="A9_EngDoc" itemrevision="A9_EngDocRevision" masterform="A9_EngDocMaster|A9_EngDocMasterS" masterform-rev="A9_EngDocRevisionMaster|A9_EngDocRevMasterS"/>
+      <class item="A9_NonProduct" itemrevision="A9_NonProductRevision" masterform="A9_NonProductMaster|A9_NonProductMasterS" masterform-rev="A9_NonProductRevisionMaster|A9_NonProductRevMasterS"/>
+      <class item="A9_ManDoc" itemrevision="A9_ManDocRevision" masterform="A9_ManDocMaster|A9_ManDocMasterS" masterform-rev="A9_ManDocRevisionMaster|A9_ManDocRevMasterS"/>
+      <class item="A9_autoproduct" itemrevision="A9_autoproductRevision" masterform="A9_autoproductMaster|A9_autoproductMasterS" masterform-rev="A9_autoproductRevisionMaster|A9_autoproductRevMasterS"/>
+      <class item="YF5_IndDesDoc" itemrevision="YF5_IndDesDocRevision" masterform="YF5_IndDesDocMaster|YF5_IndDesDocMasterS" masterform-rev="YF5_IndDesDocRevisionMaster|YF5_IndDesDocRevMasterS"/>
+      <class item="A9_PurchDoc" itemrevision="A9_PurchDocRevision" masterform="A9_PurchDocMaster|A9_PurchDocMasterS" masterform-rev="A9_PurchDocRevisionMaster|A9_PurchDocRevMasterS"/>
+      <class item="A9_QuaDoc" itemrevision="A9_QuaDocRevision" masterform="A9_QuaDocMaster|A9_QuaDocMasterS" masterform-rev="A9_QuaDocRevisionMaster|A9_QuaDocRevMasterS"/>
+      <class item="YF5_SalesFinDoc" itemrevision="YF5_SalesFinDocRevision" masterform="YF5_SalesFinDocMaster|YF5_SalesFinDocMasterS" masterform-rev="YF5_SalesFinDocRevisionMaster|YF5_SalesFinDocRevMasterS"/>
+      <class item="A9_ProgramItem" itemrevision="A9_ProgramItemRevision" masterform="A9_ProgramItemMaster|A9_ProgramItemMasterS" masterform-rev="A9_ProgramItemRevisionMaster|A9_ProgramItemRevMasterS"/>
+      <class item="Ng4_Design" itemrevision="Ng4_DesignRevision" masterform="Ng4_DesignMaster|Ng4_DesignMasterS" masterform-rev="Ng4_DesignRevisionMaster|Ng4_DesignRevMasterS"/>
+      <class item="A9_AutoDesign" itemrevision="A9_AutoDesignRevision" masterform="A9_AutoDesignMaster|A9_AutoDesignMasterS" masterform-rev="A9_AutoDesignRevisionMaster|A9_AutoDesignRevMasterS"/>
+      <class item="Ng4_MtlMaster" itemrevision="Ng4_MtlMasterRevision" masterform="Ng4_MtlMasterMaster|Ng4_MtlMasterMasterS" masterform-rev="Ng4_MtlMasterRevisionMaster|Ng4_MtlMasterRevMasterS"/>      
+      <class item="Ng4_GeneralDoc" itemrevision="Ng4_GeneralDocRevision" masterform="Ng4_GeneralDocMaster|Ng4_GeneralDocMasterS" masterform-rev="Ng4_GeneralDocRevisionMaster|Ng4_GeneralDocRevMasterS"/>
+      <class item="A9_autodoc" itemrevision="A9_autodocRevision" masterform="A9_autodocMaster|A9_autodocMasterS" masterform-rev="A9_autodocRevisionMaster|A9_autodocRevMasterS"/>
+      <class item="Ng4_PlantDoc" itemrevision="Ng4_PlantDocRevision" masterform="Ng4_PlantDocMaster|Ng4_PlantDocMasterS" masterform-rev="Ng4_PlantDocRevisionMaster|Ng4_PlantDocRevMasterS"/>
+      <class item="YF5_MatrlsDoc" itemrevision="YF5_MatrlsDocRevision" masterform="YF5_MatrlsDocMaster|YF5_MatrlsDocMasterS" masterform-rev="YF5_MatrlsDocRevisionMaster|YF5_MatrlsDocRevMasterS"/>
+      <class item="Ng4_PWP" itemrevision="Ng4_PWPRevision" masterform="Ng4_PWPMaster|Ng4_PWPMasterS" masterform-rev="Ng4_PWPRevisionMaster|Ng4_PWPRevMasterS"/>
+      <class item="Ng4_CR" itemrevision="Ng4_CRRevision" masterform="Ng4_CRMaster|Ng4_CRMasterS" masterform-rev="Ng4_CRRevisionMaster|Ng4_CRRevMasterS"/>
+      <class item="A9_AutoCR" itemrevision="A9_AutoCRRevision" masterform="A9_AutoCRMaster|A9_AutoCRMasterS" masterform-rev="A9_AutoCRRevisionMaster|A9_AutoCRRevMasterS"/>
+      <class item="Ng4_ChangeNotice" itemrevision="Ng4_ChangeNoticeRevision" masterform="Ng4_ChangeNoticeMaster|Ng4_ChangeNoticeMasterS" masterform-rev="Ng4_ChangeNoticeRevisionMaster|Ng4_ChangeNoticeRevMasterS"/>
+      <class item="A9_AutoCN" itemrevision="A9_AutoCNRevision" masterform="A9_AutoCNMaster|A9_AutoCNMasterS" masterform-rev="A9_AutoCNRevisionMaster|A9_AutoCNRevMasterS"/>
+      <class item="Ng4_DR" itemrevision="Ng4_DRRevision" masterform="Ng4_DRMaster|Ng4_DRMasterS" masterform-rev="Ng4_DRRevisionMaster|Ng4_DRRevMasterS"/>
+      <class item="A9_AutoDR" itemrevision="A9_AutoDRRevision" masterform="A9_AutoDRMaster|A9_AutoDRMasterS" masterform-rev="A9_AutoDRRevisionMaster|A9_AutoDRRevMasterS"/>
+      <class item="Ng4_EPR" itemrevision="Ng4_EPRRevision" masterform="Ng4_EPRMaster|Ng4_EPRMasterS" masterform-rev="Ng4_EPRRevisionMaster|Ng4_EPRRevMasterS"/>
+      <class item="Ng4_PR" itemrevision="Ng4_PRRevision" masterform="Ng4_PRMaster|Ng4_PRMasterS" masterform-rev="Ng4_PRRevisionMaster|Ng4_PRRevMasterS"/>
+      <class item="A9_AutoPR" itemrevision="A9_AutoPRRevision" masterform="A9_AutoPRMaster|A9_AutoPRMasterS" masterform-rev="A9_AutoPRRevisionMaster|A9_AutoPRRevMasterS"/>
+      <class item="Ng4_DA" itemrevision="Ng4_DARevision" masterform="Ng4_DAMaster|Ng4_DAMasterS" masterform-rev="Ng4_DARevisionMaster|Ng4_DARevMasterS"/>
+      <class item="YF5_DevRqst" itemrevision="YF5_DevRqstRevision" masterform="YF5_DevRqstMaster|YF5_DevRqstMasterS" masterform-rev="YF5_DevRqstRevisionMaster|YF5_DevRqstRevMasterS"/>
+      <class item="Ng4_GenDocs" itemrevision="Ng4_GenDocsRevision" masterform="Ng4_GenDocsMaster|Ng4_GenDocsMasterS" masterform-rev="Ng4_GenDocsRevisionMaster|Ng4_GenDocsRevMasterS"/>
+      <class item="A9_Program" itemrevision="A9_ProgramRevision" masterform="A9_ProgramMaster|A9_ProgramMasterS" masterform-rev="A9_ProgramRevisionMaster|A9_ProgramRevMasterS"/>
+      <class item="Ng4_ProbReport" itemrevision="Ng4_ProbReportRevision" masterform="Ng4_ProbReportMaster|Ng4_ProbReportMasterS" masterform-rev="Ng4_ProbReportRevisionMaster|Ng4_ProbReportRevMasterS"/>
+      <class item="Ng4_ROC" itemrevision="Ng4_ROCRevision" masterform="Ng4_ROCMaster|Ng4_ROCMasterS" masterform-rev="Ng4_ROCRevisionMaster|Ng4_ROCRevMasterS"/>
+	  <class item="Ng4_XImpact" itemrevision="Ng4_XImpactRevision" masterform="Ng4_XImpactMaster|Ng4_XImpactMasterS" masterform-rev="Ng4_XImpactRevisionMaster|Ng4_XImpactRevMasterS"/>
+	  <class item="A9_XImpact" itemrevision="A9_XImpactRevision" masterform="A9_XImpactMaster|A9_XImpactMasterS" masterform-rev="A9_XImpactRevisionMaster|A9_XImpactRevMasterS"/>
+	  <class item="Item" itemrevision="ItemRevision" masterform="ItemMaster|ItemMasterS" masterform-rev="ItemRevisionMaster|ItemRevMasterS"/>
+	</model>
+
+  </header>
+
+  <map a="Ng4_PartRevision" b="Ng4_PartRevision">
+  </map>
+
+	<script>
+		XElement group1 = _xml.Elements(_ns + "Group").Where(x => x.Attribute("full_name").Value == "Confidential_Interiors_CPP.YFAI").SingleOrDefault();
+
+		if (group1 != null)
+		{
+			string id = group1.GetAttrValue("elemId");
+			var group1els = from el in _xml.Elements(_ns + "Ng4_PartRevision").Where(x => x.Attribute("owning_group") != null)
+			where el.Attribute("owning_group").Value == ("#" + id)
+			select el;
+
+			foreach(var el in group1els)
+			{
+				el.SetAttrValue("ng4_CPP_STD", "Standard Part");
+			}
+
+			group1.Remove();
+		}
+		XElement group2 = _xml.Elements(_ns + "Group").Where(x => x.Attribute("full_name").Value == "Fasteners.YFAI").SingleOrDefault();
+
+		if (group2 != null)
+		{
+			string id = group2.GetAttrValue("elemId");
+			var group2els = from el in _xml.Elements(_ns + "Ng4_PartRevision").Where(x => x.Attribute("owning_group") != null)
+			where el.Attribute("owning_group").Value == ("#" + id)
+			select el;
+
+			foreach(var el in group2els)
+			{
+				el.SetAttrValue("ng4_CPP_STD", "Standard Part");
+			}
+
+			group2.Remove();
+		}
+	</script>
+	</maps>
