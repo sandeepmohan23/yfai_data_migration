@@ -64,13 +64,13 @@
 		if (group1 != null)
 		{
 			string id = group1.GetAttrValue("elemId");
-			var group1els = from el in _xml.Elements(_ns + "Ng4_Part").Where(x => x.Attribute("owning_group") != null)
+			var group1els = from el in _xml.Elements(_ns + "Ng4_PartRevision").Where(x => x.Attribute("owning_group") != null)
 			where el.Attribute("owning_group").Value == ("#" + id)
 			select el;
 
 			foreach(var el in group1els)
 			{
-				el.SetAttrValue("a9_PartType", "Standard Part");
+				el.SetAttrValue("ng4_CPP_STD", "Standard Part");
 			}
 
 			group1.Remove();
@@ -80,13 +80,13 @@
 		if (group2 != null)
 		{
 			string id = group2.GetAttrValue("elemId");
-			var group2els = from el in _xml.Elements(_ns + "Ng4_Part").Where(x => x.Attribute("owning_group") != null)
+			var group2els = from el in _xml.Elements(_ns + "Ng4_PartRevision").Where(x => x.Attribute("owning_group") != null)
 			where el.Attribute("owning_group").Value == ("#" + id)
 			select el;
 
 			foreach(var el in group2els)
 			{
-				el.SetAttrValue("a9_PartType", "Standard Part");
+				el.SetAttrValue("ng4_CPP_STD", "Standard Part");
 			}
 
 			group2.Remove();
