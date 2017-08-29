@@ -86,7 +86,7 @@
 			where el.Attribute("owning_group").Value == ("#" + id)
 			select el;
 
-			foreach(var el in group1els)
+			foreach(var el in partWithStdGrps)
 			{
 				el.SetAttrValue("ng4_CPP_STD", "Standard Part");
 			}
