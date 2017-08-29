@@ -1163,6 +1163,8 @@
 	<attribute name="ng4NULL" value="null"/>
 	<attribute name="ng4_job_desc" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
+	<!-- Set default value - PS 8/29 -->
+	<attribute name="a9_DocumentType" value="'General'"/>
   </map>
 
   <!--Ng4_PlantDoc-->
@@ -1289,6 +1291,11 @@
   	<attribute name="ng4_oem" value="null"/>
 	<attribute name="ng4_newDesign_mstr" value="null"/>
 	<attribute name="ng4_newPart_mstr" value="null"/>
+	<!-- Default values for Ng4_Phase0 objects 8/29 PS -->
+	<attr-check if="@ng4_customer == null">
+		<attribute name="ng4_customer" value="'YFAI - Internal'"/>
+	</attr-check>
+	
 	<attr>
 		<a>ng4_customer</a>
 		<b>yf5_OEMName</b>
@@ -1307,6 +1314,9 @@
 		<a>ng4_property</a>
 		<b>yf5_OEM_Model_Name</b>
 	</attr>
+	<!-- Default values for Ng4_Phase0 objects 8/29 PS -->
+	<attribute name="yf5_MfgRegion" value="'NA'"/>
+	<attribute name="yf5_ProductGroup" value="'Advanced Development Program - ADP'"/>
 	
   </map>
   <!-- Unmapped attributes of A9_ProgramItem-->
@@ -1317,6 +1327,7 @@
 	<!-- The following two attributes have been mapped from Item to Rev, but need to be explicitly removed from Item PS 7/3-->
 	<attribute name="ng4_startech" value="null"/>
 	<attribute name="ng4_pdwo" value="null"/>
+	
   </map>
   <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
     <attr-check if="@ng4_PltName != null">
