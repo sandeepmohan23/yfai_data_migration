@@ -50,7 +50,7 @@
 	  <class item="Ng4_XImpact" itemrevision="Ng4_XImpactRevision" masterform="Ng4_XImpactMaster|Ng4_XImpactMasterS" masterform-rev="Ng4_XImpactRevisionMaster|Ng4_XImpactRevMasterS"/>
 	  <class item="A9_XImpact" itemrevision="A9_XImpactRevision" masterform="A9_XImpactMaster|A9_XImpactMasterS" masterform-rev="A9_XImpactRevisionMaster|A9_XImpactRevMasterS"/>
 	  <class item="Item" itemrevision="ItemRevision" masterform="ItemMaster|ItemMasterS" masterform-rev="ItemRevisionMaster|ItemRevMasterS"/>
-    </model>
+	</model>
 
     <!--Release status values-->
     <lookup name="ChangeReleseStatus" file="rel_stat.csv"/>
@@ -58,6 +58,40 @@
     <!--Owning User values-->
     <lookup name="ChangeOwningUser" file="owning_user.csv"/>
 
+	<script>
+		XElement group1 = _xml.Elements(_ns + "Group").Where(x => x.Attribute("full_name").Value == "Confidential_Interiors_CPP.YFAI").SingleOrDefault();
+
+		if (group1 != null)
+		{
+			string id = group1.GetAttrValue("elemId");
+			var group1els = from el in _xml.Elements(_ns + "Ng4_Part").Where(x => x.Attribute("owning_group") != null)
+			where el.Attribute("owning_group").Value == ("#" + id)
+			select el;
+
+			foreach(var el in group1els)
+			{
+				el.SetAttrValue("a9_PartType", "Standard Part");
+			}
+
+			group1.Remove();
+		}
+		XElement group2 = _xml.Elements(_ns + "Group").Where(x => x.Attribute("full_name").Value == "Fasteners.YFAI").SingleOrDefault();
+
+		if (group2 != null)
+		{
+			string id = group2.GetAttrValue("elemId");
+			var group2els = from el in _xml.Elements(_ns + "Ng4_Part").Where(x => x.Attribute("owning_group") != null)
+			where el.Attribute("owning_group").Value == ("#" + id)
+			select el;
+
+			foreach(var el in group2els)
+			{
+				el.SetAttrValue("a9_PartType", "Standard Part");
+			}
+
+			group2.Remove();
+		}
+	</script>
     <!--Owning Group values-->
     <lookup name="ChangeOwningGroup" file="owning_group.csv"/>
 
@@ -1916,6 +1950,8 @@
   <map a="A9_ProgramItemRevision" b="A9_ProgramItemRevision">
     <attribute name="ng4NULL" value="null"/>
 	<attribute name="ng4_Job_Description" value="null"/>
+	<!-- Set a9_IsActive to Yes - PS 8/29 -->
+	<attribute name="a9_IsActive" value="'Yes'"/>
   </map>
   
   <!--PSOccurrence-->
