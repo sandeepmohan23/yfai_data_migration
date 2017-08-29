@@ -56,6 +56,16 @@
 
   <map a="Ng4_PartRevision" b="Ng4_PartRevision">
   </map>
+  <!-- Set standard parts for the following groups
+	Confidential_Interiors_CPP.YFAI
+	Fasteners.YFAI
+	Raw_Matls_Plastic_Resin&Concent.YFAI
+	Raw_Matls_Plastic_Resin&amp;Concent.JCI
+	Fasteners.JCI
+	Raw_Materials_Steel.JCI
+	Fasteners.FJC
+	Raw_Matls_Plastic_Resin&Concent.JCI
+-->
 
 	<script>
 		var allPartEls = from el in _xml.Elements(_ns + "Ng4_PartRevision")
@@ -64,13 +74,15 @@
 		{
 			el.SetAttrValue("ng4_CPP_STD", "Engineering Part");
 		}
-	
-		XElement group1 = _xml.Elements(_ns + "Group").Where(x => x.Attribute("full_name").Value == "Confidential_Interiors_CPP.YFAI").SingleOrDefault();
-
-		if (group1 != null)
+		
+		var stdGroups = new string[] {"Confidential_Interiors_CPP.YFAI", "Fasteners.YFAI", "Raw_Matls_Plastic_Resin&amp;Concent.YFAI", "Raw_Matls_Plastic_Resin&amp;Concent.JCI", "Fasteners.JCI", "Raw_Materials_Steel.JCI", "Fasteners.FJC", "Raw_Matls_Plastic_Resin&amp;Concent.JCI"};
+		
+		var groupEls = from groupEl in _xml.Elements(_ns + "Group").Where(x => stdGroups.Contains(x.Attribute("full_name").Value))
+		select groupEl;
+		foreach (var groupEl in groupEls)
 		{
-			string id = group1.GetAttrValue("elemId");
-			var group1els = from el in _xml.Elements(_ns + "Ng4_PartRevision").Where(x => x.Attribute("owning_group") != null)
+			string id = groupEl.GetAttrValue("elemId");
+			var partWithStdGrps = from el in _xml.Elements(_ns + "Ng4_PartRevision").Where(x => x.Attribute("owning_group") != null)
 			where el.Attribute("owning_group").Value == ("#" + id)
 			select el;
 
@@ -78,24 +90,6 @@
 			{
 				el.SetAttrValue("ng4_CPP_STD", "Standard Part");
 			}
-
-			group1.Remove();
-		}
-		XElement group2 = _xml.Elements(_ns + "Group").Where(x => x.Attribute("full_name").Value == "Fasteners.YFAI").SingleOrDefault();
-
-		if (group2 != null)
-		{
-			string id = group2.GetAttrValue("elemId");
-			var group2els = from el in _xml.Elements(_ns + "Ng4_PartRevision").Where(x => x.Attribute("owning_group") != null)
-			where el.Attribute("owning_group").Value == ("#" + id)
-			select el;
-
-			foreach(var el in group2els)
-			{
-				el.SetAttrValue("ng4_CPP_STD", "Standard Part");
-			}
-
-			group2.Remove();
 		}
 	</script>
 	</maps>
