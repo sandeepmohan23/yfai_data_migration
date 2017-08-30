@@ -471,6 +471,11 @@
       <a>ng4_CPP_STD</a>
       <b>a9_PartType</b>
     </attr>
+	<!-- Test - setting part type based on group names - PS 8/30 -->
+	<attribute name="a9_PartType" value="'Engineering Part'"/>
+	<attr-check if="@owning_group = 'Confidential_Interiors_CPP' or @owning_group = 'Fasteners' or @owning_group = 'Raw_Matls_Plastic_Resin&amp;Concent' or @owning_group = 'Raw_Materials_Steel'">
+		<attribute name="a9_PartType" value="'Standard Part'"/>
+	</attr-check>
     <attr>
       <a>ng4_IsDesignRequired</a>
       <b>yf5_CADRequired</b>
