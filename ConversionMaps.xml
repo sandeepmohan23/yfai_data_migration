@@ -646,9 +646,10 @@
       <b>yf5_OEM_Model_Code</b>
     </attr>
 	<!-- PS 8/21- ng4PltName mapped to yf5_OEMPlatformCode for Ng4_ProgramRevision, so, as a workaround, rename to a dummy attribute, then re-transform -->
+	<!-- Changed from yf5_GlobalPlatformCode to yf5_HyperionPlatformCode 8/31 PS -->
     <attr>
       <a>ng4PltName</a>
-      <b>yf5_GlobalPlatformCode</b>
+      <b>yf5_HyperionPlatformCode</b>
     </attr>
 	<attr>
       <a>ng4_PrmLifeYear</a>
@@ -720,28 +721,28 @@
     </attr>
     <attr>
       <a>ng4SDTLead</a>
-      <b>a9_ProgramLeader</b>
+      <b>a9p_ProjectManager</b>
     </attr>
-	<attribute name="a9_ProgramLeader" value="Lookup('EmailUserIdMap',@a9_ProgramLeader)"/>
+	<attribute name="a9p_ProjectManager" value="Lookup('EmailUserIdMap',@a9p_ProjectManager)"/>
 	
-	<!-- Commented out per the latest mapping sheet. This should be set to null - PS 6/4/17 
+	<!-- Commented out per the latest mapping sheet. This should be set to null - PS 6/4/17 -->
+	<!-- Uncommented per the latest mapping sheet 8/31 PS -->
     <attr>
       <a>ng4SOP_PlDate</a>
       <b>a9_SOP</b>
     </attr>
-	-->
+	
 	<attr>
       <a>ng4GateEvent</a>
       <b>a9_ProgramGate</b>
     </attr>
 	<attribute name="ng4OEMName" value="null"/>
 	<attribute name="ng4LaunchSite" value="null"/>
-	<attribute name="ng4SOP_PlDate" value="null"/>
   </map>
 
 <!-- Item to Rev mapping for Ng4_Program -->
    <map a="Ng4_Program" b="Ng4_Program">
-      <join obj="Ng4_ProgramRevision" on="Ng4_Program@puid = Ng4_ProgramRevision@items_tag"/>
+	  <join obj="Ng4_ProgramRevision" on="Ng4_Program@puid = Ng4_ProgramRevision@items_tag"/>
       <attribute name="Ng4_ProgramRevision@yf5_Program_Comments" value="Ng4_Program@ng4_ProgDescription"/>
 	  <!-- Transforming to an intermediate attribute ng4_PltName on Ng4_ProgramRevision, which is then converted to yf5_GlobalPlatformCode for A9_ProgramItemRevision PS 8/18-->
 	  <attribute name="Ng4_ProgramRevision@ng4_PltName" value="Ng4_Program@ng4_oem_platform_name"/>
@@ -876,7 +877,6 @@
 		<attribute name="ng4DVRelease_ActlDate" value="null"/>
 		<attribute name="ng4DVRR_PlDate" value="null"/>
 		<attribute name="ng4EndItemVarn" value="null"/>
-		<attribute name="ng4EOP_PlDate" value="null"/>
 		<attribute name="ng4FinalScore" value="null"/>
 		<attribute name="ng4FinProdRel_ActlDate" value="null"/>
 		<attribute name="ng4FPR_PlDate" value="null"/>
@@ -892,7 +892,6 @@
 		<attribute name="ng4GPSOpportunityID" value="null"/>
 		<attribute name="ng4KissComment" value="null"/>
 		<attribute name="ng4NULL" value="null"/>
-		<attribute name="ng4OEMName" value="null"/>
 		<attribute name="ng4opportunity_desc" value="null"/>
 		<attribute name="ng4PE_PlDate" value="null"/>
 		<attribute name="ng4PL_PlDate" value="null"/>
@@ -915,7 +914,6 @@
 		<attribute name="ng4PrgType" value="null"/>
 		<attribute name="ng4ProdArea" value="null"/>
 		<attribute name="ng4ProdFacility" value="null"/>
-		<attribute name="ng4ProdLine" value="null"/>
 		<attribute name="ng4Product" value="null"/>
 		<attribute name="ng4ProductGroup" value="null"/>
 		<attribute name="ng4ProductGroupRgn" value="null"/>
@@ -932,7 +930,6 @@
 		<attribute name="ng4QuoteDue_PlDate" value="null"/>
 		<attribute name="ng4RFQExpected_PlDate" value="null"/>
 		<attribute name="ng4RFQReceived_ActlDate" value="null"/>
-		<attribute name="ng4SOP_PlDate" value="null"/>
 		<attribute name="ng4SOP" value="null"/>
 		<attribute name="ng4TBLEntry_ActlDate" value="null"/>
 		<attribute name="ng4TE_PlDate" value="null"/>
@@ -945,12 +942,32 @@
 				<attr>
 			<a>ng4LaunchSite</a>
 			<b>yf5_MfgRegion</b>
-		</attr>
-		<attr>
-			<a>ng4DCLaunchSiteRgn</a>
-			<b>yf5_LeadMfgCountry</b>
-		</attr>
--->
+		</attr> -->
+		<!-- Uncommented per latest mapping sheet 8/31 PS -->
+		<attr-check if="@ng4DCLaunchSiteRgn != null">
+			<attr>
+				<a>ng4DCLaunchSiteRgn</a>
+				<b>yf5_LeadMfgCountry</b>
+			</attr>
+		</attr-check>
+		<attr-check if="@ng4EOP_PlDate != null">
+			<attr>
+				<a>ng4EOP_PlDate</a>
+				<b>a9_ProjectTargetedEnd</b>
+			</attr>
+		</attr-check>
+		<attr-check if="@ng4ProdLine != null">
+			<attr>
+				<a>ng4ProdLine</a>
+				<b>a9_ProductGroup</b>
+			</attr>
+		</attr-check>
+		<attr-check if="@ng4SOP_PlDate != null">
+			<attr>
+				<a>ng4SOP_PlDate</a>
+				<b>a9_SOP</b>
+			</attr>
+		</attr-check>
 		<!-- Issue #41 PS 7/26 -->
 		<attr-check if="@ng4SDTLead != null">
 			<attr>
@@ -963,6 +980,10 @@
 		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')">
 			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[0]"/>
 			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[1]"/>
+		</attr-check>
+		<attr-check  if="@ng4OEMName != null and @ng4OEMName.Contains('-')">
+			<attribute name="yf5_OEMName" value="@ng4OEMName.Split('-')[0]"/>
+			<attribute name="yf5_OEMSubGroup" value="@ng4OEMName.Split('-')[1]"/>
 		</attr-check>
 		<attr>
 			<a>ng4_EstCompletion</a>
@@ -1035,10 +1056,11 @@
 				<b>yf5_OEM_Model_Code</b>
 			</attr>
 		</attr-check>
+		<!-- Per Srini's emails, map ng4PltName to yf5_HyperionPlatformCode PS 8/30 -->
 		<attr-check if="@ng4PltName != null">
 			<attr>
 				<a>ng4PltName</a>
-				<b>yf5_OEMPlatformCode</b>
+				<b>yf5_HyperionPlatformCode</b>
 			</attr>
 		</attr-check>
 		<attr-check if="@ng4PrgCategory != null">
@@ -1081,7 +1103,10 @@
 		<attribute name="ng4PrgStatus" value="null"/>
 		<attribute name="ng4VehicleName" value="null"/>
 		<attribute name="ng4SDTLead" value="null"/>		
-		<attribute name="ng4PltName" value="null"/>		
+		<attribute name="ng4PltName" value="null"/>
+		<attribute name="ng4OEMName" value="null"/>
+		<attribute name="ng4ProdLine" value="null"/>
+		<attribute name="ng4SOP_PlDate" value="null"/>
   </map>
   <!--Ng4_GenDocs-->
   <!-- Mapping Document not available for this type -->
@@ -1265,10 +1290,11 @@
 		<b>yf5_CustomerBillTo</b>
 	</attr>
 	<!-- Fix for Issue# 11 - a+b PS 7/8-->
+	<!-- Changed from yf5_GlobalPlatformCode to yf5_HyperionPlatformCode 8/31 PS -->
 	<attr-check if="@ng4Platform != null"> 
 		<attr>
 			<a>ng4Platform</a>
-			<b>yf5_GlobalPlatformCode</b>
+			<b>yf5_HyperionPlatformCode</b>
 		</attr>
 	</attr-check>
 	<!-- Fix for Issue#28 - PS 7/7 -->
