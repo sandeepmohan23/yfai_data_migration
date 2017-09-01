@@ -471,11 +471,13 @@
       <a>ng4_CPP_STD</a>
       <b>a9_PartType</b>
     </attr>
-	<!-- Test - setting part type based on group names - PS 8/30 -->
+	<!-- Test - setting part type based on group names - PS 8/30 
+	This did not work 9/1 PS 
 	<attribute name="a9_PartType" value="'Engineering Part'"/>
 	<attr-check if="@owning_group = 'Confidential_Interiors_CPP' or @owning_group = 'Fasteners' or @owning_group = 'Raw_Matls_Plastic_Resin&amp;Concent' or @owning_group = 'Raw_Materials_Steel'">
 		<attribute name="a9_PartType" value="'Standard Part'"/>
 	</attr-check>
+	-->
     <attr>
       <a>ng4_IsDesignRequired</a>
       <b>yf5_CADRequired</b>
@@ -645,12 +647,14 @@
       <a>ng4ModelCode</a>
       <b>yf5_OEM_Model_Code</b>
     </attr>
-	<!-- PS 8/21- ng4PltName mapped to yf5_OEMPlatformCode for Ng4_ProgramRevision, so, as a workaround, rename to a dummy attribute, then re-transform -->
-	<!-- Changed from yf5_GlobalPlatformCode to yf5_HyperionPlatformCode 8/31 PS -->
-    <attr>
-      <a>ng4PltName</a>
-      <b>yf5_HyperionPlatformCode</b>
-    </attr>
+	<!-- PS 8/21- ng4PltName mapped to yf5_GlobalPlatformCode and  yf5_HyperionPlatformCode 9/1 PS -->  
+	<attr-check if="@ng4PltName != null"> 
+		<attribute name="yf5_GlobalPlatformCode" value="@ng4PltName" />
+		<attr>
+			<a>ng4PltName</a>
+			<b>yf5_HyperionPlatformCode</b>
+		</attr>
+	</attr-check>
 	<attr>
       <a>ng4_PrmLifeYear</a>
       <b>yf5_ProgramLife</b>
@@ -668,7 +672,7 @@
       <b>a9_ProjectTargetedStart</b>
     </attr>
     <attr>
-      <a>ng4SOP_ActlDate</a>
+      <a>ng4SOP_PlDate</a>
       <b>a9_SOP</b>
     </attr>
     <attr>
@@ -715,10 +719,12 @@
       <a>ng4opportunity_desc</a>
       <b>yf5_Program_Comments</b>
     </attr>
+	<!-- Latest sheet maps it to a compound property, so, not needed here PS 9/1 
     <attr>
       <a>ng4ProdLine</a>
       <b>a9_ProductGroup</b>
     </attr>
+	-->
     <attr>
       <a>ng4SDTLead</a>
       <b>a9p_ProjectManager</b>
@@ -738,6 +744,8 @@
     </attr>
 	<attribute name="ng4OEMName" value="null"/>
 	<attribute name="ng4LaunchSite" value="null"/>
+	<attribute name="ng4PltName" value="null"/>
+	<attribute name="ng4ProdLine" value="null"/>	
   </map>
 
 <!-- Item to Rev mapping for Ng4_Program -->
@@ -782,7 +790,11 @@
     <attribute name="ng4_ScheduleTemplateStr" value="null"/>
 
 	<attribute name="ng4_leadRgnSite" value="null"/>
-	<attribute name="ng4_oem_model_year" value="null"/>
+	
+	<attr>
+		<a>ng4_oem_model_year</a>
+		<b>yf5_Model_Year</b>
+	</attr>
 	<!-- 	RA:THIS CHANGE IS FOR ITERATION_2 ONLY.
 	ng4_ProgDescription attribute is on Item in the soruce but in target we are trying to map to yf5_Program_Comments on ItemRevision(A9_ProgramItemRevision) class. As Mike tool can't handle to move attributes from Item to Item Rev so we may need to strip it from A9_ProgramItem . 
 	<attribute name="ng4_ProgDescription" value="null"/>-->
@@ -847,7 +859,9 @@
 -->
 	<attr-check  if="@ng4_region_dc_launch_site != null and @ng4_region_dc_launch_site.Contains(',')">
       <attribute name="yf5_MfgRegion" value="@ng4_region_dc_launch_site.Split(',')[1]"/>
+	  <!--
       <attribute name="yf5_LeadMfgCountry" value="@ng4_region_dc_launch_site.Split(',')[0]"/>
+	  -->
     </attr-check>
 	<attribute name="ng4_region_dc_launch_site" value="null"/>
 	<attribute name="ng4_oem_name" value="null"/>
@@ -956,12 +970,14 @@
 				<b>a9_ProjectTargetedEnd</b>
 			</attr>
 		</attr-check>
+		<!-- Latest mapping sheet does not have this mapping PS 9/1 
 		<attr-check if="@ng4ProdLine != null">
 			<attr>
 				<a>ng4ProdLine</a>
 				<b>a9_ProductGroup</b>
 			</attr>
 		</attr-check>
+		-->
 		<attr-check if="@ng4SOP_PlDate != null">
 			<attr>
 				<a>ng4SOP_PlDate</a>
@@ -1056,13 +1072,14 @@
 				<b>yf5_OEM_Model_Code</b>
 			</attr>
 		</attr-check>
-		<!-- Per Srini's emails, map ng4PltName to yf5_HyperionPlatformCode PS 8/30 -->
+		<!-- Per Srini's emails, map ng4PltName to yf5_HyperionPlatformCode and yf5_OEMPlatformCode PS 9/1 -->
 		<attr-check if="@ng4PltName != null">
+			<attribute name="yf5_OEMPlatformCode" value="@ng4PltName" />
 			<attr>
 				<a>ng4PltName</a>
 				<b>yf5_HyperionPlatformCode</b>
 			</attr>
-		</attr-check>
+		</attr-check>		
 		<attr-check if="@ng4PrgCategory != null">
 			<attr>
 				<a>ng4PrgCategory</a>
@@ -1290,11 +1307,10 @@
 		<b>yf5_CustomerBillTo</b>
 	</attr>
 	<!-- Fix for Issue# 11 - a+b PS 7/8-->
-	<!-- Changed from yf5_GlobalPlatformCode to yf5_HyperionPlatformCode 8/31 PS -->
 	<attr-check if="@ng4Platform != null"> 
 		<attr>
 			<a>ng4Platform</a>
-			<b>yf5_HyperionPlatformCode</b>
+			<b>yf5_GlobalPlatformCode</b>
 		</attr>
 	</attr-check>
 	<!-- Fix for Issue#28 - PS 7/7 -->
