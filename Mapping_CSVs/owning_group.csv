@@ -45,7 +45,7 @@ Rear_Seat_Metals_Application.JCI|Engineering
 Visteon.JCI|Engineering
 YFAI|Engineering
 Interiors_Application.FJC|Engineering
-JCI_PBU1.JCI|Engineering
+JCI_PBU|Engineering
 Project Administration|Project Administration
 Adjusters_Tracks_Core.JCI|Engineering
 Adjuster_Track.JCI|Engineering
@@ -68,6 +68,7 @@ Rear_Seat_Structures_Core.JCI|Engineering
 Support|Business
 IMMG|Material
 Front_Seat_Metals_Application.JCI|Engineering
+Interiors_Application.CSC|Engineering
 Foam.FJC|Engineering
 Trim.FJC|Engineering
 FAW.JCI|Engineering
