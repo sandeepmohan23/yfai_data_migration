@@ -857,12 +857,11 @@
       <b>yf5_LeadMfgCountry</b>
     </attr>
 -->
-	<attr-check  if="@ng4_region_dc_launch_site != null and @ng4_region_dc_launch_site.Contains(',')">
-      <attribute name="yf5_MfgRegion" value="@ng4_region_dc_launch_site.Split(',')[1]"/>
-	  <!--
-      <attribute name="yf5_LeadMfgCountry" value="@ng4_region_dc_launch_site.Split(',')[0]"/>
-	  -->
-    </attr-check>
+	<!-- For Ng4_Program objects, don't split the values on comma PS 9/3 -->
+	<attr>
+      <a>ng4_region_dc_launch_site</a>
+      <b>yf5_MfgRegion</b>
+    </attr>
 	<attribute name="ng4_region_dc_launch_site" value="null"/>
 	<attribute name="ng4_oem_name" value="null"/>
   </map>
