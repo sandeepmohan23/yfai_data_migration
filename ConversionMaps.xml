@@ -693,7 +693,9 @@
       <a>ng4DCLaunchSiteRgn</a>
       <b>yf5_VehicleSalesRegions</b>
     </attr>
-	<attribute name="yf5_MfgRegion" value="@ng4LaunchSite"/>
+	<attr-check if="@ng4LaunchSite != null">
+		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite"/>
+	</attr-check>
 	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')"> 
 		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[1]"/> 
 		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[0]"/> 
@@ -713,6 +715,9 @@
       <attribute name="yf5_OEMSubGroup" value="@yf5_OEMSubGroup.Split('-')[1]"/>
     </attr-check>
 	-->
+	<attr-check  if="@ng4OEMName != null">
+		<attribute name="yf5_OEMName" value="@ng4OEMName"/>
+	</attr-check>
 	<attr-check  if="@ng4OEMName != null and @ng4OEMName.Contains('-')">
       <attribute name="yf5_OEMName" value="@ng4OEMName.Split('-')[0]"/>
       <attribute name="yf5_OEMSubGroup" value="@ng4OEMName.Split('-')[1]"/>
@@ -844,7 +849,9 @@
       <a>ng4_pg</a>
       <b>yf5_ProductGroup</b>
     </attr>
-
+	<attr-check  if="@ng4_oem_name != null">
+		<attribute name="yf5_OEMName" value="@ng4_oem_name"/>
+	</attr-check>
 	<attr-check  if="@ng4_oem_name != null and @ng4_oem_name.Contains('-')">
       <attribute name="yf5_OEMName" value="@ng4_oem_name.Split('-')[0]"/>
       <attribute name="yf5_OEMSubGroup" value="@ng4_oem_name.Split('-')[1]"/>
@@ -997,10 +1004,15 @@
 			</attr>
 			<attribute name="a9_ProgramLeader" value="Lookup('EmailUserIdMap',@a9_ProgramLeader)"/>
 		</attr-check>
-		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite"/>
+		<attr-check if="@ng4LaunchSite != null">
+			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite"/>
+		</attr-check>
 		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')">
 			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[0]"/>
 			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[1]"/>
+		</attr-check>
+		<attr-check  if="@ng4OEMName != null">
+			<attribute name="yf5_OEMName" value="@ng4OEMName"/>
 		</attr-check>
 		<attr-check  if="@ng4OEMName != null and @ng4OEMName.Contains('-')">
 			<attribute name="yf5_OEMName" value="@ng4OEMName.Split('-')[0]"/>
