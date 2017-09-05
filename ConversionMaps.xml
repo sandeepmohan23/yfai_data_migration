@@ -140,6 +140,11 @@
     <attribute name="object_type" value="'Item'"/>
   </map>
   <map a="POM_stub" b="POM_stub">
+    <src-check if="@object_class = 'Ng4_Cal'"/>
+    <attribute name="object_class" value="'YF5_Cal'"/>
+    <attribute name="object_type" value="'YF5_Cal'"/>
+  </map>  
+  <map a="POM_stub" b="POM_stub">
     <src-check if="@object_class = 'Ng4_Non_ERP_DsgnRevision'"/>
     <attribute name="object_class" value="'A9_NonProductRevision'"/>
     <attribute name="object_type" value="'A9_NonProductRevision'"/>
