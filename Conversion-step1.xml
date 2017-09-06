@@ -91,5 +91,37 @@
 				el.SetAttrValue("ng4_CPP_STD", "Standard Part");
 			}
 		}
+		var allMstProgRevs = from el in _xml.Elements(_ns + "Ng4_MasterPrgRevision")
+		select el;
+		foreach(var el in allMstProgRevs)
+		{
+			string launchSite = el.GetAttrValue("ng4LaunchSite");
+			if (launchSite.Contains("\\,") {
+				launchSite = launchSite.Replace("\\,", "==");
+				string[] tokens = launchSite.Split(',');
+				string modSite = tokens[0];
+				modSite = modSite.Replace("==", ",");
+				int index = modSite.LastIndexOf(",");
+				string[] vals = new string[] {modSite.Substring(0, index), modSite.Substring(index + 1)};
+				modSite = vals[0].Trim() + "=", vals[1].Trim();
+				el.SetAttrValue("ng4LaunchSite", modSite);
+			}
+		}
+		var allProgRevs = from el in _xml.Elements(_ns + "Ng4_ProgramRevision")
+		select el;
+		foreach(var el in allProgRevs)
+		{
+			string launchSite = el.GetAttrValue("ng4LaunchSite");
+			if (launchSite.Contains("\\,") {
+				launchSite = launchSite.Replace("\\,", "==");
+				string[] tokens = launchSite.Split(',');
+				string modSite = tokens[0];
+				modSite = modSite.Replace("==", ",");
+				int index = modSite.LastIndexOf(",");
+				string[] vals = new string[] {modSite.Substring(0, index), modSite.Substring(index + 1)};
+				modSite = vals[0].Trim() + "=", vals[1].Trim();
+				el.SetAttrValue("ng4LaunchSite", modSite);
+			}
+		}
 	</script>
 	</maps>
