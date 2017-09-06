@@ -694,11 +694,12 @@
       <b>yf5_VehicleSalesRegions</b>
     </attr>
 	<attr-check if="@ng4LaunchSite != null">
-		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/>
+		<attribute name="ng4LaunchSiteCopy" value="@ng4LaunchSite"/>
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 	</attr-check>
-	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains('=')"> 
-		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split('=')[1]"/> 
-		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/> 
+	<attr-check  if="@ng4LaunchSiteCopy != null and @ng4LaunchSiteCopy.Contains('=')">
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSiteCopy.Split('=')[0]"/>
+		<attribute name="yf5_MfgRegion" value="@ng4LaunchSiteCopy.Split('=')[1]"/>
 	</attr-check>
 	  <!-- Commented PS 
     <attr>
@@ -755,6 +756,7 @@
     </attr>
 	<attribute name="ng4OEMName" value="null"/>
 	<attribute name="ng4LaunchSite" value="null"/>
+	<attribute name="ng4LaunchSiteCopy" value="null"/>
 	<attribute name="ng4PltName" value="null"/>
 	<attribute name="ng4ProdLine" value="null"/>	
   </map>
@@ -1005,11 +1007,12 @@
 			<attribute name="a9_ProgramLeader" value="Lookup('EmailUserIdMap',@a9_ProgramLeader)"/>
 		</attr-check>
 		<attr-check if="@ng4LaunchSite != null">
-			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/>
+			<attribute name="ng4LaunchSiteCopy" value="@ng4LaunchSite"/>
+			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 		</attr-check>
-		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains('=')">
-			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/>
-			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split('=')[1]"/>
+		<attr-check  if="@ng4LaunchSiteCopy != null and @ng4LaunchSiteCopy.Contains('=')">
+			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSiteCopy.Split('=')[0]"/>
+			<attribute name="yf5_MfgRegion" value="@ng4LaunchSiteCopy.Split('=')[1]"/>
 		</attr-check>
 		<attr-check  if="@ng4OEMName != null">
 			<attribute name="yf5_OEMName" value="@ng4OEMName"/>
@@ -1133,6 +1136,7 @@
 			<attribute name="yf5_CustomerGroup" value="@yf5_CustomerGroup.Trunc(10)"/> 
 		</attr-check>
 		<attribute name="ng4LaunchSite" value="null"/>
+		<attribute name="ng4LaunchSiteCopy" value="null"/>
 		<attribute name="ng4DCLaunchSiteRgn" value="null"/>
 		<attribute name="ng4PrgStatus" value="null"/>
 		<attribute name="ng4VehicleName" value="null"/>
