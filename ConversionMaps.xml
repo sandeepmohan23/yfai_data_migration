@@ -2215,6 +2215,14 @@
 
     uom2.Remove();
     }
+	var allProgRevs = from el in _xml.Elements(_ns + "A9_ProgramItemRevision")
+			select el;
+		foreach(var el in allProgRevs)
+		{
+			string country = el.GetAttrValue("yf5_LeadMfgCountry");
+			int lastSlash = country.LastIndexOf('\\');
+			country = (lastSlash > -1) ? country.Substring(0, lastSlash) : country;
+		}
   </script>
   
 </maps>
