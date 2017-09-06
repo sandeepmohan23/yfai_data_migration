@@ -694,7 +694,7 @@
       <b>yf5_VehicleSalesRegions</b>
     </attr>
 	<attr-check if="@ng4LaunchSite != null">
-		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/>
 	</attr-check>
 	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains('=')"> 
 		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split('=')[1]"/> 
@@ -1005,7 +1005,7 @@
 			<attribute name="a9_ProgramLeader" value="Lookup('EmailUserIdMap',@a9_ProgramLeader)"/>
 		</attr-check>
 		<attr-check if="@ng4LaunchSite != null">
-			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
+			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/>
 		</attr-check>
 		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains('=')">
 			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/>
