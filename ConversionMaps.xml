@@ -694,11 +694,11 @@
       <b>yf5_VehicleSalesRegions</b>
     </attr>
 	<attr-check if="@ng4LaunchSite != null">
-		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite"/>
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 	</attr-check>
 	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')"> 
-		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[1]"/> 
-		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[0]"/> 
+		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[1].Replace('\', '')"/> 
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[0].Replace('\', '')"/> 
 	</attr-check>
 	  <!-- Commented PS 
     <attr>
@@ -1005,11 +1005,11 @@
 			<attribute name="a9_ProgramLeader" value="Lookup('EmailUserIdMap',@a9_ProgramLeader)"/>
 		</attr-check>
 		<attr-check if="@ng4LaunchSite != null">
-			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite"/>
+			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 		</attr-check>
 		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')">
-			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[0]"/>
-			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[1]"/>
+			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[0].Replace('\', '')"/>
+			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[1].Replace('\', '')"/>
 		</attr-check>
 		<attr-check  if="@ng4OEMName != null">
 			<attribute name="yf5_OEMName" value="@ng4OEMName"/>
