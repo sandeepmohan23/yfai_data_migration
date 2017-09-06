@@ -96,7 +96,7 @@
 		foreach(var el in allMstProgRevs)
 		{
 			string launchSite = el.GetAttrValue("ng4LaunchSite");
-			if (launchSite.Contains("\\,") {
+			if (launchSite.Contains("\\,")) {
 				launchSite = launchSite.Replace("\\,", "==");
 				string[] tokens = launchSite.Split(',');
 				string modSite = tokens[0];
@@ -112,7 +112,7 @@
 		foreach(var el in allProgRevs)
 		{
 			string launchSite = el.GetAttrValue("ng4LaunchSite");
-			if (launchSite.Contains("\\,") {
+			if (launchSite.Contains("\\,")) {
 				launchSite = launchSite.Replace("\\,", "==");
 				string[] tokens = launchSite.Split(',');
 				string modSite = tokens[0];
