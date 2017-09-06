@@ -719,8 +719,8 @@
 		<attribute name="yf5_OEMName" value="@ng4OEMName"/>
 	</attr-check>
 	<attr-check  if="@ng4OEMName != null and @ng4OEMName.Contains('-')">
-      <attribute name="yf5_OEMName" value="@ng4OEMName.Split('-')[0]"/>
-      <attribute name="yf5_OEMSubGroup" value="@ng4OEMName.Split('-')[1]"/>
+      <attribute name="yf5_OEMName" value="@ng4OEMName.Split('-')[0].Trim()"/>
+      <attribute name="yf5_OEMSubGroup" value="@ng4OEMName.Split('-')[1].Trim()"/>
     </attr-check>
     <attr>
       <a>ng4EOP_PlDate</a>
@@ -853,8 +853,8 @@
 		<attribute name="yf5_OEMName" value="@ng4_oem_name"/>
 	</attr-check>
 	<attr-check  if="@ng4_oem_name != null and @ng4_oem_name.Contains('-')">
-      <attribute name="yf5_OEMName" value="@ng4_oem_name.Split('-')[0]"/>
-      <attribute name="yf5_OEMSubGroup" value="@ng4_oem_name.Split('-')[1]"/>
+      <attribute name="yf5_OEMName" value="@ng4_oem_name.Split('-')[0].Trim()"/>
+      <attribute name="yf5_OEMSubGroup" value="@ng4_oem_name.Split('-')[1].Trim()"/>
     </attr-check>
 	<attr>
       <a>ng4_oem_vehicle_name</a>
@@ -1015,8 +1015,8 @@
 			<attribute name="yf5_OEMName" value="@ng4OEMName"/>
 		</attr-check>
 		<attr-check  if="@ng4OEMName != null and @ng4OEMName.Contains('-')">
-			<attribute name="yf5_OEMName" value="@ng4OEMName.Split('-')[0]"/>
-			<attribute name="yf5_OEMSubGroup" value="@ng4OEMName.Split('-')[1]"/>
+			<attribute name="yf5_OEMName" value="@ng4OEMName.Split('-')[0].Trim()"/>
+			<attribute name="yf5_OEMSubGroup" value="@ng4OEMName.Split('-')[1].Trim()"/>
 		</attr-check>
 		<attr>
 			<a>ng4_EstCompletion</a>
@@ -2215,20 +2215,7 @@
 
     uom2.Remove();
     }
-	var allProgRevs = from el in _xml.Elements(_ns + "A9_ProgramItemRevision")
-		select el;
-	foreach(var el in allProgRevs)
-	{
-		string oemName = el.GetAttrValue("yf5_OEMName");
-		string subGrp = el.GetAttrValue("yf5_OEMSubGroup");
-		if (!String.IsNullOrEmpty(oemName)) {
-			oemName = oemName.Trim();
-			el.SetAttrValue("yf5_OEMName", oemName);
-		}
-		if (!String.IsNullOrEmpty(subGrp)) {
-			subGrp = subGrp.Trim();
-			el.SetAttrValue("yf5_OEMSubGroup", subGrp);
-		}		
+		
 		
 	}
   </script>
