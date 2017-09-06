@@ -103,7 +103,7 @@
 				modSite = modSite.Replace("==", ",");
 				int index = modSite.LastIndexOf(",");
 				string[] vals = new string[] {modSite.Substring(0, index), modSite.Substring(index + 1)};
-				modSite = vals[0].Trim() + "=", vals[1].Trim();
+				modSite = vals[0].Trim() + "=" + vals[1].Trim();
 				el.SetAttrValue("ng4LaunchSite", modSite);
 			}
 		}
@@ -119,7 +119,7 @@
 				modSite = modSite.Replace("==", ",");
 				int index = modSite.LastIndexOf(",");
 				string[] vals = new string[] {modSite.Substring(0, index), modSite.Substring(index + 1)};
-				modSite = vals[0].Trim() + "=", vals[1].Trim();
+				modSite = vals[0].Trim() + "=" + vals[1].Trim();
 				el.SetAttrValue("ng4LaunchSite", modSite);
 			}
 		}
