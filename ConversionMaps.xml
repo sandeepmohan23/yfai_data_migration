@@ -697,8 +697,8 @@
 		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 	</attr-check>
 	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains('=')"> 
-		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split('=')[1].Replace('\\', '')"/> 
-		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0].Replace('\\', '')"/> 
+		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split('=')[1]"/> 
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/> 
 	</attr-check>
 	  <!-- Commented PS 
     <attr>
@@ -1008,8 +1008,8 @@
 			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 		</attr-check>
 		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains('=')">
-			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0].Replace('\\', '')"/>
-			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split('=')[1].Replace('\\', '')"/>
+			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split('=')[0]"/>
+			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split('=')[1]"/>
 		</attr-check>
 		<attr-check  if="@ng4OEMName != null">
 			<attribute name="yf5_OEMName" value="@ng4OEMName"/>
@@ -2221,10 +2221,15 @@
 	{
 		string oemName = el.GetAttrValue("yf5_OEMName");
 		string subGrp = el.GetAttrValue("yf5_OEMSubGroup");
-		oemName = oemName.Trim();
-		subGrp = subGrp.Trim();
-		el.SetAttrValue("yf5_OEMName", oemName);
-		el.SetAttrValue("yf5_OEMSubGroup", subGrp);
+		if (!String.IsNullOrEmpty(oemName)) {
+			oemName = oemName.Trim();
+			el.SetAttrValue("yf5_OEMName", oemName);
+		}
+		if (!String.IsNullOrEmpty(subGrp)) {
+			subGrp = subGrp.Trim();
+			el.SetAttrValue("yf5_OEMSubGroup", subGrp);
+		}		
+		
 	}
   </script>
   
