@@ -696,7 +696,7 @@
 	<attr-check if="@ng4LaunchSite != null">
 		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 	</attr-check>
-	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')"> 
+	<attr-check if="@ng4LaunchSite != null and @ng4LaunchSite.Contains('=')"> 
 		<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[1].Replace('\\', '')"/> 
 		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[0].Replace('\\', '')"/> 
 	</attr-check>
@@ -1007,7 +1007,7 @@
 		<attr-check if="@ng4LaunchSite != null">
 			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 		</attr-check>
-		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains(',')">
+		<attr-check  if="@ng4LaunchSite != null and @ng4LaunchSite.Contains('=')">
 			<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite.Split(',')[0].Replace('\\', '')"/>
 			<attribute name="yf5_MfgRegion" value="@ng4LaunchSite.Split(',')[1].Replace('\\', '')"/>
 		</attr-check>
@@ -2216,13 +2216,16 @@
     uom2.Remove();
     }
 	var allProgRevs = from el in _xml.Elements(_ns + "A9_ProgramItemRevision")
-			select el;
-		foreach(var el in allProgRevs)
-		{
-			string country = el.GetAttrValue("yf5_LeadMfgCountry");
-			int lastSlash = country.LastIndexOf('\\');
-			country = (lastSlash > -1) ? country.Substring(0, lastSlash) : country;
-		}
+		select el;
+	foreach(var el in allProgRevs)
+	{
+		string oemName = el.GetAttrValue("yf5_OEMName");
+		string subGrp = el.GetAttrValue("yf5_OEMSubGroup");
+		oemName = oemName.Trim();
+		subGrp = subGrp.Trim();
+		el.SetAttrValue("yf5_OEMName", oemName);
+		el.SetAttrValue("yf5_OEMSubGroup", subGrp);
+	}
   </script>
   
 </maps>
