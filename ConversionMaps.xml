@@ -697,9 +697,9 @@
 		<attribute name="ng4LaunchSiteCopy" value="@ng4LaunchSite"/>
 		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSite"/>
 	</attr-check>
-	<attr-check  if="@ng4LaunchSiteCopy != null and @ng4LaunchSiteCopy.Contains('=')">
-		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSiteCopy.Split('=')[0]"/>
-		<attribute name="yf5_MfgRegion" value="@ng4LaunchSiteCopy.Split('=')[1]"/>
+	<attr-check  if="@ng4LaunchSiteCopy != null and @ng4LaunchSiteCopy.Contains('-')">
+		<attribute name="yf5_LeadMfgCountry" value="@ng4LaunchSiteCopy.Split('-')[0]"/>
+		<attribute name="yf5_MfgRegion" value="@ng4LaunchSiteCopy.Split('-')[1]"/>
 	</attr-check>
 	  <!-- Commented PS 
     <attr>
