@@ -741,7 +741,6 @@
       <a>ng4SDTLead</a>
       <b>a9p_ProjectManager</b>
     </attr>
-	<attribute name="a9p_ProjectManager" value="Lookup('EmailUserIdMap',@a9p_ProjectManager)"/>
 	
 	<!-- Commented out per the latest mapping sheet. This should be set to null - PS 6/4/17 -->
 	<!-- Uncommented per the latest mapping sheet 8/31 PS -->
