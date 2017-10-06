@@ -677,10 +677,6 @@
       <b>a9_ProjectTargetedStart</b>
     </attr>
     <attr>
-      <a>ng4SOP_PlDate</a>
-      <b>a9_SOP</b>
-    </attr>
-    <attr>
       <a>ng4VehicleName</a>
       <b>yf5_OEM_Model_Name</b>
     </attr>
